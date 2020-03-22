@@ -74,7 +74,7 @@ const BannerSection = ({
               description={
                 <Text
                   style={{ fontSize: "1.3rem" }}
-                  content="Boost conversions and retention by delivering personalized experiences. Parallax learns your users’ preferences and automatically tailors their journeys to keep them engaged with your platform."
+                  content="Boost conversions and retention by providing guides to your users when they need it, where they need it. Parallax makes it easy to teach new users how to use your software product. Keep your users engaged by providing them with helpful information."
                   {...description}
                 />
               }

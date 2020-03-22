@@ -15,7 +15,7 @@ import CentralizeSectionWrapper, { SectionObject } from './dynamicSection.style'
 import GifPlayer from 'react-gif-player';
 import GlowUp from '../../../assets/image/glowup.gif';
 import ImageBg from '../../../assets/image/flat/visitor_bg.png';
-import ServerWoman from '../../../assets/image/flat/server-woman.svg';
+import Guides from '../../../assets/image/guides.png';
 
 const CentralizeSection = ({
   title,
@@ -30,11 +30,11 @@ const CentralizeSection = ({
         <Card className="dashboardWrapper" {...imageWrapper}>
           <Zoom>
             <Fade left>
-              <GifPlayer
-                style={{ width: '650px', margin: '50px', marginTop: '150px' }}
-                gif={GlowUp}
-                autoplay={true}
-              />
+              <Card className="dashboardWrapper" {...imageWrapper}>
+                <Fade right>
+                  <Image src={Guides} alt="ContentMan" width="800" />
+                </Fade>
+              </Card>
             </Fade>
           </Zoom>
         </Card>
@@ -46,14 +46,14 @@ const CentralizeSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Anticipate issues and make live changes."
+                  content="Bring users closer to that 'aha!' moment."
                   {...title}
                 />
               }
               description={
                 <Text
                   style={{ fontSize: "1.25rem" }}
-                  content="Parallax uses collected data and ongoing behaviors to anticipate what users will do, and  makes live edits to your interface to help guide them in the right direction if they get off-track."
+                  content="Parallax presents your users with video guides. They can select what they want to learn to do from a few options you have determined. Increase conversion, retention, and user satisfaction using Parallax guides."
                   {...description}
                 />
               }

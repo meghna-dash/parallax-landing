@@ -46,7 +46,7 @@ const ValueSection = ({
               description={
                 <Text
                   style={{ fontSize: "1.25rem" }}
-                  content="Users almost never think about your product the way you want them to, which causes significant drops in conversion, retention, and purchases. Parallax helps you avoid this by tailoring their experiences as they browse."
+                  content="Users almost never think about your product the way you want them to, which causes significant drops in conversion, retention, and purchases. Parallax helps you avoid this with non-invasive, comprehensive product guides."
                   {...description}
                 />
               }

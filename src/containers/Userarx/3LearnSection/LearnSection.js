@@ -31,14 +31,14 @@ const AnalyzeSection = ({
           <FeatureBlock
             title={
               <Heading
-                content="Identify key user trends."
+                content="Help your users with simple guides."
                 {...title}
               />
             }
             description={
               <Text
                 style={{ fontSize: "1.25rem" }}
-                content="Parallax collects your users’ actions and backgrounds, and learns how they interact with your platform. Understand the patterns in how they behave based on a variety of demographics."
+                content="Parallax lets you easily upload video guides that teach your users how to use your software. Identify what you want to teach your users, upload guides, and we will handle engaging your user."
                 {...description}
               />
             }
