@@ -39,14 +39,14 @@ const ValueSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Stop struggling with unexpected user behavior."
+                  content="Stop losing users during the onboarding process."
                   {...title}
                 />
               }
               description={
                 <Text
                   style={{ fontSize: "1.25rem" }}
-                  content="Users almost never think about your product the way you want them to, which causes significant drops in conversion, retention, and purchases. Parallax helps you avoid this with non-invasive, comprehensive product guides."
+                  content="Long onboarding flows lose users — but without onboarding guides, users can get confused about how to use your software product and leave it altogether. Parallax helps you avoid this with non-invasive, comprehensive product guides."
                   {...description}
                 />
               }

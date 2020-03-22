@@ -38,7 +38,7 @@ const AnalyzeSection = ({
             description={
               <Text
                 style={{ fontSize: "1.25rem" }}
-                content="Parallax lets you easily upload video guides that teach your users how to use your software. Identify what you want to teach your users, upload guides, and we will handle engaging your user."
+                content="Parallax lets you easily upload video guides that teach your users how to use your product. Help your users answer questions like “how do I create a new project?”, “how do I change my security settings?”, and “how do I start a new instance?”."
                 {...description}
               />
             }

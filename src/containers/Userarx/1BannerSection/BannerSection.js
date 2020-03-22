@@ -61,11 +61,11 @@ const BannerSection = ({
                     className="strong"
                     speed='80'
                     eraseDelay='800'
-                    text={["Personalized", "Dynamic","Adaptable"]}
+                    text={["Adaptable", "Easy","Engaging", "Intelligent"]}
                   />
                   <div style={{height: "160px"}}>
                   <Heading
-                    content="user experiences."
+                    content="user onboarding."
                     {...title}
                   />
                   </div>
@@ -74,7 +74,7 @@ const BannerSection = ({
               description={
                 <Text
                   style={{ fontSize: "1.3rem" }}
-                  content="Boost conversions and retention by providing guides to your users when they need it, where they need it. Parallax makes it easy to teach new users how to use your software product. Keep your users engaged by providing them with helpful information."
+                  content="User onboarding made simple. Boost retention by providing product guides to your users when they need it, where they need it. Parallax makes it easier for you to onboard users, increase engagement, and maximize customer satisfaction."
                   {...description}
                 />
               }

@@ -53,7 +53,7 @@ const CentralizeSection = ({
               description={
                 <Text
                   style={{ fontSize: "1.25rem" }}
-                  content="Parallax presents your users with video guides. They can select what they want to learn to do from a few options you have determined. Increase conversion, retention, and user satisfaction using Parallax guides."
+                  content="Using Parallax is like onboarding each user one-by-one. Users understand your product and its value much faster, increasing your conversion and retention rates. It’s easier for your users — and for you."
                   {...description}
                 />
               }
