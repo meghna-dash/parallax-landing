@@ -13,7 +13,7 @@ import FeatureBlock from '../../../components/FeatureBlock';
 import Container from '../../../components/UI/Container';
 import CentralizeSectionWrapper, { SectionObject } from './dynamicSection.style';
 import GifPlayer from 'react-gif-player';
-import GlowUp from '../../../assets/image/glowup.gif';
+// import GlowUp from '../../../assets/image/glowup.gif';
 import ImageBg from '../../../assets/image/flat/visitor_bg.png';
 import Guides from '../../../assets/image/guides.png';
 

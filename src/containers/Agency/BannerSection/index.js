@@ -12,7 +12,7 @@ import BannerWrapper, { DiscountLabel, BannerObject } from './bannerSection.styl
 import ReactTypingEffect from 'react-typing-effect';
 import NatureMan from '../../../assets/image/flat/nature-man.svg';
 import GifPlayer from 'react-gif-player';
-import GlowUp from '../../../assets/image/glowup.gif';
+// import GlowUp from '../../../assets/image/glowup.gif';
 const BannerSection = ({
   row,
   col,
@@ -80,13 +80,7 @@ const BannerSection = ({
       </Container>
       <BannerObject>
         <div >
-        <GifPlayer
-          style={{ width: '750px', margin: '50px', marginTop: '150px' }}
-          gif={GlowUp}
-          autoplay={true}
-          // still=
-          // pauseRef={pause => this.pauseGif = pause}
-        />
+
         </div>
       </BannerObject>
     </BannerWrapper>

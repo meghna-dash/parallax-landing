@@ -65,7 +65,7 @@ const BannerSection = ({
                   />
                   <div style={{height: "160px"}}>
                   <Heading
-                    content="user onboarding."
+                    content="product guides."
                     {...title}
                   />
                   </div>
@@ -74,7 +74,7 @@ const BannerSection = ({
               description={
                 <Text
                   style={{ fontSize: "1.3rem" }}
-                  content="User onboarding made simple. Boost retention by providing product guides to your users when they need it, where they need it. Parallax makes it easier for you to onboard users, increase engagement, and maximize customer satisfaction."
+                  content="Boost conversion and retention by providing product guides to your users when they need it, where they need it. Parallax makes it easier for you to onboard users, increase engagement, and maximize customer satisfaction."
                   {...description}
                 />
               }
