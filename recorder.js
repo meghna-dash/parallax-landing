@@ -59,7 +59,6 @@ class Recorder {
 
     this.ws.onmessage = (event) => {
       var data = JSON.parse(event.data);
-      console.log(data)
       switch (data.action) {
         case "disconnect":
           this.close();
@@ -159,7 +158,6 @@ class Recorder {
 
     event.selector = this.getDomPath(target);
     if (this.initialized) {
-      console.log(event)
       var msg = new WsEventMessage(event, this.projectID, this.sessionID);
       this.ws.send(msg.toJSON());
     } else {
@@ -262,7 +260,6 @@ class Recorder {
       };
     })
     .catch(error => {
-      console.log(error);
       this.userData = null;
     });
   }
