@@ -3,14 +3,17 @@
   <head>
     <script async type="text/javascript">
       var projectID="e7f31b8e-04fe-4313-bad4-4bb118428def";
-      window.sessionStorage.setItem("ux-pid", projectID);
+      window.sessionStorage.setItem("parallax-pid", projectID);
       document.addEventListener("DOMContentLoaded", (event) => {
         var head = document.getElementsByTagName("head").item(0);
-        var script = document.createElement("script");
-        script.setAttribute("type", "text/javascript");
-        // script.setAttribute("src", "https://parallaxux.com/recorder.js");
-        // script.setAttribute("src", "./inject.js");
-        head.appendChild(script);
+        var recorderScript = document.createElement("script");
+        var injectScript = document.createElement("script");
+        recorderScript.setAttribute("type", "text/javascript");
+        injectScript.setAttribute("type", "text/javascript");
+        recorderScript.setAttribute("src", "https://static.parallaxux.com/recorder.js");
+        injectScript.setAttribute("src", "https://static.parallaxux.com/inject.js");
+        head.appendChild(recorderScript);
+        head.appendChild(injectScript);
       });
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159674036-1"></script>
