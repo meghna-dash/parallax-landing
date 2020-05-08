@@ -11,7 +11,7 @@ import Card from '../../../components/Card';
 import Image from '../../../components/Image';
 import FeatureBlock from '../../../components/FeatureBlock';
 import Container from '../../../components/UI/Container';
-import AnalyzeSectionWrapper, { SectionObject } from './learnSection.style';
+import AnalyzeSectionWrapper, { SectionObject } from './helpUsersSection.style';
 
 import ImageBg from '../../../assets/image/flat/analyze.png';
 import ContentMan from '../../../assets/image/flat/content-man.svg';

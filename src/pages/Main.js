@@ -12,9 +12,9 @@ import Navbar from '../containers/Userarx/0Navbar/Navbar';
 
 // SECTIONS
 import BannerSection from '../containers/Userarx/1BannerSection/BannerSection';
-import RecordSection from '../containers/Userarx/2RecordSection/RecordSection';
-import LearnSection from '../containers/Userarx/3LearnSection/LearnSection';
-import DynamicSection from '../containers/Userarx/4DynamicSection/DynamicSection';
+import LosingUsersSection from '../containers/Userarx/2LosingUsersSection/LosingUsersSection';
+import HelpUsersSection from '../containers/Userarx/3HelpUsersSection/HelpUsersSection';
+import AhaMomentSection from '../containers/Userarx/4AhaMomentSection/AhaMomentSection';
 import GetStarted from '../containers/Userarx/5GetStartedSection/GetStartedSection';
 import ContactSection from '../containers/Hosting/Contact';
 
@@ -49,9 +49,9 @@ class Main extends Component {
             </DrawerProvider>
           </Sticky>
           <BannerSection />
-          <RecordSection />
-          <LearnSection />
-          <DynamicSection />
+          <LosingUsersSection />
+          <HelpUsersSection />
+          <AhaMomentSection />
           <GetStarted />
           <br />
         </AgencyWrapper>

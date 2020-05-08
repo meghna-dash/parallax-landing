@@ -11,7 +11,7 @@ import Card from '../../../components/Card';
 import Image from '../../../components/Image';
 import FeatureBlock from '../../../components/FeatureBlock';
 import Container from '../../../components/UI/Container';
-import ValueSectionWrapper, { SectionObject } from './recordSection.style';
+import ValueSectionWrapper, { SectionObject } from './losingUsersSection.style';
 
 import ImageBg from '../../../assets/image/flat/visitor_bg.png';
 import Error404Colour from '../../../assets/image/flat/error-404-colour.svg';

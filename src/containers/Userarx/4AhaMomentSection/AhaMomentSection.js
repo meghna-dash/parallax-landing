@@ -11,7 +11,7 @@ import Card from '../../../components/Card';
 import Image from '../../../components/Image';
 import FeatureBlock from '../../../components/FeatureBlock';
 import Container from '../../../components/UI/Container';
-import CentralizeSectionWrapper, { SectionObject } from './dynamicSection.style';
+import CentralizeSectionWrapper, { SectionObject } from './ahaMomentSection.style';
 import GifPlayer from 'react-gif-player';
 // import GlowUp from '../../../assets/image/glowup.gif';
 import ImageBg from '../../../assets/image/flat/visitor_bg.png';
