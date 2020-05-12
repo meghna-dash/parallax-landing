@@ -1,0 +1,61 @@
+//
+// shapes.scss
+//
+
+.shape {
+  position: absolute;
+  pointer-events: none;
+  background-color: currentColor;
+}
+
+// Image
+
+.shape-img {
+  position: inherit;
+  overflow: hidden;
+}
+
+.shape-img > svg {
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  transform: scale(2);
+}
+
+// Orientation
+
+.shape-fluid-x {
+  width: 100%;
+}
+
+.shape-fluid-x .shape-img {
+  width: inherit;
+}
+
+// Positioning
+
+.shape-top {
+  bottom: 100%;
+}
+
+.shape-top .shape-img {
+  bottom: inherit;
+}
+
+.shape-top .shape-img > svg {
+  bottom: 0;
+  transform-origin: top center;
+}
+
+.shape-bottom {
+  top: 100%;
+}
+
+.shape-bottom .shape-img {
+  top: inherit;
+}
+
+.shape-bottom .shape-img > svg {
+  top: 0;
+  transform-origin: bottom center;
+}

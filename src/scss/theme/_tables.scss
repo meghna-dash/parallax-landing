@@ -1,0 +1,71 @@
+//
+// tables.scss
+//
+
+// Flush
+
+.table-flush thead th:first-child,
+.table-flush tbody th:first-child,
+.table-flush tbody td:first-child,
+.table-flush tfoot td:first-child {
+  padding-left: 0;
+}
+
+.table-flush thead th:last-child,
+.table-flush tbody th:last-child,
+.table-flush tbody td:last-child,
+.table-flush tfoot td:last-child {
+  padding-right: 0;
+}
+
+
+// Head
+
+.table th {
+  padding-top: $table-head-cell-padding-y;
+  padding-bottom: $table-head-cell-padding-y;
+  font-weight: $font-weight-normal;
+}
+
+.table thead th {
+  border-bottom: 0;
+  @extend h6.text-uppercase;
+  text-transform: uppercase;
+  font-size: $h6-font-size;
+  color: $gray-500;
+}
+
+
+// Foot
+
+.table tfoot td {
+  padding-top: $table-foot-cell-padding-y;
+  padding-bottom: $table-foot-cell-padding-y;
+}
+
+
+// Clickable
+
+.table-clickable [data-href]:hover {
+  cursor: pointer;
+}
+
+.table-clickable [data-href]:hover .table-clickable-hover {
+  color: $link-hover-color;
+}
+
+
+// Features
+
+@include media-breakpoint-down(sm) {
+
+  .table-features.table-features-alt th:nth-child(2),
+  .table-features.table-features-alt td:nth-child(2) {
+    display: none;
+  }
+
+  .table-features:not(.table-features-alt) th:nth-child(3),
+  .table-features:not(.table-features-alt) td:nth-child(3) {
+    display: none;
+  }
+}

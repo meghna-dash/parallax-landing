@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Border"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Border",
+            "isCustom": true,
+            "description": "Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.",
+            "bootstrapDocs": "https://getbootstrap.com/docs/4.4/utilities/borders/",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Sizing",
+            "id": "sizing",
+            "isCustom": false,
+            "description": "Responsive border utilities with border width ranging from <code>0</code> to <code>7</code>."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;border-0&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;border-0&nbsp;border-md-1&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;border-top-2&nbsp;border-top-lg-5&quot;&gt;&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Colors",
+            "id": "colors",
+            "isCustom": false,
+            "description": "Additional border color utilities."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body d-flex flex-wrap">
+
+                <!-- Items -->
+                <div class="border border-transparent bg-light" style="width: 100px; height: 100px; margin: .5rem"></div>
+                <div class="border border-white-5 bg-light" style="width: 100px; height: 100px; margin: .5rem"></div>
+                <div class="border border-gray-300" style="width: 100px; height: 100px; margin: .5rem"></div>
+                <div class="border border-gray-900" style="width: 100px; height: 100px; margin: .5rem"></div>
+                <div class="border-multicolor bg-light" style="width: 100px; height: 100px; margin: .5rem"></div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;border&nbsp;border-transparent&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;border&nbsp;border-white-5&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;border&nbsp;border-gray-300&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;border&nbsp;border-gray-900&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;border-multicolor&quot;&gt;&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Border radius",
+            "id": "borderRadius",
+            "isCustom": false,
+            "description": "Additional border radius utilities."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body d-flex flex-wrap">
+
+                <!-- Items -->
+                <div class="border rounded-top-left" style="width: 100px; height: 100px; margin: .5rem;"></div>
+                <div class="border rounded-top-right" style="width: 100px; height: 100px; margin: .5rem;"></div>
+                <div class="border rounded-top-left-sm" style="width: 100px; height: 100px; margin: .5rem;"></div>
+                <div class="border rounded-top-right-sm" style="width: 100px; height: 100px; margin: .5rem;"></div>
+                <div class="border rounded rounded-top-right-0" style="width: 100px; height: 100px; margin: .5rem;"></div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;border&nbsp;rounded-top-left&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;border&nbsp;rounded-top-right&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;border&nbsp;rounded-top-left-sm&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;border&nbsp;rounded-top-right-sm&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;border&nbsp;rounded&nbsp;rounded-top-right-0&quot;&gt;&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Sizing", "url": "#sizing"}, {"title": "Colors", "url": "#colors"}, {"title": "Border radius", "url": "#borderRadius"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

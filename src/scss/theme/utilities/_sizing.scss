@@ -1,0 +1,68 @@
+//
+// sizing.scss
+//
+
+.mvw-100 {
+  max-width: 100vw !important;
+}
+
+@each $size, $sizeValue in $sizes {
+
+  // Percentage
+
+  .mw-#{$size} {
+    max-width: $sizeValue !important;
+  }
+
+  // Viewport units
+
+  @if $size !="auto" {
+
+    .vh-#{$size} {
+      height: #{$size}vh !important;
+    }
+
+    .vw-#{$size} {
+      width: #{$size}vw !important;
+    }
+  }
+
+}
+
+
+// Responsive
+
+@each $width, $widthValue in $container-max-widths {
+  @include media-breakpoint-up($width) {
+    @each $size, $sizeValue in $sizes {
+
+      // Percentage
+
+      .h-#{$width}-#{$size} {
+        height: $sizeValue !important;
+      }
+
+      .w-#{$width}-#{$size} {
+        width: $sizeValue !important;
+      }
+
+      .mw-#{$width}-#{$size} {
+        max-width: $sizeValue !important;
+      }
+
+      // Viewport units
+
+      @if $size !="auto" {
+
+        .vh-#{$width}-#{$size} {
+          height: #{$size}vh;
+        }
+
+        .vw-#{$width}-#{$size} {
+          width: #{$size}vw;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,124 @@
+//
+// custom-forms.scss
+//
+
+// Timeline
+
+.timeline-radio {
+  display: flex;
+}
+
+// Input
+
+.timeline-radio-input {
+  display: none;
+}
+
+.timeline-radio-input:checked ~ .timeline-radio-label {
+  opacity: .2;
+}
+
+.timeline-radio-input:checked + .timeline-radio-label {
+  opacity: 1;
+}
+
+.timeline-radio-input:checked + .timeline-radio-label::before {
+  box-shadow: 0 0 0 $timeline-radio-border-width currentColor;
+}
+
+// Label
+
+.timeline-radio-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  pointer-events: none;
+}
+
+.timeline-radio-label:first-of-type {
+  width: $timeline-radio-indicator-size;
+}
+
+// Text
+
+.timeline-radio-label > small {
+  white-space: nowrap;
+}
+
+.timeline-radio-label:not(:first-of-type) > small,
+.timeline-radio-label:not(:last-of-type) > small {
+  transform: translateX(50%) translateX(-#{$timeline-radio-indicator-size / 2});
+}
+
+// Indicator
+
+.timeline-radio-label::after,
+.timeline-radio-label::before {
+  content: "";
+  display: block;
+  cursor: pointer;
+}
+
+.timeline-radio-label::before {
+  z-index: 1;
+  width: $timeline-radio-indicator-size;
+  height: $timeline-radio-indicator-size;
+  margin-bottom: $spacer;
+  background-color: $body-bg;
+  box-shadow: inset 0 0 0 $timeline-radio-indicator-size currentColor;
+  border-radius: 50%;
+  pointer-events: auto;
+}
+
+// Line
+
+.timeline-radio-label::after {
+  position: absolute;
+  top: calc((#{$timeline-radio-indicator-size} - #{$timeline-radio-border-width}) / 2);
+  right: 0;
+  width: 100%;
+  border-top: $timeline-radio-border-width solid currentColor;
+}
+
+// Colors
+
+@each $color, $value in $theme-colors {
+
+  .timeline-radio-#{$color} {
+
+    .timeline-radio-label::after,
+    .timeline-radio-label::before {
+      color: $value;
+    }
+  }
+}
+
+
+// Switch
+
+.custom-switch .custom-control-label::before {
+  top: calc((#{$font-size-base * $line-height-base} - #{$custom-switch-height}) / 2);
+  height: $custom-switch-height;
+}
+
+.custom-switch .custom-control-label::after {
+  left: -(($custom-switch-width + $custom-control-gutter) - ($custom-switch-height - $custom-control-indicator-size) / 2);
+  background-color: $white;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  transform: translateX($custom-switch-width - $custom-control-indicator-size - $custom-switch-height + $custom-control-indicator-size);
+  background-color: $white;
+}
+
+// Dark
+
+.custom-control-dark.custom-switch .custom-control-label::before {
+  background-color: rgba($white, .1);
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: $primary;
+}

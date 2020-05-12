@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white"
+    })
+
+    <!-- WELCOME -->
+    <section class="pt-6 pt-md-11 pb-11 pb-md-13">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-6 text-center" data-aos="fade-up">
+
+            <!-- Heading -->
+            <h1 class="display-3 mb-4">
+              One stop to run your <span class="text-underline-warning">whole shop</span>.
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted">
+              From point of sale to payroll,<br>
+              we got you covered for everything.
+            </p>
+
+            <!-- Button -->
+            <a class="btn btn-primary lift" href="#!">
+              Create an Account
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-bottom text-white pb-14">
+        <div class="shape-img pb-8 pb-md-11">
+          @@include("partials/shapes/angles/angle-bottom-left.svg")
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDER -->
+    <section class="bg-light">
+      <div class="container-lg">
+        <div class="row no-gutters">
+          <div class="col-12">
+
+            <!-- Decoration -->
+            <div class="position-absolute top-right text-primary-light mt-n8 mr-n7">
+              @@include("partials/decorations/decoration-2.svg")
+            </div>
+
+            <!-- Slider -->
+            <div class="row align-items-center">
+              <div class="col-md-10 col-xl-9 order-md-1 offset-md-n6 offset-xl-n3 position-static">
+
+                <!-- Slider -->
+                <div class="flickity-buttons-overlap position-static vw-100 w-sm-100 ml-n4 ml-sm-0" data-flickity='{"autoPlay": true, "imagesLoaded": true, "pageDots": false, "wrapAround": true}' id="imageSlider">
+                  <div class="w-100">
+
+                    <!-- Image -->
+                    <img class="img-fluid pos-relative" src="assets/img/e-commerce/customer-hero-1.jpg" alt="..." data-aos="wipe-left" data-aos-delay="150">
+
+                  </div>
+                  <div class="w-100">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="assets/img/e-commerce/customer-hero-2.jpg" alt="...">
+
+                  </div>
+                  <div class="w-100">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="assets/img/e-commerce/customer-hero-3.jpg" alt="...">
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-8 col-xl-6 order-md-0">
+
+                <!-- Slider -->
+                <div class="shadow-lg bg-white mt-n10 mt-md-0" data-flickity='{"fade": true, "asNavFor": "#imageSlider", "draggable": false, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "wrapAround": true}' data-aos="fade-up" data-aos-delay="200">
+                  <div class="w-100">
+
+                    <!-- Card -->
+                    <div class="card card-lg shadow-none">
+                      <div class="card-body text-center">
+
+                        <!-- Preheading -->
+                        <h6 class="text-uppercase text-warning mb-5">
+                          01. Brand
+                        </h6>
+
+                        <!-- Heading -->
+                        <h1 class="mb-4">
+                          Building your brand.
+                        </h1>
+
+                        <!-- Text -->
+                        <p class="text-muted mb-5">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus.
+                        </p>
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="w-100">
+
+                    <!-- Card -->
+                    <div class="card card-lg shadow-none">
+                      <div class="card-body text-center">
+
+                        <!-- Preheading -->
+                        <h6 class="text-uppercase text-warning mb-5">
+                          02. Audience
+                        </h6>
+
+                        <!-- Heading -->
+                        <h1 class="mb-4">
+                          Finding your audience.
+                        </h1>
+
+                        <!-- Text -->
+                        <p class="text-muted mb-5">
+                          In urna lectus, mattis non accumsan in, tempor dictum neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="w-100">
+
+                    <!-- Card -->
+                    <div class="card card-lg shadow-none">
+                      <div class="card-body text-center">
+
+                        <!-- Preheading -->
+                        <h6 class="text-uppercase text-warning mb-5">
+                          03. Operations
+                        </h6>
+
+                        <!-- Heading -->
+                        <h1 class="mb-4">
+                          Running your business.
+                        </h1>
+
+                        <!-- Text -->
+                        <p class="text-muted mb-5">
+                          In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor.
+                        </p>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="pt-10 pt-md-12 pb-9 pb-md-11 bg-light">
+      <div class="container-lg">
+        <div class="row justify-content-center mt-n8">
+          <div class="col-md-6 px-lg-9 border-right-md">
+
+            <!-- Blockquote -->
+            <blockquote class="mt-8">
+
+              <!-- Logo -->
+              <p class="img-fluid svg-shim text-stripe mx-auto mb-3 mb-md-5" style="max-width: 85px;">
+                @@include("partials/brands/logotype/stripe.svg")
+              </p>
+
+              <!-- Text -->
+              <p class="lead text-center mb-5 mb-md-8">
+                <q>
+                  We wouldn't be able to run the majority of our business without the Goodkit platform helping us manage everything.
+                </q>
+              </p>
+
+              <!-- Footer -->
+              <div class="d-flex align-items-center justify-content-center">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm">
+                  <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-1.jpg" alt="...">
+                </div>
+
+                <!-- Body -->
+                <div class="ml-4">
+
+                  <!-- Title -->
+                  <p class="font-weight-bold mb-0">
+                    Clarissa Jones
+                  </p>
+
+                  <!-- Position -->
+                  <p class="small text-muted mt-n1 mb-0">
+                    COO at Stripe
+                  </p>
+
+                </div>
+
+              </div>
+
+            </blockquote>
+
+          </div>
+          <div class="col-md-6 px-lg-9">
+
+            <!-- Blockquote -->
+            <blockquote class="mt-8">
+
+              <!-- Logo -->
+              <p class="img-fluid svg-shim text-pinterest mx-auto mb-3 mb-md-5" style="max-width: 132px;">
+                @@include("partials/brands/logotype/pinterest.svg")
+              </p>
+
+              <!-- Text -->
+              <p class="lead text-center mb-5 mb-md-8">
+                <q>
+                  Building a thriving business is hard enough without worrying about overhead. Do the smart thing and just use Goodkit.
+                </q>
+              </p>
+
+              <!-- Footer -->
+              <div class="d-flex align-items-center justify-content-center">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-sm">
+                  <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-2.jpg" alt="...">
+                </div>
+
+                <!-- Body -->
+                <div class="ml-4">
+
+                  <!-- Title -->
+                  <p class="font-weight-bold mb-0">
+                    James Franci
+                  </p>
+
+                  <!-- Position -->
+                  <p class="small text-muted mt-n1 mb-0">
+                    Ops at Pinterest
+                  </p>
+
+                </div>
+
+              </div>
+
+            </blockquote>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-bottom text-light">
+        <div class="shape-img pb-8 pb-md-11">
+          @@include("partials/shapes/angles/angle-bottom-right.svg")
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="pt-11 pt-md-13">
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6">
+
+            <!-- Image -->
+            <img class="img-fluid mb-8 mb-md-0" src="assets/img/e-commerce/product.jpg" alt="...">
+
+          </div>
+          <div class="col-md-6 col-lg-5">
+
+            <!-- Heading -->
+            <h2 class="display-4 mb-4">
+              Begin earning from your very first day
+            </h2>
+
+            <!-- Text -->
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+            <!-- Link -->
+            <a class="h6 text-uppercase text-decoration-none" href="#!">
+              Explore our tools <i class="fe fe-arrow-right ml-2"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section>
+      <div class="container-lg position-relative" style="z-index: 1;">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-5 order-md-1 pt-10 py-md-8">
+
+            <!-- Image -->
+            <div class="position-relative">
+
+              <!-- Decoration -->
+              <div class="position-absolute bottom-right text-warning mb-n8 mr-n8">
+                @@include("partials/decorations/decoration-2.svg")
+              </div>
+
+              <!-- Image -->
+              <img class="img-fluid position-relative border border-7 border-white shadow-lg" src="assets/img/e-commerce/customer.jpg" alt="...">
+
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-5 order-md-0 py-10 py-md-12">
+
+            <!-- Heading -->
+            <h2 class="display-4 mb-4">
+              Market your store across all channels.
+            </h2>
+
+            <!-- Text -->
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+            <!-- Link -->
+            <a class="h6 text-uppercase text-decoration-none" href="#!">
+              Explore our tools <i class="fe fe-arrow-right ml-2"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative mt-n7 mt-md-n15">
+      <div class="shape shape-fluid-x shape-bottom text-white">
+        <div class="shape-img pb-9 pb-md-15">
+          @@include("partials/shapes/angles/angle-bottom-left.svg")
+        </div>
+      </div>
+    </div>
+
+    <!-- CASES -->
+    <section class="pt-12 pt-md-18 pb-11 pb-md-16 bg-dark" style="background-image: url(assets/img/patterns/pattern-1.svg);">
+
+      <!-- Content -->
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 text-center">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-warning mb-5">
+              Selling on the go
+            </h6>
+
+            <!-- Heading -->
+            <h2 class="display-4 text-white mb-9">
+              Our mobile app makes it dead simple to <span class="text-underline-primary-light">run your entire shop</span>.
+            </h2>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="flickity-items-fade" data-flickity='{"imagesLoaded": true, "pageDots": false, "wrapAround": true}'>
+        <div style="width: calc(100% - 2rem); max-width: 380px;">
+
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-1.jpg" alt="...">
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">
+              Account Management
+            </h6>
+
+            <!-- Text -->
+            <p class="font-size-sm text-center text-white-80 mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan.
+            </p>
+
+          </div>
+
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px;">
+
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-2.jpg" alt="...">
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">
+              Customer Communication
+            </h6>
+
+            <!-- Text -->
+            <p class="font-size-sm text-center text-white-80 mb-0">
+              In urna lectus, mattis non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+          </div>
+
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px;">
+
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-4.jpg" alt="...">
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">
+              Appointment Scheduling
+            </h6>
+
+            <!-- Text -->
+            <p class="font-size-sm text-center text-white-80 mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan.
+            </p>
+
+          </div>
+
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px;">
+
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-5.jpg" alt="...">
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">
+              Calendar Sharing
+            </h6>
+
+            <!-- Text -->
+            <p class="font-size-sm text-center text-white-80 mb-0">
+              In urna lectus, mattis non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+          </div>
+
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px;">
+
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-6.jpg" alt="...">
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">
+              Project Management
+            </h6>
+
+            <!-- Text -->
+            <p class="font-size-sm text-center text-white-80 mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan.
+            </p>
+
+          </div>
+
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px;">
+
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-7.jpg" alt="...">
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">
+              Automatic Scheduling
+            </h6>
+
+            <!-- Text -->
+            <p class="font-size-sm text-center text-white-80 mb-0">
+              In urna lectus, mattis non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+          </div>
+
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px;">
+
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-1.jpg" alt="...">
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">
+              Account Management
+            </h6>
+
+            <!-- Text -->
+            <p class="font-size-sm text-center text-white-80 mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan.
+            </p>
+
+          </div>
+
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px;">
+
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-2.jpg" alt="...">
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">
+              Customer Communication
+            </h6>
+
+            <!-- Text -->
+            <p class="font-size-sm text-center text-white-80 mb-0">
+              In urna lectus, mattis non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+          </div>
+
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px;">
+
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-4.jpg" alt="...">
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">
+              Appointment Scheduling
+            </h6>
+
+            <!-- Text -->
+            <p class="font-size-sm text-center text-white-80 mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan.
+            </p>
+
+          </div>
+
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px;">
+
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-5.jpg" alt="...">
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">
+              Calendar Sharing
+            </h6>
+
+            <!-- Text -->
+            <p class="font-size-sm text-center text-white-80 mb-0">
+              In urna lectus, mattis non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+
+          </div>
+
+        </div>
+        <div style="width: calc(100% - 2rem); max-width: 380px;">
+
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/img/screenshots/mobile/screenshot-6.jpg" alt="...">
+
+          <!-- Body -->
+          <div class="flickity-hidden py-6 text-center">
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-white">
+              Project Management
+            </h6>
+
+            <!-- Text -->
+            <p class="font-size-sm text-center text-white-80 mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan.
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+
+      <!-- Shape -->
+      <div class="shape shape-fluid-x shape-top text-white">
+        <div class="shape-img pb-9 pb-md-15">
+          @@include("partials/shapes/angles/angle-top-left.svg")
+        </div>
+      </div>
+
+      <!-- Decoration -->
+      <div class="position-absolute top-right text-primary-dark mt-n12">
+        @@include("partials/decorations/decoration-5.svg")
+      </div>
+
+    </div>
+
+    <!-- GROUP -->
+    <div class="bg-gradient-light">
+
+      <!-- ABOUT -->
+      <section class="pt-9 pt-md-0">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-md-8 col-lg-6">
+
+              <!-- Heading -->
+              <h2 class="display-4 mb-4">
+                Customer service reps to keep sales up <span class="text-underline-warning">every day</span>.
+              </h2>
+
+              <!-- Text -->
+              <p class="font-size-lg text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum.
+              </p>
+
+              <!-- Stats -->
+              <div class="row mx-md-n6 mb-8 mb-md-0">
+                <div class="col-auto px-md-6 border-right">
+
+                  <!-- Heading -->
+                  <div class="h1 mb-0">
+                    <span data-countup data-from="0" data-to="99.8" data-decimals="1" data-aos data-aos-id="countup:in">0</span>%
+                  </div>
+
+                  <div class="text-muted mt-n1">
+                    Approval
+                  </div>
+
+                </div>
+                <div class="col-auto px-md-6 border-right">
+
+                  <!-- Heading -->
+                  <div class="h1 mb-0">
+                    <span data-countup data-from="0" data-to="24" data-aos data-aos-id="countup:in">0</span>/<span data-countup data-from="0" data-to="7" data-aos data-aos-id="countup:in">0</span>
+                  </div>
+
+                  <div class="text-muted mt-n1">
+                    Support
+                  </div>
+
+                </div>
+                <div class="col-auto px-md-6">
+
+                  <!-- Heading -->
+                  <div class="h1 mb-0">
+                    <span data-countup data-from="0" data-to="42.3" data-decimals="1" data-aos data-aos-id="countup:in">0</span>%
+                  </div>
+
+                  <div class="text-muted mt-n1">
+                    Conversion
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row mt-md-n9">
+            <div class="col-12">
+
+              <!-- Image grid -->
+              <div class="img-grid img-grid-3">
+                <div class="img-grid-item">
+
+                  <!-- Image -->
+                  <img class="img-fluid border border-4 border-md-7 border-white shadow" src="assets/img/e-commerce/customer-service-2.jpg" alt="..." data-jarallax-element="-65">
+
+                </div>
+                <div class="img-grid-item">
+
+                  <!-- Image -->
+                  <img class="img-fluid border border-4 border-md-7 border-white shadow" src="assets/img/e-commerce/customer-service-1.jpg" alt="..." data-jarallax-element="-40">
+
+                </div>
+                <div class="img-grid-item">
+
+                  <!-- Image -->
+                  <img class="img-fluid border border-4 border-md-7 border-white shadow" src="assets/img/e-commerce/customer-service-3.jpg" alt="..." data-jarallax-element="-25">
+
+                </div>
+                <div class="img-grid-item">
+
+                  <!-- Card -->
+                  <div class="card rounded-top-left rounded-bottom-right">
+
+                    <!-- Image -->
+                    <img class="card-img-top rounded-top-left" src="assets/img/e-commerce/customer-service-4.jpg" alt="...">
+
+                    <!-- SHAPE -->
+                    <div class="position-relative">
+                      <div class="shape shape-fluid-x shape-top text-white">
+                        <div class="shape-img pb-6">
+                          @@include("partials/shapes/angles/angle-top-right.svg")
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="card-body">
+
+                      <!-- Blockquote -->
+                      <blockquote class="text-center mb-0">
+
+                        <!-- Text -->
+                        <p class="font-size-lg">
+                          <strong class="text-primary text-underline-primary">Our mission</strong> is to help you run your store as efficiently as possible without incurring any costs.
+                        </p>
+
+                        <!-- Footer -->
+                        <footer class="font-size-sm">
+
+                          <!-- Author -->
+                          <p class="font-weight-bold mb-0">
+                            Timmy Turner
+                          </p>
+
+                          <!-- Source -->
+                          <p class="text-muted mb-0">
+                            Engineer at Pinterest
+                          </p>
+
+                        </footer>
+
+                      </blockquote>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="position-relative pt-10 pt-md-12 pb-12 pb-md-16">
+
+        <!-- Decoration -->
+        <div class="position-absolute bottom-right text-warning">
+          @@include("partials/decorations/decoration-3.svg")
+        </div>
+
+        <!-- Content -->
+        <div class="container-lg">
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8 text-center">
+
+              <!-- Divider -->
+              <hr class="hr-sm border-warning mb-10 mb-md-12">
+
+              <!-- Preheading -->
+              <h6 class="text-uppercase text-primary mb-5">
+                Start today
+              </h6>
+
+              <!-- Heading -->
+              <h2 class="display-1 mb-4">
+                Build your store.
+              </h2>
+
+              <!-- Text -->
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+              </p>
+
+              <!-- Button -->
+              <a class="btn btn-primary lift" href="#!">
+                Get Started
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    @@include("partials/footer.html", {
+    "classList": "bg-dark border-multicolor"
+    })
+
+    <!-- JAVASCRIPT -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

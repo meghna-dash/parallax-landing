@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en" style="overflow-x: visible;">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body style="overflow-x: visible;">
+
+    <!-- MODALS -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light"
+    })
+
+    <!-- WELCOME -->
+    <section class="pt-6 pt-md-11">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-9 text-center">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary mb-5">
+              FAQ
+            </h6>
+
+            <!-- Heading -->
+            <h2 class="display-3 mb-4">
+              Frequently Asked Questions
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+            <!-- Form -->
+            <form class="mx-auto text-white" style="max-width: 462px;">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="search">
+                    <i class="fe fe-search"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Search for answers" aria-label="Search" aria-describedby="search">
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="pt-10 pt-md-12">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col">
+
+            <!-- Divider -->
+            <hr class="hr-sm border-warning mb-10 mb-md-12">
+
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-md-4">
+
+            <!-- Header -->
+            <div class="position-sticky mb-8" style="top: 2rem;">
+
+              <!-- Heading -->
+              <h1 class="mb-4">
+                Data Services
+              </h1>
+
+              <!-- Text -->
+              <p class="mb-0">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+              </p>
+
+            </div>
+
+          </div>
+          <div class="col-md-7">
+
+            <!-- List group -->
+            <div class="list-group list-group-lg list-group-flush mt-n7 mb-9" id="faqData">
+              <div class="list-group-item">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqDataOne" role="button" aria-expanded="true" aria-controls="faqDataOne">
+                  Can I use this theme for any project?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse show" id="faqDataOne" data-parent="#faqData">
+                  <p class="mt-2 mb-0">
+                    Yup! Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqDataTwo" role="button" aria-expanded="false" aria-controls="faqDataTwo">
+                  Do you give out student/military discounts?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqDataTwo" data-parent="#faqData">
+                  <p class="mt-2 mb-0">
+                    Yup! Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqDataThree" role="button" aria-expanded="false" aria-controls="faqDataThree">
+                  Can I use the illustrations and icons?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqDataThree" data-parent="#faqData">
+                  <p class="mt-2 mb-0">
+                    Yup! In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqDataFour" role="button" aria-expanded="false" aria-controls="faqDataFour">
+                  Does this theme have technical support?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqDataFour" data-parent="#faqData">
+                  <p class="mt-2 mb-0">
+                    Yup! Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-md-4">
+
+            <!-- Header -->
+            <div class="position-sticky mb-8" style="top: 2rem;">
+
+              <!-- Heading -->
+              <h1 class="mb-4">
+                Account Issues
+              </h1>
+
+              <!-- Text -->
+              <p class="mb-0">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+              </p>
+
+            </div>
+
+          </div>
+          <div class="col-md-7">
+
+            <!-- List group -->
+            <div class="list-group list-group-lg list-group-flush mt-n7 mb-9" id="faqAccount">
+              <div class="list-group-item">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqAccountOne" role="button" aria-expanded="true" aria-controls="faqAccountOne">
+                  Can I use this theme for anything?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse show" id="faqAccountOne" data-parent="#faqAccount">
+                  <p class="mt-2 mb-0">
+                    Yup! Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqAccountTwo" role="button" aria-expanded="false" aria-controls="faqAccountTwo">
+                  Do you give out student/military discounts?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqAccountTwo" data-parent="#faqAccount">
+                  <p class="mt-2 mb-0">
+                    Yup! In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqAccountThree" role="button" aria-expanded="false" aria-controls="faqAccountThree">
+                  Can I use the illustrations and icons?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqAccountThree" data-parent="#faqAccount">
+                  <p class="mt-2 mb-0">
+                    Yup! Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqAccountFour" role="button" aria-expanded="false" aria-controls="faqAccountFour">
+                  Does this theme have technical support?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqAccountFour" data-parent="#faqAccount">
+                  <p class="mt-2 mb-0">
+                    Yup! In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-md-4">
+
+            <!-- Header -->
+            <div class="position-sticky mb-8" style="top: 2rem;">
+
+              <!-- Heading -->
+              <h1 class="mb-4">
+                Billing
+              </h1>
+
+              <!-- Text -->
+              <p class="mb-0">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+              </p>
+
+            </div>
+
+          </div>
+          <div class="col-md-7">
+
+            <!-- List group -->
+            <div class="list-group list-group-lg list-group-flush mt-n7 mb-0" id="faqBilling">
+              <div class="list-group-item">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqBillingOne" role="button" aria-expanded="true" aria-controls="faqBillingOne">
+                  Can I use this theme for anything?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse show" id="faqBillingOne" data-parent="#faqBilling">
+                  <p class="mt-2 mb-0">
+                    Yup! Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqBillingTwo" role="button" aria-expanded="false" aria-controls="faqBillingTwo">
+                  Do you give out student/military discounts?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqBillingTwo" data-parent="#faqBilling">
+                  <p class="mt-2 mb-0">
+                    Yup! In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqBillingThree" role="button" aria-expanded="false" aria-controls="faqBillingThree">
+                  Can I use the illustrations and icons?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqBillingThree" data-parent="#faqBilling">
+                  <p class="mt-2 mb-0">
+                    Yup! Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqBillingFour" role="button" aria-expanded="false" aria-controls="faqBillingFour">
+                  Does this theme have technical support?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqBillingFour" data-parent="#faqBilling">
+                  <p class="mt-2 mb-0">
+                    Yup! In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPTIONS -->
+    <section class="py-10 py-md-12">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 text-center">
+
+            <!-- Divider -->
+            <hr class="hr-sm border-warning mb-10 mb-md-12">
+
+            <!-- Heading -->
+            <h2 class="display-3 mb-4">
+              Didn’t find <span class="text-underline text-underline-warning">an answer</span>?
+            </h2>
+
+            <!-- Text -->
+            <p class="text-gray-600 mb-9">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+          </div>
+        </div>
+        <div class="row mt-n6">
+          <div class="col-md-4">
+
+            <!-- Card -->
+            <div class="card card-sm shadow-none mt-6">
+
+              <!-- Image -->
+              <img class="card-img-top mw-75 mw-md-100 mx-auto" src="assets/img/illustrations/illustration-7.png" alt="...">
+
+              <!-- Body -->
+              <div class="card-body text-center">
+
+                <!-- Heading -->
+                <h2 class="mb-2">
+                  Schedule a chat
+                </h2>
+
+                <!-- Text -->
+                <p class="font-size-sm text-gray-600 mb-3">
+                  We can help you figure out the best solution for issues.
+                </p>
+
+                <!-- Link -->
+                <a class="h4 font-family-sans-serif" href="#!">
+                  Schedule <i class="fe fe-chevron-right"></i>
+                </a>
+
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+
+            <!-- Card -->
+            <div class="card card-sm shadow-none mt-6">
+
+              <!-- Image -->
+              <img class="card-img-top mw-75 mw-md-100 mx-auto" src="assets/img/illustrations/illustration-3.png" alt="...">
+
+              <!-- Body -->
+              <div class="card-body text-center">
+
+                <!-- Heading -->
+                <h2 class="mb-2">
+                  Submit a ticket
+                </h2>
+
+                <!-- Text -->
+                <p class="font-size-sm text-gray-600 mb-3">
+                  Technical issues can be resolved entirely through ticketing.
+                </p>
+
+                <!-- Link -->
+                <a class="h4 font-family-sans-serif" href="#!">
+                  Create a ticket <i class="fe fe-chevron-right"></i>
+                </a>
+
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+
+            <!-- Card -->
+            <div class="card card-sm shadow-none mt-6">
+
+              <!-- Image -->
+              <img class="card-img-top mw-75 mw-md-100 mx-auto" src="assets/img/illustrations/illustration-4.png" alt="...">
+
+              <!-- Body -->
+              <div class="card-body text-center">
+
+                <!-- Heading -->
+                <h2 class="mb-2">
+                  Get a consultation
+                </h2>
+
+                <!-- Text -->
+                <p class="font-size-sm text-gray-600 mb-3">
+                  Have a complicated question? A consultation can help.
+                </p>
+
+                <!-- Link -->
+                <a class="h4 font-family-sans-serif" href="#!">
+                  Schedule <i class="fe fe-chevron-right"></i>
+                </a>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    @@include("partials/footer.html", {
+    "classList": "bg-dark border-multicolor"
+    })
+
+    <!-- JAVASCRIPT -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Buttons"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Buttons",
+            "isCustom": false,
+            "description": "Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.",
+            "bootstrapDocs": "https://getbootstrap.com/docs/4.0/components/buttons/",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <button type="button" class="btn btn-primary btn-lg mb-3 mr-1">
+                  Large button
+                </button>
+
+                <button type="button" class="btn btn-primary mb-3 mr-1">
+                  Base button
+                </button>
+
+                <button type="button" class="btn btn-primary btn-sm mb-3 mr-1">
+                  Small button
+                </button>
+
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <button class="btn btn-primary mb-3 mr-1">Primary</button>
+                <button class="btn btn-secondary mb-3 mr-1">Secondary</button>
+                <button class="btn btn-success mb-3 mr-1">Success</button>
+                <button class="btn btn-danger mb-3 mr-1">Danger</button>
+                <button class="btn btn-warning mb-3 mr-1">Warning</button>
+                <button class="btn btn-info mb-3 mr-1">Info</button>
+                <button class="btn btn-light mb-3 mr-1">Light</button>
+                <button class="btn btn-dark mb-3 mr-1">Dark</button>
+                <button class="btn btn-link mb-3 mr-1">Link</button>
+                <button class="btn btn-outline-primary mb-3 mr-1">Primary</button>
+                <button class="btn btn-outline-secondary mb-3 mr-1">Secondary</button>
+                <button class="btn btn-outline-success mb-3 mr-1">Success</button>
+                <button class="btn btn-outline-danger mb-3 mr-1">Danger</button>
+                <button class="btn btn-outline-warning mb-3 mr-1">Warning</button>
+                <button class="btn btn-outline-info mb-3 mr-1">Info</button>
+                <button class="btn btn-outline-light mb-3 mr-1">Light</button>
+                <button class="btn btn-outline-dark mb-3 mr-1">Dark</button>
+
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Colors",
+            "id": "colors",
+            "isCustom": true,
+            "description": "Additional button color options."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Buttons -->
+                <button class="btn btn-white mb-3 mr-1">White</button>
+                <button class="btn btn-gray-200 mb-3 mr-1 shadow-none">Gray 200</button>
+                <button class="btn btn-gray-300 mb-3 mr-1 shadow-none">Gray 300</button>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;button&nbsp;class=&quot;btn&nbsp;btn-white&quot;&gt;White&lt;/button&gt;<br />&lt;button&nbsp;class=&quot;btn&nbsp;btn-gray-200&quot;&gt;Gray&nbsp;200&lt;/button&gt;<br />&lt;button&nbsp;class=&quot;btn&nbsp;btn-gray-300&quot;&gt;Gray&nbsp;300&lt;/button&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Border radius",
+            "id": "borderRadius",
+            "isCustom": false,
+            "description": "Easily control the button border radius with the border radius utilities."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Buttons -->
+                <button class="btn btn-primary rounded-sm mb-3 mr-1">Rounded</button>
+                <button class="btn btn-primary rounded-0 mb-3 mr-1">Square</button>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;button&nbsp;class=&quot;btn&nbsp;btn-primary&nbsp;rounded-sm&quot;&gt;Rounded&lt;/button&gt;<br />&lt;button&nbsp;class=&quot;btn&nbsp;btn-primary&nbsp;rounded-0&quot;&gt;Square&lt;/button&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Circle",
+            "id": "circle",
+            "isCustom": true,
+            "description": "Turn any button into a circle with a <code>.btn-circle</code> modifier."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <button class="btn btn-primary btn-circle btn-lg mb-3 mr-1">
+                  <i class="fe fe-check"></i>
+                </button>
+
+                <button class="btn btn-primary btn-circle mb-3 mr-1">
+                  <i class="fe fe-check"></i>
+                </button>
+
+                <button class="btn btn-primary btn-circle btn-sm mb-3 mr-1">
+                  <i class="fe fe-check"></i>
+                </button>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;button&nbsp;class=&quot;btn&nbsp;btn-primary&nbsp;btn-circle&nbsp;btn-lg&quot;&gt;<br />&nbsp;&nbsp;&lt;i&nbsp;class=&quot;fe&nbsp;fe-check&quot;&gt;&lt;/i&gt;<br />&lt;/button&gt;<br /><br />&lt;button&nbsp;class=&quot;btn&nbsp;btn-primary&nbsp;btn-circle&quot;&gt;<br />&nbsp;&nbsp;&lt;i&nbsp;class=&quot;fe&nbsp;fe-check&quot;&gt;&lt;/i&gt;<br />&lt;/button&gt;<br /><br />&lt;button&nbsp;class=&quot;btn&nbsp;btn-primary&nbsp;btn-circle&nbsp;btn-sm&quot;&gt;<br />&nbsp;&nbsp;&lt;i&nbsp;class=&quot;fe&nbsp;fe-check&quot;&gt;&lt;/i&gt;<br />&lt;/button&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Colors", "url": "#colors"}, {"title": "Border radius", "url": "#borderRadius"}, {"title": "Circle", "url": "#circle"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

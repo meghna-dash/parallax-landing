@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Jarallax"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Jarallax",
+            "isCustom": true,
+            "description": "Smooth parallax scrolling effect for background images, videos and inline elements.",
+            "bootstrapDocs": "",
+            "pluginDocs": "https://github.com/nk-o/jarallax"
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Background image",
+            "id": "backgroundImage",
+            "isCustom": false,
+            "description": "We recommend you use Jarallax with background images to ensure compatibility with IE."
+            })
+
+            <!-- Image -->
+            <div class="jarallax bg-light py-12 mb-4" data-jarallax data-speed=".8" style="background-image: url(@@webRoot/assets/img/career/hero.jpg);"></div>
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;jarallax&quot;&nbsp;data-jarallax&nbsp;data-speed=&quot;.8&quot;&nbsp;style=&quot;background-image:&nbsp;url(@@webRoot/assets/img/career/hero.jpg);&quot;&gt;&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Element",
+            "id": "element",
+            "isCustom": false,
+            "description": "Note: this is more like experimental feature, so the behavior could be changed in the future releases."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <p class="mb-0" data-jarallax-element="-40">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nisi magnam sit numquam quidem similique earum assumenda nesciunt a! Quos perspiciatis velit ipsum natus similique blanditiis possimus dignissimos inventore labore.
+                </p>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;p&nbsp;data-jarallax-element=&quot;-40&quot;&gt;<br />&nbsp;&nbsp;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Amet&nbsp;nisi&nbsp;magnam&nbsp;sit&nbsp;numquam&nbsp;quidem&nbsp;similique&nbsp;earum&nbsp;assumenda&nbsp;nesciunt&nbsp;a!&nbsp;Quos&nbsp;perspiciatis&nbsp;velit&nbsp;ipsum&nbsp;natus&nbsp;similique&nbsp;blanditiis&nbsp;possimus&nbsp;dignissimos&nbsp;inventore&nbsp;labore.<br />&lt;/p&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Background image", "url": "#backgroundImage"}, {"title": "Element", "url": "#element"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

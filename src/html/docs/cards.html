@@ -1,0 +1,206 @@
+<!doctype html>
+<html style="overflow-x: visible;">
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body" style="overflow-x: visible;">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Cards"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Cards",
+            "isCustom": false,
+            "description": "Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.",
+            "bootstrapDocs": "https://getbootstrap.com/docs/4.0/components/card/",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <div class="card">
+              <div class="card-body">
+
+                <!-- Title -->
+                <h2 class="card-title font-family-sans-serif mb-4">Card title</h2>
+
+                <!-- Text -->
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis non dolore est fuga nobis ipsum illum eligendi nemo iure repellat, soluta, optio minus ut reiciendis voluptates enim impedit veritatis officiis.
+                </p>
+
+                <!-- Button -->
+                <a class="btn btn-sm btn-primary" href="#!">Go somewhere</a>
+
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Sizing",
+            "id": "sizing",
+            "isCustom": true,
+            "description": "Easily change the size of the card component with sizing utlities."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm mb-4">
+              <div class="card-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor assumenda magni culpa! Qui, quisquam! Dolores quisquam totam vitae maiores. Sit quae incidunt quisquam. Ipsam blanditiis tempora accusantium nihil mollitia sapiente?
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-sm docs-card mb-4">
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;card&nbsp;card-sm&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;card-body&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;...<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card mb-4">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores quidem quibusdam sequi, consequuntur, ex quis qui tenetur distinctio veniam autem nesciunt. Molestiae voluptatum cumque velit reiciendis repellendus ipsum neque vel.
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-sm docs-card mb-4">
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;card&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;card-body&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;...<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-lg mb-4">
+              <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt excepturi atque rem at nisi. Reprehenderit dolorem magni, at fugit, sapiente aut et est molestias totam harum voluptates molestiae quos repellendus!
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;card&nbsp;card-lg&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;card-body&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;...<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Stack",
+            "id": "stack",
+            "isCustom": true,
+            "description": "Stacks cards as you scroll. We are using <code>position: sticky;</code> to achieve this behaviour. Please make sure to set <code>html, body</code> to <code>overflow: visible;</code> for pages where you plan to use this component, because it's set to <code>hidden</code> in Goodkit by default."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Card stack -->
+                <div class="card-stack">
+
+                  <!-- Card -->
+                  <div class="card-stack-item mb-6" style="top: 209px;">
+                    <div class="card">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur quasi culpa inventore laboriosam excepturi vel temporibus quam dolore deserunt optio tempora, facere esse fugit sit cum neque reprehenderit numquam a.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="card-stack-item mb-6" style="top: 209px;">
+                    <div class="card">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur quasi culpa inventore laboriosam excepturi vel temporibus quam dolore deserunt optio tempora, facere esse fugit sit cum neque reprehenderit numquam a.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="card-stack-item mb-6" style="top: 209px;">
+                    <div class="card">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur quasi culpa inventore laboriosam excepturi vel temporibus quam dolore deserunt optio tempora, facere esse fugit sit cum neque reprehenderit numquam a.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="card-stack-item mb-6" style="top: 209px;">
+                    <div class="card">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur quasi culpa inventore laboriosam excepturi vel temporibus quam dolore deserunt optio tempora, facere esse fugit sit cum neque reprehenderit numquam a.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="card-stack-item mb-6" style="top: 209px;">
+                    <div class="card">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur quasi culpa inventore laboriosam excepturi vel temporibus quam dolore deserunt optio tempora, facere esse fugit sit cum neque reprehenderit numquam a.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;card-stack&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;card-stack-item&nbsp;mb-9&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;card&quot;&gt;...&lt;/div&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;card-stack-item&nbsp;mb-9&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;card&quot;&gt;...&lt;/div&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;card-stack-item&nbsp;mb-0&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;card&quot;&gt;...&lt;/div&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Sizing", "url": "#sizing"}, {"title": "Stack", "url": "#stack"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

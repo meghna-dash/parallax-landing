@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-dark bg-dark"
+    })
+
+    <!-- WELCOME -->
+    <section class="pt-6 pt-md-11 bg-dark">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 text-center text-white">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-warning mb-5">
+              Keep it simple
+            </h6>
+
+            <!-- Heading -->
+            <h2 class="display-3 mb-4">
+              Simple, fair pricing.
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+            <!-- Form -->
+            <form class="d-flex align-items-center justify-content-center text-white">
+
+              <!-- Heading -->
+              <h6 class="text-uppercase mr-5 mb-0">
+                Monthly
+              </h6>
+
+              <!-- Switch -->
+              <div class="custom-control custom-control-dark custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1" data-toggle="prices" data-target=".price">
+                <label class="custom-control-label" for="customSwitch1"></label>
+              </div>
+
+              <!-- Heading -->
+              <h6 class="text-uppercase ml-4 mb-0">
+                Annual
+              </h6>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-bottom text-dark pb-14 pb-md-18">
+        <div class="shape-img pb-8 pb-md-11">
+          @@include("partials/shapes/angles/angle-bottom-left.svg")
+        </div>
+      </div>
+    </div>
+
+    <!-- PRICING -->
+    <section class="pt-10 pt-md-12">
+      <div class="container-lg">
+        <div class="row mt-n6">
+          <div class="col-lg-4 mt-6">
+
+            <!-- Card -->
+            <div class="card rounded-top-left-lg rounded-bottom-right-lg mt-6">
+              <div class="card-body">
+
+                <!-- Preheading -->
+                <h6 class="text-center text-uppercase text-warning">
+                  Starter
+                </h6>
+
+                <!-- Price -->
+                <p class="display-4 font-weight-bold text-center">
+                  <span class="font-size-h3 align-middle">$</span>
+                  <span class="price mx-n2" data-min-value="19" data-max-value="29">19</span>
+                  <span class="font-size-h2 align-middle">/mo </span>
+                </p>
+
+                <!-- List -->
+                <ul class="list-checked list-checked-warning">
+                  <li class="mb-3">
+                    20 automations
+                  </li>
+                  <li class="mb-3">
+                    3 seats
+                  </li>
+                  <li>
+                    API access
+                  </li>
+                </ul>
+
+                <!-- Button -->
+                <a class="btn btn-block btn-gray-300 shadow-none lift" href="#!">
+                  Get Started
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 mt-6">
+
+            <!-- Card -->
+            <div class="card rounded-top-left-lg rounded-bottom-right-lg mt-6">
+              <div class="card-body">
+
+                <!-- Preheading -->
+                <h6 class="text-center text-uppercase text-warning">
+                  Standard
+                </h6>
+
+                <!-- Price -->
+                <p class="display-4 font-weight-bold text-center">
+                  <span class="font-size-h3 align-middle">$</span>
+                  <span class="price mx-n2" data-min-value="49" data-max-value="59">49</span>
+                  <span class="font-size-h2 align-middle">/mo </span>
+                </p>
+
+                <!-- List -->
+                <ul class="list-checked list-checked-warning">
+                  <li class="mb-3">
+                    100 automations
+                  </li>
+                  <li class="mb-3">
+                    10 seats
+                  </li>
+                  <li class="mb-3">
+                    API access
+                  </li>
+                  <li>
+                    Integration support
+                  </li>
+                </ul>
+
+                <!-- Button -->
+                <a class="btn btn-block btn-primary lift" href="#!">
+                  Get Started
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 mt-6">
+
+            <!-- Decoration -->
+            <div class="position-absolute top-right text-primary-light mt-n8 mr-n6">
+              @@include("partials/decorations/decoration-2.svg")
+            </div>
+
+            <!-- Card -->
+            <div class="card rounded-top-left-lg rounded-bottom-right-lg mt-6">
+              <div class="card-body">
+
+                <!-- Preheading -->
+                <h6 class="text-center text-uppercase text-warning">
+                  Starter
+                </h6>
+
+                <!-- Price -->
+                <p class="display-4 font-weight-bold text-center">
+                  <span class="font-size-h3 align-middle">$</span>
+                  <span class="price mx-n2" data-min-value="99" data-max-value="109">99</span>
+                  <span class="font-size-h2 align-middle">/mo </span>
+                </p>
+
+                <!-- List -->
+                <ul class="list-checked list-checked-warning">
+                  <li class="mb-3">
+                    100 automations
+                  </li>
+                  <li class="mb-3">
+                    10 seats
+                  </li>
+                  <li class="mb-3">
+                    API access
+                  </li>
+                  <li class="mb-3">
+                    Integration support
+                  </li>
+                  <li>
+                    Success concierge
+                  </li>
+                </ul>
+
+                <!-- Button -->
+                <a class="btn btn-block btn-gray-300 shadow-none lift" href="#!">
+                  Get Started
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="pt-10 pt-md-11">
+      <div class="container-lg">
+        <div class="row mt-n5">
+          <div class="col-4 col-md-2 mt-5">
+
+            <!-- Image -->
+            <div class="img-fluid svg-shim text-coinbase mx-auto" style="max-width: 112px;">
+              @@include("partials/brands/logotype/coinbase.svg")
+            </div>
+
+          </div>
+          <div class="col-4 col-md-2 mt-5">
+
+            <!-- Image -->
+            <div class="img-fluid svg-shim text-dribbble mx-auto" style="max-width: 112px;">
+              @@include("partials/brands/logotype/dribbble.svg")
+            </div>
+
+          </div>
+          <div class="col-4 col-md-2 mt-5">
+
+            <!-- Image -->
+            <div class="img-fluid svg-shim text-stripe mx-auto" style="max-width: 85px;">
+              @@include("partials/brands/logotype/stripe.svg")
+            </div>
+
+          </div>
+          <div class="col-4 col-md-2 mt-5">
+
+            <!-- Image -->
+            <div class="img-fluid svg-shim text-pinterest mx-auto" style="max-width: 112px;">
+              @@include("partials/brands/logotype/pinterest.svg")
+            </div>
+
+          </div>
+          <div class="col-4 col-md-2 mt-5">
+
+            <!-- Image -->
+            <div class="img-fluid svg-shim text-netflix mx-auto" style="max-width: 102px;">
+              @@include("partials/brands/logotype/netflix.svg")
+            </div>
+
+          </div>
+          <div class="col-4 col-md-2 mt-5">
+
+            <!-- Image -->
+            <div class="img-fluid svg-shim text-instagram mx-auto" style="max-width: 112px;">
+              @@include("partials/brands/logotype/instagram.svg")
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="py-10 py-md-12">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 text-center">
+
+            <!-- Divider -->
+            <hr class="hr-sm border-warning mb-10 mb-md-12">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary mb-5">
+              Useful at all Tiers
+            </h6>
+
+            <!-- Heading -->
+            <h2 class="display-4 mb-10">
+              All plans include a full suite of functional features.
+            </h2>
+
+          </div>
+        </div>
+        <div class="row mt-n8 mt-md-n9">
+          <div class="col-md-6 col-lg-4">
+
+            <!-- Item -->
+            <div class="d-flex mt-8 mt-md-9">
+
+              <!-- Icon -->
+              <div class="icon text-primary-light">
+                @@include("partials/icons/duotone-icons/General/Shield-check.svg")
+              </div>
+
+              <!-- Body -->
+              <div class="ml-5">
+
+                <!-- Title -->
+                <p class="font-size-lg font-weight-bold mb-1">
+                  Secure
+                </p>
+
+                <!-- Text -->
+                <p class="font-size-sm text-muted mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-4">
+
+            <!-- Item -->
+            <div class="d-flex mt-8 mt-md-9">
+
+              <!-- Icon -->
+              <div class="icon text-primary-light">
+                @@include("partials/icons/duotone-icons/Communication/Chat#4.svg")
+              </div>
+
+              <!-- Body -->
+              <div class="ml-5">
+
+                <!-- Title -->
+                <p class="font-size-lg font-weight-bold mb-1">
+                  Cross-platform
+                </p>
+
+                <!-- Text -->
+                <p class="font-size-sm text-muted mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-4">
+
+            <!-- Item -->
+            <div class="d-flex mt-9">
+
+              <!-- Icon -->
+              <div class="icon text-primary-light">
+                @@include("partials/icons/duotone-icons/General/Search.svg")
+              </div>
+
+              <!-- Body -->
+              <div class="ml-5">
+
+                <!-- Title -->
+                <p class="font-size-lg font-weight-bold mb-1">
+                  Searchable
+                </p>
+
+                <!-- Text -->
+                <p class="font-size-sm text-muted mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-4">
+
+            <!-- Item -->
+            <div class="d-flex mt-8 mt-md-9">
+
+              <!-- Icon -->
+              <div class="icon text-primary-light">
+                @@include("partials/icons/duotone-icons/Code/Git#3.svg")
+              </div>
+
+              <!-- Body -->
+              <div class="ml-5">
+
+                <!-- Title -->
+                <p class="font-size-lg font-weight-bold mb-1">
+                  Document History
+                </p>
+
+                <!-- Text -->
+                <p class="font-size-sm text-muted mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-4">
+
+            <!-- Item -->
+            <div class="d-flex mt-8 mt-md-9">
+
+              <!-- Icon -->
+              <div class="icon text-primary-light">
+                @@include("partials/icons/duotone-icons/Shopping/Wallet#3.svg")
+              </div>
+
+              <!-- Body -->
+              <div class="ml-5">
+
+                <!-- Title -->
+                <p class="font-size-lg font-weight-bold mb-1">
+                  100% Free
+                </p>
+
+                <!-- Text -->
+                <p class="font-size-sm text-muted mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-4">
+
+            <!-- Item -->
+            <div class="d-flex mt-8 mt-md-9">
+
+              <!-- Icon -->
+              <div class="icon text-primary-light">
+                @@include("partials/icons/duotone-icons/General/Thunder-move.svg")
+              </div>
+
+              <!-- Body -->
+              <div class="ml-5">
+
+                <!-- Title -->
+                <p class="font-size-lg font-weight-bold mb-1">
+                  Group Sync
+                </p>
+
+                <!-- Text -->
+                <p class="font-size-sm text-muted mb-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section>
+      <div class="container-lg position-relative" style="z-index: 1;">
+        <div class="row no-gutters">
+          <div class="col-md-6 bg-cover rounded-top-left-lg rounded-bottom-right-lg mb-6 mb-md-0 d-none d-md-block" style="background-image: url(assets/img/avatars/avatar-jumbo-1.jpg);">
+
+            <!-- Image (placeholder) -->
+            <img class="img-fluid invisible" src="assets/img/avatars/avatar-jumbo-1.jpg" alt="...">
+
+          </div>
+          <div class="col-md-6 py-md-6">
+
+            <!-- Card -->
+            <div class="card h-100 rounded-bottom-right-lg border-top border-top-4 border-primary">
+              <div class="card-body text-center d-flex flex-column py-10">
+
+                <!-- Preheading -->
+                <h6 class="text-uppercase text-primary mb-5">
+                  Student & non profit
+                </h6>
+
+                <!-- Text -->
+                <p class="lead my-auto">
+                  We provide huge discounts for those we believe are giving back to the larger global community. Our “goodwill” discounts range from 20% - 80% off.
+                </p>
+
+                <!-- Button -->
+                <div class="mt-6">
+                  <a class="btn btn-primary lift" href="#!">
+                    Contact Us
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-top text-dark pb-15">
+        <div class="shape-img pb-8 pb-md-11">
+          @@include("partials/shapes/angles/angle-top-right.svg")
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="py-10 py-md-12 bg-dark">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-7">
+
+            <!-- Heading -->
+            <h2 class="display-4 text-center text-white mb-4">
+              Frequently asked questions.
+            </h2>
+
+            <!-- Text -->
+            <p class="text-center text-white-80 mb-9">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+            <!-- List group -->
+            <div class="list-group list-group-lg list-group-flush my-n7" id="faq">
+              <div class="list-group-item border-gray-900">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-white" data-toggle="collapse" href="#faqOne" role="button" aria-expanded="true" aria-controls="faqOne">
+                  Can I use this theme for any project?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse show" id="faqOne" data-parent="#faq">
+                  <p class="text-white-80 mt-2 mb-0">
+                    Yup! Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item border-gray-900">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-white" data-toggle="collapse" href="#faqTwo" role="button" aria-expanded="false" aria-controls="faqTwo">
+                  Do you give out student/military discounts?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqTwo" data-parent="#faq">
+                  <p class="text-white-80 mt-2 mb-0">
+                    Yup! In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item border-gray-900">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-white" data-toggle="collapse" href="#faqThree" role="button" aria-expanded="false" aria-controls="faqThree">
+                  Can I use the illustrations and icons?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqThree" data-parent="#faq">
+                  <p class="text-white-80 mt-2 mb-0">
+                    Yup! Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+
+              </div>
+              <div class="list-group-item border-gray-900">
+
+                <!-- Heading -->
+                <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-white" data-toggle="collapse" href="#faqFour" role="button" aria-expanded="false" aria-controls="faqFour">
+                  Does this theme have technical support?
+                </a>
+
+                <!-- Collapse -->
+                <div class="collapse" id="faqFour" data-parent="#faq">
+                  <p class="text-white-80 mt-2 mb-0">
+                    Yup! In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-dark">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-12">
+
+            <!-- Divider -->
+            <hr class="border-gray-900 mt-0 mb-8">
+
+          </div>
+          <div class="col-12 col-md">
+
+            <!-- Heading -->
+            <h2 class="h1 text-white mb-0">
+              Let’s build sites <span class="text-primary-light">together</span>
+            </h2>
+
+            <!-- Text -->
+            <p class="text-white-60 mb-4 mb-md-0">
+              Create beautiful websites in hours, not weeks.
+            </p>
+
+          </div>
+          <div class="col-auto">
+
+            <!-- Button -->
+            <a class="btn btn-primary lift" href="#!">
+              Get Started
+            </a>
+
+          </div>
+          <div class="col-12">
+
+            <!-- Divider -->
+            <hr class="border-gray-900 mb-0 mt-8">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    @@include("partials/footer.html", {
+    "classList": "bg-dark"
+    })
+
+    <!-- JAVASCRIPT -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

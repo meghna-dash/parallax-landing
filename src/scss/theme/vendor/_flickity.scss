@@ -1,0 +1,279 @@
+//
+// flickity.scss
+//
+
+// Hide flickity before it's enabled to prevent showing stacked content
+
+[data-flickity]:not(.flickity-enabled) {
+  display: none;
+}
+
+
+// Buttons
+
+.flickity-button {
+  z-index: 1;
+  width: $flickity-button-size;
+  height: $flickity-button-size;
+  border-radius: 0;
+  transition: $btn-transition;
+  @include button-variant($primary, $primary);
+
+  @include hover-focus-active {
+    opacity: 1;
+    background-color: darken(theme-color('primary'), 4%);
+  }
+}
+
+.flickity-button::before {
+  font-family: "Feather";
+}
+
+.flickity-button.previous {
+  left: 0;
+}
+
+.flickity-button.previous::before {
+  content: "\e910";
+}
+
+.flickity-button.next {
+  right: 0;
+}
+
+.flickity-button.next::before {
+  content: "\e912";
+}
+
+.flickity-button-icon {
+  display: none;
+}
+
+// Overlap
+
+@include media-breakpoint-down(sm) {
+  .flickity-buttons-overlap .flickity-button {
+    top: auto;
+    bottom: 0;
+    transform: translate(-.5rem, 1.5rem);
+  }
+
+  .flickity-buttons-overlap .flickity-button.next {
+    left: 50%;
+    transform: translate(0, 1.5rem);
+  }
+
+  .flickity-buttons-overlap .flickity-button.next::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    height: 40%;
+    border-left: $border-width solid fade-out($white, .8);
+  }
+
+  .flickity-buttons-overlap .flickity-button.previous {
+    left: 50%;
+    transform: translate(-100%, 1.5rem);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .flickity-buttons-overlap .flickity-button.previous {
+    transform: translate(-50%, -50%);
+  }
+
+  .flickity-buttons-overlap .flickity-button.next {
+    transform: translate(50%, -50%);
+  }
+}
+
+// Bottom left
+
+.flickity-buttons-bottom-left .flickity-button {
+  top: auto;
+  bottom: 0;
+  transform: translate(-1.5rem, 1.5rem);
+}
+
+.flickity-buttons-bottom-left .flickity-button.next {
+  left: $flickity-button-size;
+}
+
+.flickity-buttons-bottom-left .flickity-button.previous {
+  left: 0;
+}
+
+@include media-breakpoint-down(sm) {
+  .flickity-buttons-bottom-left .flickity-button.next {
+    left: 50%;
+    transform: translate(0, 1.5rem);
+  }
+
+  .flickity-buttons-bottom-left .flickity-button.previous {
+    left: 50%;
+    transform: translate(-100%, 1.5rem);
+  }
+}
+
+// Bottom right
+
+.flickity-buttons-bottom-right .flickity-button {
+  top: auto;
+  bottom: 0;
+  transform: translate(1.5rem, 1.5rem);
+}
+
+.flickity-buttons-bottom-right .flickity-button.next {
+  right: 0;
+}
+
+.flickity-buttons-bottom-right .flickity-button.previous {
+  left: auto;
+  right: $flickity-button-size;
+}
+
+@include media-breakpoint-down(sm) {
+  .flickity-buttons-bottom-right .flickity-button.next {
+    left: 50%;
+    transform: translate(0, 1.5rem);
+  }
+
+  .flickity-buttons-bottom-right .flickity-button.previous {
+    left: 50%;
+    transform: translate(-100%, 1.5rem);
+  }
+}
+
+// Bottom center
+
+.flickity-buttons-bottom-center .flickity-button {
+  top: auto;
+  bottom: 0;
+  transform: translate(1.5rem, 1.5rem);
+}
+
+.flickity-buttons-bottom-center .flickity-button.next {
+  left: 50%;
+  transform: translate(0, 1.5rem);
+}
+
+.flickity-buttons-bottom-center .flickity-button.previous {
+  left: 50%;
+  transform: translate(-100%, 1.5rem);
+}
+
+
+// Adjacent
+
+.flickity-buttons-adjacent .flickity-button.next::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  height: 40%;
+  border-left: $border-width solid fade-out($white, .8);
+}
+
+// Rounded
+
+.flickity-buttons-rounded .flickity-button.next {
+  border-bottom-right-radius: $border-radius;
+}
+
+.flickity-buttons-rounded .flickity-button.previous {
+  border-top-left-radius: $border-radius;
+}
+
+// Responsive
+
+.flickity-buttons-responsive .flickity-button {
+  display: none;
+}
+
+@include media-breakpoint-up(md) {
+  .flickity-buttons-responsive .flickity-button {
+    display: block;
+  }
+
+  .flickity-buttons-responsive .flickity-page-dots {
+    display: none;
+  }
+}
+
+
+// Viewport visible
+
+.flickity-viewport-visible .flickity-viewport {
+  overflow: visible;
+}
+
+
+// Items fade
+
+.flickity-items-fade .flickity-slider > * {
+  transition: $transition-base;
+  transition-property: opacity, transform, -webkit-transform;
+  transform-origin: center center;
+}
+
+.flickity-items-fade .flickity-hidden {
+  transition: $transition-base;
+  transition-property: opacity;
+}
+
+.flickity-items-fade .flickity-slider > *:not(.is-selected) {
+  opacity: .1;
+  transform: scale(.8);
+}
+
+.flickity-items-fade .flickity-slider > *:not(.is-selected) .flickity-hidden {
+  opacity: 0;
+}
+
+
+// Page dots
+
+.flickity-page-dots {
+  position: relative;
+}
+
+.flickity-page-dots .dot {
+  width: $flickity-dot-size;
+  height: $flickity-dot-size;
+  margin: 0;
+  background-color: $flickity-dot-bg;
+  opacity: 1;
+}
+
+.flickity-page-dots .dot + .dot {
+  margin-left: $flickity-dot-spacing;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background-color: $flickity-dot-active-bg;
+}
+
+
+// Soft edges
+
+.flickity-soft-edges .flickity-viewport {
+  border-radius: inherit;
+}
+
+.flickity-soft-edges .flickity-viewport::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, $white, rgba($white, 0) $grid-gutter-width / 2), linear-gradient(to left, $white, rgba($white, 0) $grid-gutter-width / 2);
+}
+
+@each $color, $value in $theme-colors {
+
+  .flickity-soft-edges-#{$color} .flickity-viewport::after {
+    background-image: linear-gradient(to right, $value, rgba($value, 0) $grid-gutter-width / 2), linear-gradient(to left, $value, rgba($value, 0) $grid-gutter-width / 2);
+  }
+}

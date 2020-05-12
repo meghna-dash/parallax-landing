@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white"
+    })
+
+    <!-- ROLES -->
+    <section class="pt-6 pt-md-11">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 text-center">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary mb-5">
+              Upgrade your career
+            </h6>
+
+            <!-- Heading -->
+            <h2 class="display-3 mb-4">
+              Start your future today.
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-9">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <!-- Form -->
+            <form class="mb-9">
+              <div class="row">
+                <div class="col-md">
+
+                  <!-- Keywords -->
+                  <div class="form-group mb-md-0">
+                    <div class="input-group input-group-merge">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="searchKeywords">
+                          <i class="fe fe-search"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Keywords" aria-label="Keywords" aria-describedby="searchKeywords">
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md">
+
+                  <!-- Team -->
+                  <div class="form-group mb-md-0">
+                    <label class="sr-only" for="searchTeam">
+                      Team
+                    </label>
+                    <select class="custom-select" id="searchTeam">
+                      <option selected>Team</option>
+                      <option>Option</option>
+                      <option>Another option</option>
+                    </select>
+                  </div>
+
+                </div>
+                <div class="col-md">
+
+                  <!-- Team -->
+                  <div class="form-group mb-0">
+                    <label class="sr-only" for="searchLocation">
+                      Location
+                    </label>
+                    <select class="custom-select" id="searchLocation">
+                      <option selected>Location</option>
+                      <option>Option</option>
+                      <option>Another option</option>
+                    </select>
+                  </div>
+
+                </div>
+              </div>
+            </form>
+
+            <!-- Table -->
+            <div class="table-responsive">
+              <table class="table table-flush table-clickable mb-0">
+                <thead>
+                  <tr>
+                    <th>
+                      Role
+                    </th>
+                    <th>
+                      Team
+                    </th>
+                    <th class="text-right">
+                      Location
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-href="pricing.html">
+                    <td class="table-clickable-hover">
+                      Analyst
+                    </td>
+                    <td>
+                      Media
+                    </td>
+                    <td class="text-right text-nowrap">
+                      <span class="flag-icon flag-icon-us mr-3"></span> San Francisco
+                    </td>
+                  </tr>
+                  <tr data-href="#!">
+                    <td class="table-clickable-hover">
+                      Front End Specialist
+                    </td>
+                    <td>
+                      Platform
+                    </td>
+                    <td class="text-right text-nowrap">
+                      <span class="flag-icon flag-icon-ro mr-3"></span> Bucharest
+                    </td>
+                  </tr>
+                  <tr data-href="#!">
+                    <td class="table-clickable-hover">
+                      UI / UX Designer
+                    </td>
+                    <td>
+                      Design
+                    </td>
+                    <td class="text-right text-nowrap">
+                      <span class="flag-icon flag-icon-br mr-3"></span> São Paulo
+                    </td>
+                  </tr>
+                  <tr data-href="#!">
+                    <td class="table-clickable-hover">
+                      Product Researcher
+                    </td>
+                    <td>
+                      Research
+                    </td>
+                    <td class="text-right text-nowrap">
+                      <span class="flag-icon flag-icon-cn mr-3"></span> Beijing
+                    </td>
+                  </tr>
+                  <tr data-href="#!">
+                    <td class="table-clickable-hover">
+                      C+ Developer
+                    </td>
+                    <td>
+                      Engineering
+                    </td>
+                    <td class="text-right text-nowrap">
+                      <span class="flag-icon flag-icon-us mr-3"></span> Los Angeles
+                    </td>
+                  </tr>
+                  <tr data-href="#!">
+                    <td class="table-clickable-hover">
+                      Business Development
+                    </td>
+                    <td>
+                      Sales
+                    </td>
+                    <td class="text-right text-nowrap">
+                      <span class="flag-icon flag-icon-co mr-3"></span> Medellín
+                    </td>
+                  </tr>
+                  <tr data-href="#!">
+                    <td class="table-clickable-hover">
+                      React Developer
+                    </td>
+                    <td>
+                      Internal Tools
+                    </td>
+                    <td class="text-right text-nowrap">
+                      <span class="flag-icon flag-icon-no mr-3"></span> Oslo
+                    </td>
+                  </tr>
+                  <tr data-href="#!">
+                    <td class="table-clickable-hover">
+                      Brand Designer
+                    </td>
+                    <td>
+                      Design
+                    </td>
+                    <td class="text-right text-nowrap">
+                      <span class="flag-icon flag-icon-be mr-3"></span> Brussels
+                    </td>
+                  </tr>
+                  <tr data-href="#!">
+                    <td class="table-clickable-hover">
+                      Product Manager
+                    </td>
+                    <td>
+                      Product
+                    </td>
+                    <td class="text-right text-nowrap">
+                      <span class="flag-icon flag-icon-fr mr-3"></span> Paris
+                    </td>
+                  </tr>
+                  <tr data-href="#!">
+                    <td class="table-clickable-hover">
+                      Support Lead
+                    </td>
+                    <td>
+                      Support
+                    </td>
+                    <td class="text-right text-nowrap">
+                      <span class="flag-icon flag-icon-us mr-3"></span> San Francisco
+                    </td>
+                  </tr>
+                  <tr data-href="#!">
+                    <td class="table-clickable-hover">
+                      Office Manager
+                    </td>
+                    <td>
+                      Operations
+                    </td>
+                    <td class="text-right text-nowrap">
+                      <span class="flag-icon flag-icon-de mr-3"></span> Berlin
+                    </td>
+                  </tr>
+                  <tr data-href="#!">
+                    <td class="table-clickable-hover">
+                      API Architect
+                    </td>
+                    <td>
+                      Engineering
+                    </td>
+                    <td class="text-right text-nowrap">
+                      <span class="flag-icon flag-icon-ie mr-3"></span> Dublin
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="position-relative py-10 py-md-12">
+
+      <!-- Decoration -->
+      <div class="position-absolute bottom-right text-warning">
+        @@include("partials/decorations/decoration-3.svg")
+      </div>
+
+      <!-- Content -->
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8">
+
+            <!-- Divider -->
+            <hr class="hr-sm border-warning mb-10 mb-md-12">
+
+            <!-- Heading -->
+            <h2 class="display-3 text-center mb-4">
+              Don't see <span class="text-underline-warning">your role?</span>
+            </h2>
+
+            <!-- Text -->
+            <p class="text-center text-muted mb-9">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+
+            <!-- Form -->
+            <form>
+              <div class="form-group">
+                <label class="sr-only" for="contactName">
+                  Your name
+                </label>
+                <input class="form-control" id="contactName" type="text" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="contactEmail">
+                  Your email
+                </label>
+                <input class="form-control" id="contactEmail" type="email" placeholder="Your email">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="contactText">
+                  What position are you interested in?
+                </label>
+                <textarea class="form-control" id="contactText" placeholder="What position are you interested in?" rows="6"></textarea>
+              </div>
+              <button class="btn btn-block btn-primary">
+                Contact Us
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    @@include("partials/footer.html", {
+    "classList": "bg-dark border-multicolor"
+    })
+
+    <!-- JAVASCRIPT -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

@@ -1,0 +1,26 @@
+//
+// icon.scss
+//
+
+.icon > svg {
+  width: $icon-size-base;
+  height: $icon-size-base;
+}
+
+// Use "text-" utilities to fill svg icons
+.icon > svg [fill]:not([fill="none"]) {
+  fill: currentColor !important;
+}
+
+
+// Sizing
+
+.icon-sm > svg {
+  width: $icon-size-sm;
+  height: $icon-size-sm;
+}
+
+.icon-auto > svg {
+  width: 1em;
+  height: 1em;
+}

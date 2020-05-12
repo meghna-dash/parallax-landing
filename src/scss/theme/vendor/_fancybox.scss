@@ -1,0 +1,13 @@
+//
+// fancybox.scss
+//
+
+body.compensate-for-scrollbar {
+  margin-right: 0 !important;
+}
+
+// Change overlay color
+
+.fancybox-container .fancybox-bg {
+  background-color: $black;
+}

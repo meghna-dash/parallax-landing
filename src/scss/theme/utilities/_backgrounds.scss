@@ -1,0 +1,56 @@
+//
+// backgrounds.scss
+//
+
+// Colors
+
+.bg-dark-50 {
+  background-color: rgba($black, .5) !important;
+}
+
+.bg-gray-900 {
+  background-color: $gray-900 !important;
+}
+
+.bg-gray-800 {
+  background-color: $gray-800 !important;
+}
+
+.bg-gray-200 {
+  background-color: $gray-200 !important;
+}
+
+
+// Cover
+
+.bg-cover {
+  background: no-repeat center center / cover;
+}
+
+
+// Gradient
+
+.bg-gradient-light {
+  background-image: linear-gradient(to bottom, rgba($light, 0), $light);
+}
+
+
+// Boxed
+
+.bg-light-boxed-right {
+  background: no-repeat left center linear-gradient(to right, $light);
+
+  @include media-breakpoint-up(xl) {
+    background-size: calc(#{map-get($container-max-widths, "xl")} + (100vw - #{map-get($container-max-widths, "xl")}) / 2) 100%;
+  }
+}
+
+// Checkered
+
+.bg-checkered {
+  background-repeat: no-repeat, repeat, repeat;
+  background-image: radial-gradient(transparent, transparent 50%, #{$bg-checkered-color}),
+  linear-gradient(to right, transparent, transparent $bg-checkered-size, #{$border-color} $bg-checkered-size, #{$border-color}),
+  linear-gradient(to bottom, transparent, transparent $bg-checkered-size, #{$border-color} $bg-checkered-size, #{$border-color});
+  background-size: 100% 100%, calc(#{$bg-checkered-size} + 1px) calc(#{$bg-checkered-size} + 1px), calc(#{$bg-checkered-size} + 1px) calc(#{$bg-checkered-size} + 1px);
+}

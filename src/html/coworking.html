@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-light-boxed-right"
+    })
+
+    <!-- WELCOME -->
+    <section class="pt-6 pt-md-10 pb-11 pb-md-13 bg-light-boxed-right">
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6 text-center text-md-left" data-aos="fade-up">
+
+            <!-- Heading -->
+            <h1 class="display-3 mb-4">
+              Coworking spaces. <br>
+              <span class="text-primary-light text-underline-primary-light">Startup vibes.</span>
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg">
+              We design and build coworking spaces tailored to the needs of growing tech teams.
+            </p>
+
+            <!-- Form -->
+            <form class="mb-10 mb-md-0">
+              <div class="input-group rounded-top-left rounded-bottom-right shadow">
+
+                <!-- Input -->
+                <input type="email" class="form-control bg-white" placeholder="Where’s your company?" aria-label="Where’s your company?" aria-describedby="searchButton">
+
+                <!-- Prepend -->
+                <div class="input-group-append">
+                  <button class="btn btn-white" type="button" id="searchButton">
+                    Search
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+          <div class="col-md-5">
+
+            <!-- Slider -->
+            <div class="position-relative">
+
+              <!-- Decoration -->
+              <div class="position-absolute top-left text-primary-light mt-n8 ml-12">
+                @@include("partials/decorations/decoration-2.svg")
+              </div>
+
+              <!-- Slider -->
+              <div class="flickity-buttons-adjacent flickity-buttons-bottom-left w-xl-125" data-flickity='{"imagesLoaded": true, "prevNextButtons": true, "pageDots": false, "wrapAround": true}'>
+                <div class="w-100">
+
+                  <!-- Image -->
+                  <img class="img-fluid" src="assets/img/coworking/hero-1.jpg" alt="..." data-aos="wipe-right" data-aos-delay="100">
+
+                </div>
+                <div class="w-100">
+
+                  <!-- Image -->
+                  <img class="img-fluid" src="assets/img/coworking/hero-2.jpg" alt="...">
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-top text-white">
+        <div class="shape-img pb-8 pb-md-10">
+          @@include("partials/shapes/angles/angle-top-left.svg")
+        </div>
+      </div>
+    </div>
+
+    <!-- PRICING -->
+    <section class="pt-8 pt-md-9">
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-5">
+
+            <!-- Slider -->
+            <div class="position-relative mb-md-0 d-none d-md-block">
+
+              <!-- Decoration -->
+              <div class="position-absolute top-center top-md-left text-warning mt-n8 ml-md-n8">
+                @@include("partials/decorations/decoration-1.svg")
+              </div>
+
+              <!-- Slider -->
+              <div class="bg-white" data-flickity='{"draggable": false, "fade": true, "imagesLoaded": true, "prevNextButtons": false, "pageDots": false}' id="coworkingOptions">
+                <div class="w-100">
+
+                  <!-- Image -->
+                  <img class="img-fluid" src="assets/img/coworking/seat-type-floating.jpg" alt="..." data-aos="wipe-right">
+
+                </div>
+                <div class="w-100">
+
+                  <!-- Image -->
+                  <img class="img-fluid" src="assets/img/coworking/seat-type-dedicated.jpg" alt="...">
+
+                </div>
+                <div class="w-100">
+
+                  <!-- Image -->
+                  <img class="img-fluid" src="assets/img/coworking/seat-type-office.jpg" alt="...">
+
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-fluid-x shape-top text-white">
+                <div class="shape-img pb-5">
+                  @@include("partials/shapes/angles/angle-top-right.svg")
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-5" data-aos="fade-up">
+
+            <!-- Heading -->
+            <h2 class="display-4 mb-4">
+              Spaces for every size and type of need.
+            </h2>
+
+            <!-- Text -->
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+            <!-- List group -->
+            <div class="list-group list-group-flush list-group-hover">
+              <a class="list-group-item d-flex align-items-center text-reset text-decoration-none" data-toggle="flickity" data-target="#coworkingOptions" data-slide="0" href="#!">
+
+                <!-- Body -->
+                <div class="mr-auto">
+
+                  <!-- Heading -->
+                  <p class="font-size-lg font-weight-bold mb-0">
+                    Floating Seat
+                  </p>
+
+                  <!-- Text -->
+                  <p class="small text-muted mt-n1 mb-0">
+                    First-come first-serve seating
+                  </p>
+
+                </div>
+
+                <!-- Price -->
+                <h6 class="text-uppercase text-primary mb-0">
+                  $49/mo
+                </h6>
+
+              </a>
+              <a class="list-group-item d-flex align-items-center text-reset text-decoration-none" data-toggle="flickity" data-target="#coworkingOptions" data-slide="1" href="#!">
+
+                <!-- Body -->
+                <div class="mr-auto">
+
+                  <!-- Heading -->
+                  <p class="font-size-lg font-weight-bold mb-0">
+                    Dedicated Desk
+                  </p>
+
+                  <!-- Text -->
+                  <p class="small text-muted mt-n1 mb-0">
+                    Desk in a community space
+                  </p>
+
+                </div>
+
+                <!-- Price -->
+                <h6 class="text-uppercase text-primary mb-0">
+                  $99/mo
+                </h6>
+
+              </a>
+              <a class="list-group-item d-flex align-items-center text-reset text-decoration-none" data-toggle="flickity" data-target="#coworkingOptions" data-slide="2" href="#!">
+
+                <!-- Body -->
+                <div class="mr-auto">
+
+                  <!-- Heading -->
+                  <p class="font-size-lg font-weight-bold mb-0">
+                    Small Office
+                  </p>
+
+                  <!-- Text -->
+                  <p class="small text-muted mt-n1 mb-0">
+                    2-10 person team offices
+                  </p>
+
+                </div>
+
+                <!-- Price -->
+                <h6 class="text-uppercase text-primary mb-0">
+                  $299/mo
+                </h6>
+
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="py-10 py-md-12">
+      <div class="container-lg position-relative" style="z-index: 1;">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-5 col-xl-6 order-md-1">
+
+            <!-- Image grid -->
+            <div class="img-grid img-grid-2 mb-8 mb-md-0">
+              <div class="img-grid-item">
+
+                <!-- Image -->
+                <img class="img-fluid border border-4 border-md-7 border-white shadow" src="assets/img/coworking/office-1.jpg" alt="..." data-jarallax-element="-75">
+
+              </div>
+              <div class="img-grid-item">
+
+                <!-- Image -->
+                <img class="img-fluid border border-4 border-md-7 border-white shadow" src="assets/img/coworking/office-2.jpg" alt="..." data-jarallax-element="-45">
+
+              </div>
+              <div class="img-grid-item">
+
+                <!-- Image -->
+                <img class="img-fluid border border-4 border-md-7 border-white shadow" src="assets/img/coworking/office-3.jpg" alt="..." data-jarallax-element="-25">
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-7 col-lg-6 col-xl-5 order-md-0" data-aos="fade-up">
+
+            <!-- Divider -->
+            <hr class="hr-sm border-warning ml-0 mb-6">
+
+            <!-- Heading -->
+            <h2 class="display-4 mb-9">
+              Our top priority is customer service.
+            </h2>
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-warning">
+              ― Staffing
+            </h6>
+
+            <!-- Body -->
+            <div class="row mb-7">
+              <div class="col-4">
+
+                <!-- Value -->
+                <h3 class="display-3 mb-0">
+                  <span data-countup data-from="0" data-to="24" data-aos data-aos-id="countup:in">0</span>/<span data-countup data-from="0" data-to="7" data-aos data-aos-id="countup:in">0</span>
+                </h3>
+
+              </div>
+              <div class="col align-self-center border-left">
+
+                <!-- Text -->
+                <p class="mb-0">
+                  We stay open 24 hours, 7 days a week so you can work.
+                </p>
+
+              </div>
+            </div>
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-warning">
+              ― Approval
+            </h6>
+
+            <!-- Body -->
+            <div class="row mb-7">
+              <div class="col-4">
+
+                <!-- Value -->
+                <h3 class="display-3 mb-0">
+                  <span data-countup data-from="0" data-to="99" data-aos data-aos-id="countup:in">0</span> <span class="font-size-h2 align-middle ml-n2">%</span>
+                </h3>
+
+              </div>
+              <div class="col align-self-center border-left">
+
+                <!-- Text -->
+                <p class="mb-0">
+                  Our customers love the office space we've built.
+                </p>
+
+              </div>
+            </div>
+
+            <!-- Heading -->
+            <h6 class="text-uppercase text-warning">
+              ― Yelp
+            </h6>
+
+            <!-- Body -->
+            <div class="row mb-7">
+              <div class="col-4">
+
+                <!-- Value -->
+                <h3 class="display-3 mb-0">
+                  <span data-countup data-from="0" data-to="5" data-aos data-aos-id="countup:in">0</span>/<span data-countup data-from="0" data-to="5" data-aos data-aos-id="countup:in">0</span>
+                </h3>
+
+              </div>
+              <div class="col align-self-center border-left">
+
+                <!-- Text -->
+                <p class="mb-0">
+                  We have a perfect Yelp score, so come see why!
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-top text-light">
+        <div class="shape-img pb-9 pb-md-15">
+          @@include("partials/shapes/angles/angle-top-right.svg")
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="pt-8 pt-md-9 bg-light">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8">
+
+            <!-- Heading -->
+            <h2 class="display-4 text-center mb-4">
+              Frequently asked questions.
+            </h2>
+
+            <!-- Text -->
+            <p class="text-muted text-center mb-9">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+            <!-- Card -->
+            <div class="card rounded-top-left-lg rounded-bottom-right-lg" style="z-index: 1;">
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-lg list-group-flush my-n7" id="faq">
+                  <div class="list-group-item">
+
+                    <!-- Heading -->
+                    <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqOne" role="button" aria-expanded="true" aria-controls="faqOne">
+                      Can I come take a tour anytime?
+                    </a>
+
+                    <!-- Collapse -->
+                    <div class="collapse show" id="faqOne" data-parent="#faq">
+                      <p class="mt-2 mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet.
+                      </p>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item">
+
+                    <!-- Heading -->
+                    <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqTwo" role="button" aria-expanded="false" aria-controls="faqTwo">
+                      Do you have student or small company discounts?
+                    </a>
+
+                    <!-- Collapse -->
+                    <div class="collapse" id="faqTwo" data-parent="#faq">
+                      <p class="mt-2 mb-0">
+                        In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item">
+
+                    <!-- Heading -->
+                    <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqThree" role="button" aria-expanded="false" aria-controls="faqThree">
+                      Can I cancel anytime or is there a lock-in period?
+                    </a>
+
+                    <!-- Collapse -->
+                    <div class="collapse" id="faqThree" data-parent="#faq">
+                      <p class="mt-2 mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet.
+                      </p>
+                    </div>
+
+                  </div>
+                  <div class="list-group-item">
+
+                    <!-- Heading -->
+                    <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqFour" role="button" aria-expanded="false" aria-controls="faqFour">
+                      How are you handling safety of the offices?
+                    </a>
+
+                    <!-- Collapse -->
+                    <div class="collapse" id="faqFour" data-parent="#faq">
+                      <p class="mt-2 mb-0">
+                        In urna lectus, mattis non accumsan in, tempor dictum neque. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-bottom text-light pb-15 pb-md-10">
+        <div class="shape-img pb-9 pb-md-15">
+          @@include("partials/shapes/angles/angle-bottom-left.svg")
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <section class="py-10 py-md-12">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+
+            <!-- Slider -->
+            <div class="position-relative mb-10 mb-md-0">
+
+              <!-- Decoration -->
+              <div class="position-absolute bottom-left text-primary-light mb-n9 ml-n8">
+                @@include("partials/decorations/decoration-2.svg")
+              </div>
+
+              <!-- Slider -->
+              <div class="flickity-buttons-adjacent flickity-buttons-bottom-right" data-flickity='{"fade": true, "imagesLoaded": true, "pageDots": false, "wrapAround": true}' id="testimonialsSlider">
+                <div class="w-100">
+
+                  <!-- Image -->
+                  <img class="w-100 h-auto" src="assets/img/coworking/avatar-tall-1.jpg" alt="..." data-aos="wipe-left">
+
+                </div>
+                <div class="w-100">
+
+                  <!-- Image -->
+                  <img class="w-100 h-auto" src="assets/img/coworking/avatar-tall-2.jpg" alt="...">
+
+                </div>
+                <div class="w-100">
+
+                  <!-- Image -->
+                  <img class="w-100 h-auto" src="assets/img/coworking/avatar-tall-3.jpg" alt="...">
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-7 col-xl-6 offset-xl-1 pt-md-12 pb-md-8">
+
+            <!-- Slider -->
+            <div class="flickity-soft-edges" data-flickity='{"asNavFor": "#testimonialsSlider", "draggable": false, "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "wrapAround": true}'>
+              <div class="col-12" data-aos="fade-up">
+
+                <!-- Blockquote -->
+                <blockquote>
+
+                  <!-- Logo -->
+                  <p class="img-fluid svg-shim text-stripe text-center mx-auto mb-6" style="max-width: 85px;">
+                    @@include("partials/brands/logotype/stripe.svg")
+                  </p>
+
+                  <!-- Text -->
+                  <p class="h1 text-center mb-8">
+                    “I'll never create another office space from scratch. Goodkit's coworking solution is simpler and cheaper.”
+                  </p>
+
+                  <!-- Footer -->
+                  <div class="d-flex align-items-center justify-content-center">
+
+                    <!-- Body -->
+                    <div class="ml-4 text-center">
+
+                      <!-- Title -->
+                      <p class="font-weight-bold mb-0">
+                        Graham Follets
+                      </p>
+
+                      <!-- Position -->
+                      <p class="small text-muted mt-n1 mb-0">
+                        COO at Stripe
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </blockquote>
+
+              </div>
+              <div class="col-12">
+
+                <!-- Blockquote -->
+                <blockquote>
+
+                  <!-- Logo -->
+                  <p class="img-fluid svg-shim text-dribbble text-center mx-auto mb-6" style="max-width: 130px;">
+                    @@include("partials/brands/logotype/dribbble.svg")
+                  </p>
+
+                  <!-- Text -->
+                  <p class="h1 text-center mb-8">
+                    “Goodkit's offices are insanely beautiful. They are a perfect balance of minimal, but still cozy and functional.”
+                  </p>
+
+                  <!-- Footer -->
+                  <div class="d-flex align-items-center justify-content-center">
+
+                    <!-- Body -->
+                    <div class="ml-4 text-center">
+
+                      <!-- Title -->
+                      <p class="font-weight-bold mb-0">
+                        Tiffany Fyfe
+                      </p>
+
+                      <!-- Position -->
+                      <p class="small text-muted mt-n1 mb-0">
+                        Ops at Dribbble
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </blockquote>
+
+              </div>
+              <div class="col-12">
+
+                <!-- Blockquote -->
+                <blockquote>
+
+                  <!-- Logo -->
+                  <p class="img-fluid svg-shim text-netflix text-center mx-auto mb-6" style="max-width: 102px;">
+                    @@include("partials/brands/logotype/netflix.svg")
+                  </p>
+
+                  <!-- Text -->
+                  <p class="h1 text-center mb-8">
+                    “Finding the perfect office can burn up valuable hours. Make the simple choice and just join Goodkit's coworking.”
+                  </p>
+
+                  <!-- Footer -->
+                  <div class="d-flex align-items-center justify-content-center">
+
+                    <!-- Body -->
+                    <div class="ml-4 text-center">
+
+                      <!-- Title -->
+                      <p class="font-weight-bold mb-0">
+                        Danielle Pilker
+                      </p>
+
+                      <!-- Position -->
+                      <p class="small text-muted mt-n1 mb-0">
+                        CTO of Netflix
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </blockquote>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section>
+      <div class="container-lg">
+        <div class="row mt-n5">
+          <div class="col-4 col-md-2 mt-5">
+
+            <!-- Image -->
+            <div class="img-fluid svg-shim text-coinbase mx-auto" style="max-width: 112px;">
+              @@include("partials/brands/logotype/coinbase.svg")
+            </div>
+
+          </div>
+          <div class="col-4 col-md-2 mt-5">
+
+            <!-- Image -->
+            <div class="img-fluid svg-shim text-dribbble mx-auto" style="max-width: 112px;">
+              @@include("partials/brands/logotype/dribbble.svg")
+            </div>
+
+          </div>
+          <div class="col-4 col-md-2 mt-5">
+
+            <!-- Image -->
+            <div class="img-fluid svg-shim text-stripe mx-auto" style="max-width: 85px;">
+              @@include("partials/brands/logotype/stripe.svg")
+            </div>
+
+          </div>
+          <div class="col-4 col-md-2 mt-5">
+
+            <!-- Image -->
+            <div class="img-fluid svg-shim text-pinterest mx-auto" style="max-width: 112px;">
+              @@include("partials/brands/logotype/pinterest.svg")
+            </div>
+
+          </div>
+          <div class="col-4 col-md-2 mt-5">
+
+            <!-- Image -->
+            <div class="img-fluid svg-shim text-netflix mx-auto" style="max-width: 102px;">
+              @@include("partials/brands/logotype/netflix.svg")
+            </div>
+
+          </div>
+          <div class="col-4 col-md-2 mt-5">
+
+            <!-- Image -->
+            <div class="img-fluid svg-shim text-instagram mx-auto" style="max-width: 112px;">
+              @@include("partials/brands/logotype/instagram.svg")
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="py-10 py-md-12">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+
+            <!-- Divider -->
+            <hr class="hr-sm border-warning mb-10 mb-md-12">
+
+            <!-- Heading -->
+            <h2 class="display-3 text-center mb-4">
+              Schedule a <span class="text-underline-primary-light">Visit</span>
+            </h2>
+
+            <!-- Text -->
+            <p class="text-center text-muted mb-9">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+            <!-- Form -->
+            <form>
+              <div class="form-group">
+                <label class="sr-only" for="contactName">
+                  Your name
+                </label>
+                <input class="form-control" id="contactName" type="text" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="contactSpace">
+                  Your name
+                </label>
+                <input class="form-control" id="contactSpace" type="text" placeholder="Type of space you want">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="contactMessage">
+                  Message
+                </label>
+                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Message"></textarea>
+              </div>
+              <button class="btn btn-block btn-primary">
+                Request a Day Pass
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-dark border-multicolor">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-12">
+
+            <!-- Divider -->
+            <hr class="border-gray-900 mt-0 mb-8">
+
+          </div>
+          <div class="col-md">
+
+            <!-- Heading -->
+            <h1 class="text-white mb-0">
+              Let’s build something <span class="text-primary-light">together</span>.
+            </h1>
+
+            <!-- Text -->
+            <p class="text-white-60 mb-4 mb-md-0">
+              Build trustworthy websites in hours instead of weeks.
+            </p>
+
+          </div>
+          <div class="col-md-auto">
+
+            <!-- Button -->
+            <a class="btn btn-primary lift" href="#!">Learn More</a>
+
+          </div>
+          <div class="col-12">
+
+            <!-- Divider -->
+            <hr class="border-gray-900 mb-0 mt-8">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    @@include("partials/footer.html", {
+    "classList": "bg-dark"
+    })
+
+    <!-- JAVASCRIPT -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

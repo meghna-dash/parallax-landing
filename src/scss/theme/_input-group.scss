@@ -1,0 +1,29 @@
+//
+// input-group.scss
+//
+
+// Button
+
+.input-group .btn {
+  box-shadow: none;
+}
+
+.input-group .input-group-append .btn-white::before {
+  content: '';
+  position: absolute;
+  top: .75rem;
+  bottom: .75rem;
+  left: 0;
+  border-left: $border-width solid $gray-300;
+}
+
+
+// Text
+
+.input-group-prepend .input-group-text {
+  padding-right: 0;
+}
+
+.input-group-append .input-group-text {
+  padding-left: 0;
+}

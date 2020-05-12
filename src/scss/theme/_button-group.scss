@@ -1,0 +1,13 @@
+//
+// button-group.scss
+//
+
+.btn-group {
+  @if ($enable-shadows) {
+    box-shadow: $btn-box-shadow;
+  }
+}
+
+.btn-group .btn {
+  box-shadow: none;
+}

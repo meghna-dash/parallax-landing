@@ -1,0 +1,23 @@
+//
+// collapse.scss
+//
+
+// Toggle
+
+.collapse-toggle {
+  display: flex;
+}
+
+.collapse-toggle::after {
+  content: "\e9b1";
+  align-self: flex-start;
+  margin-left: auto;
+  font-family: "Feather";
+  color: $warning;
+  transform-origin: center center;
+  transition: $transition-base;
+}
+
+.collapse-toggle[aria-expanded="true"]::after {
+  transform: rotate(45deg);
+}

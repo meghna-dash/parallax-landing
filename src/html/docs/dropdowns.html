@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Dropdowns"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Dropdowns",
+            "isCustom": false,
+            "description": "Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.",
+            "bootstrapDocs": "https://getbootstrap.com/docs/4.0/components/dropdowns/",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body d-flex flex-wrap">
+
+                <div class="dropdown mr-1 mb-1">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                    Dropdown button
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="dropdownMenuButton">
+                    <div class="row no-gutters">
+                      <div class="col">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header text-uppercase mb-3">
+                          Company
+                        </h6>
+
+                        <!-- Links -->
+                        <a class="dropdown-item" href="@@webRoot/pricing.html">
+                          Pricing
+                        </a>
+                        <a class="dropdown-item" href="@@webRoot/pricing-feature-list.html">
+                          Pricing Table
+                        </a>
+                        <a class="dropdown-item" href="@@webRoot/career-listing.html">
+                          Careers
+                        </a>
+                        <a class="dropdown-item" href="@@webRoot/career-benefits.html">
+                          Benefits
+                        </a>
+                        <a class="dropdown-item" href="@@webRoot/contact.html">
+                          Contact
+                        </a>
+                        <a class="dropdown-item" href="@@webRoot/faq.html">
+                          FAQ
+                        </a>
+
+                      </div>
+                      <div class="col">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header text-uppercase mb-3">
+                          Blog
+                        </h6>
+
+                        <!-- Links -->
+                        <a class="dropdown-item" href="@@webRoot/blog-listing.html">
+                          Listing
+                        </a>
+                        <a class="dropdown-item" href="@@webRoot/blog-post.html">
+                          Article
+                        </a>
+                        <a class="dropdown-item" href="@@webRoot/blog-post-cover.html">
+                          Cover Article
+                        </a>
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header text-uppercase mb-3">
+                          Legal
+                        </h6>
+
+                        <!-- Links -->
+                        <a class="dropdown-item" href="@@webRoot/terms.html">
+                          Terms
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="dropdown mr-1 mb-1">
+                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButtonTwo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonTwo">
+                    <a class="dropdown-item" href="#!">Action</a>
+                    <a class="dropdown-item" href="#!">Another action</a>
+                    <a class="dropdown-item" href="#!">Something else here</a>
+                  </div>
+                </div>
+
+                <div class="btn-group mb-1">
+                  <button type="button" class="btn btn-danger">Action</button>
+                  <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fe fe-chevron-down"></i>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="highlight html">
+                  &lt;div&nbsp;class=&quot;dropdown&quot;&gt;<br />&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn-secondary&nbsp;dropdown-toggle&quot;&nbsp;type=&quot;button&quot;&nbsp;id=&quot;dropdownMenuButton&quot;&nbsp;data-toggle=&quot;dropdown&quot;&nbsp;aria-haspopup=&quot;true&quot;&nbsp;aria-expanded=&quot;false&quot;&nbsp;data-display=&quot;static&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Dropdown&nbsp;button<br />&nbsp;&nbsp;&lt;/button&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;dropdown-menu&nbsp;dropdown-menu-lg&quot;&nbsp;aria-labelledby=&quot;dropdownMenuButton&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;row&nbsp;no-gutters&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;col&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Heading&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&nbsp;class=&quot;dropdown-header&nbsp;text-uppercase&nbsp;mb-3&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h6&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Links&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;@@webRoot/pricing.html&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pricing<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;@@webRoot/pricing-feature-list.html&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pricing&nbsp;Table<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;@@webRoot/career-listing.html&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Careers<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;@@webRoot/career-benefits.html&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Benefits<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;@@webRoot/contact.html&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;@@webRoot/faq.html&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAQ<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;col&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Heading&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&nbsp;class=&quot;dropdown-header&nbsp;text-uppercase&nbsp;mb-3&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blog<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h6&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Links&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;@@webRoot/blog-listing.html&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Listing<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;@@webRoot/blog-post.html&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;@@webRoot/blog-post-cover.html&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cover&nbsp;Article<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Heading&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&nbsp;class=&quot;dropdown-header&nbsp;text-uppercase&nbsp;mb-3&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Legal<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h6&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Links&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;@@webRoot/terms.html&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;dropdown&quot;&gt;<br />&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn-primary&nbsp;dropdown-toggle&quot;&nbsp;type=&quot;button&quot;&nbsp;id=&quot;dropdownMenuButtonTwo&quot;&nbsp;data-toggle=&quot;dropdown&quot;&nbsp;aria-haspopup=&quot;true&quot;&nbsp;aria-expanded=&quot;false&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Dropdown&nbsp;button<br />&nbsp;&nbsp;&lt;/button&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;dropdown-menu&quot;&nbsp;aria-labelledby=&quot;dropdownMenuButtonTwo&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;#!&quot;&gt;Action&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;#!&quot;&gt;Another&nbsp;action&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;#!&quot;&gt;Something&nbsp;else&nbsp;here&lt;/a&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;btn-group&quot;&gt;<br />&nbsp;&nbsp;&lt;button&nbsp;type=&quot;button&quot;&nbsp;class=&quot;btn&nbsp;btn-danger&quot;&gt;Action&lt;/button&gt;<br />&nbsp;&nbsp;&lt;button&nbsp;type=&quot;button&quot;&nbsp;class=&quot;btn&nbsp;btn-danger&nbsp;dropdown-toggle&nbsp;dropdown-toggle-split&quot;&nbsp;data-toggle=&quot;dropdown&quot;&nbsp;aria-haspopup=&quot;true&quot;&nbsp;aria-expanded=&quot;false&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;i&nbsp;class=&quot;fe&nbsp;fe-chevron-down&quot;&gt;&lt;/i&gt;<br />&nbsp;&nbsp;&lt;/button&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;dropdown-menu&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;#&quot;&gt;Action&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;#&quot;&gt;Another&nbsp;action&lt;/a&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;dropdown-item&quot;&nbsp;href=&quot;#&quot;&gt;Something&nbsp;else&nbsp;here&lt;/a&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": []
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

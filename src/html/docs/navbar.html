@@ -1,0 +1,562 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Navbar"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Navbar",
+            "isCustom": false,
+            "description": "Powerful and responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for the collapse plugin.",
+            "bootstrapDocs": "http://getbootstrap.com/docs/4.1/components/navbar/",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="container-lg">
+
+                    <!-- Brand -->
+                    <a class="navbar-brand d-lg-none" href="@@webRoot/index.html">Goodkit</a>
+
+                    <!-- Toggler -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseDocs" aria-controls="navbarCollapseDocs" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Collapse -->
+                    <div class="collapse navbar-collapse" id="navbarCollapseDocs">
+
+                      <!-- Navigation -->
+                      <ul class="navbar-nav justify-content-end w-100">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="landingsDropdownDocs" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Landings
+                          </a>
+                          <div class="dropdown-positioner">
+                            <div class="dropdown-menu dropdown-menu-xl dropdown-menu-flush" aria-labelledby="landingsDropdownDocs">
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-md-6 order-1 dropdown-menu-col rounded-top-left-0 bg-gray-900 pt-4 py-lg-5">
+                                  <div class="dropdown-menu-body">
+
+                                    <!-- Heading -->
+                                    <h6 class="dropdown-header text-uppercase text-primary-light d-none d-lg-block">
+                                      Services
+                                    </h6>
+
+                                    <!-- Links -->
+                                    <a class="d-flex text-decoration-none" href="@@webRoot/software-automation.html">
+
+                                      <!-- Icon -->
+                                      <div class="icon icon-sm text-primary-light">
+                                        @@include("../partials/icons/duotone-icons/Navigation/Route.svg")
+                                      </div>
+
+                                      <div class="ml-3">
+
+                                        <!-- Heading -->
+                                        <p class="font-weight-bold text-white mb-0">
+                                          Automated Integrations
+                                        </p>
+
+                                        <!-- Text -->
+                                        <span class="text-gray-500">
+                                          Digital integration software
+                                        </span>
+
+                                      </div>
+
+                                    </a>
+                                    <a class="d-flex text-decoration-none mt-4" href="@@webRoot/coworking.html">
+
+                                      <!-- Icon -->
+                                      <div class="icon icon-sm text-primary-light">
+                                        @@include("../partials/icons/duotone-icons/Home/Flower#1.svg")
+                                      </div>
+
+                                      <div class="ml-3">
+
+                                        <!-- Heading -->
+                                        <p class="font-weight-bold text-white mb-0">
+                                          Coworking
+                                        </p>
+
+                                        <!-- Text -->
+                                        <span class="text-gray-500">
+                                          Minimal, image-focused content
+                                        </span>
+
+                                      </div>
+
+                                    </a>
+                                    <a class="d-flex text-decoration-none mt-4" href="@@webRoot/hiring-agency.html">
+
+                                      <!-- Icon -->
+                                      <div class="icon icon-sm text-primary-light">
+                                        @@include("../partials/icons/duotone-icons/General/User.svg")
+                                      </div>
+
+                                      <div class="ml-3">
+
+                                        <!-- Heading -->
+                                        <p class="font-weight-bold text-white mb-0">
+                                          Hiring Agency
+                                        </p>
+
+                                        <!-- Text -->
+                                        <span class="text-gray-500">
+                                          A hiring service platform
+                                        </span>
+
+                                      </div>
+
+                                    </a>
+                                    <a class="d-flex text-decoration-none mt-4" href="@@webRoot/course.html">
+
+                                      <!-- Icon -->
+                                      <div class="icon icon-sm text-primary-light">
+                                        @@include("../partials/icons/duotone-icons/Media/Movie-Lane #2.svg")
+                                      </div>
+
+                                      <div class="ml-3">
+
+                                        <!-- Heading -->
+                                        <p class="font-weight-bold text-white mb-0">
+                                          Course
+                                        </p>
+
+                                        <!-- Text -->
+                                        <span class="text-gray-500">
+                                          React programming course
+                                        </span>
+
+                                      </div>
+
+                                    </a>
+
+                                  </div>
+                                </div>
+                                <div class="col-md-6 order-0 dropdown-menu-col">
+                                  <div class="dropdown-menu-body">
+
+                                    <!-- Heading -->
+                                    <h6 class="dropdown-header text-uppercase d-none d-lg-block">
+                                      Software
+                                    </h6>
+
+                                    <!-- Links -->
+                                    <a class="d-flex text-decoration-none text-reset" href="@@webRoot/robo-advisor.html">
+
+                                      <!-- Icon -->
+                                      <div class="icon icon-sm text-primary-light">
+                                        @@include("../partials/icons/duotone-icons/Shopping/Wallet#3.svg")
+                                      </div>
+
+                                      <div class="ml-3">
+
+                                        <!-- Heading -->
+                                        <p class="font-weight-bold mb-0">
+                                          Robo Advisor
+                                        </p>
+
+                                        <!-- Text -->
+                                        <span class="text-muted">
+                                          A simple and professional layout
+                                        </span>
+
+                                      </div>
+
+                                    </a>
+                                    <a class="d-flex text-decoration-none text-reset mt-4" href="@@webRoot/analytics-saas.html">
+
+                                      <!-- Icon -->
+                                      <div class="icon icon-sm text-primary-light">
+                                        @@include("../partials/icons/duotone-icons/Shopping/Chart-Pie.svg")
+                                      </div>
+
+                                      <div class="ml-3">
+
+                                        <!-- Heading -->
+                                        <p class="font-weight-bold mb-0">
+                                          Analytics SaaS
+                                        </p>
+
+                                        <!-- Text -->
+                                        <span class="text-muted">
+                                          UI-heavy product example
+                                        </span>
+
+                                      </div>
+
+                                    </a>
+                                    <a class="d-flex text-decoration-none text-reset mt-4" href="@@webRoot/e-commerce-platform.html">
+
+                                      <!-- Icon -->
+                                      <div class="icon icon-sm text-primary-light">
+                                        @@include("../partials/icons/duotone-icons/Shopping/Cart#1.svg")
+                                      </div>
+
+                                      <div class="ml-3">
+
+                                        <!-- Heading -->
+                                        <p class="font-weight-bold mb-0">
+                                          E-Commerce Platform
+                                        </p>
+
+                                        <!-- Text -->
+                                        <span class="text-muted">
+                                          SaaS for sales of goods
+                                        </span>
+
+                                      </div>
+
+                                    </a>
+                                    <a class="d-flex text-decoration-none text-reset mt-4" href="@@webRoot/mobile-chat-app.html">
+
+                                      <!-- Icon -->
+                                      <div class="icon icon-sm text-primary-light">
+                                        @@include("../partials/icons/duotone-icons/Devices/Phone.svg")
+                                      </div>
+
+                                      <div class="ml-3">
+
+                                        <!-- Heading -->
+                                        <p class="font-weight-bold mb-0">
+                                          Mobile Apps
+                                        </p>
+
+                                        <!-- Text -->
+                                        <span class="text-muted">
+                                          Minimal layout for mobile apps
+                                        </span>
+
+                                      </div>
+
+                                    </a>
+
+                                  </div>
+                                  <div class="dropdown-menu-footer align-items-center d-none d-lg-flex">
+
+                                    <!-- Text -->
+                                    <span>Sans Serif Headers</span>
+
+                                    <!-- Switch -->
+                                    <form class="ml-auto mr-n3">
+                                      <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input family-switch" id="familySwitchDocs" onchange="switchFamily(this.checked)">
+                                        <label class="custom-control-label" for="familySwitchDocs"></label>
+                                      </div>
+                                    </form>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="pagesDropdownDocs" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pages
+                          </a>
+                          <div class="dropdown-positioner">
+                            <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="pagesDropdownDocs">
+                              <div class="row no-gutters">
+                                <div class="col">
+
+                                  <!-- Heading -->
+                                  <h6 class="dropdown-header text-uppercase mb-3">
+                                    Company
+                                  </h6>
+
+                                  <!-- Links -->
+                                  <a class="dropdown-item" href="@@webRoot/pricing.html">
+                                    Pricing
+                                  </a>
+                                  <a class="dropdown-item" href="@@webRoot/pricing-feature-list.html">
+                                    Pricing Table
+                                  </a>
+                                  <a class="dropdown-item" href="@@webRoot/career-listing.html">
+                                    Careers
+                                  </a>
+                                  <a class="dropdown-item" href="@@webRoot/career-benefits.html">
+                                    Benefits
+                                  </a>
+                                  <a class="dropdown-item" href="@@webRoot/contact.html">
+                                    Contact
+                                  </a>
+                                  <a class="dropdown-item" href="@@webRoot/faq.html">
+                                    FAQ
+                                  </a>
+
+                                </div>
+                                <div class="col">
+
+                                  <!-- Heading -->
+                                  <h6 class="dropdown-header text-uppercase mb-3">
+                                    Blog
+                                  </h6>
+
+                                  <!-- Links -->
+                                  <a class="dropdown-item" href="@@webRoot/blog-listing.html">
+                                    Listing
+                                  </a>
+                                  <a class="dropdown-item" href="@@webRoot/blog-post.html">
+                                    Article
+                                  </a>
+                                  <a class="dropdown-item" href="@@webRoot/blog-post-cover.html">
+                                    Cover Article
+                                  </a>
+
+                                  <!-- Heading -->
+                                  <h6 class="dropdown-header text-uppercase mb-3">
+                                    Legal
+                                  </h6>
+
+                                  <!-- Links -->
+                                  <a class="dropdown-item" href="@@webRoot/terms.html">
+                                    Terms
+                                  </a>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <!-- Brand -->
+                      <a class="navbar-brand d-none d-lg-block px-lg-6" href="@@webRoot/index.html">Goodkit</a>
+
+                      <!-- Navigation -->
+                      <ul class="navbar-nav justify-content-start w-100">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="accountDropdownDocs" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Account
+                          </a>
+                          <div class="dropdown-positioner">
+                            <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                              <li class="dropdown-item dropright">
+                                <a class="dropdown-link dropdown-toggle" id="signInDroprightDocs" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Sign In
+                                </a>
+                                <div class="dropdown-positioner">
+                                  <div class="dropdown-menu dropdown-menu-auto" aria-labelledby="signInDropright">
+                                    <a class="dropdown-item" href="@@webRoot/sign-in-cover.html">
+                                      Cover
+                                    </a>
+                                    <a class="dropdown-item" href="@@webRoot/sign-in.html">
+                                      Simple
+                                    </a>
+                                    <a class="dropdown-item" data-toggle="modal" href="#modalSignIn">
+                                      Modal
+                                    </a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="dropdown-item dropright">
+                                <a class="dropdown-link dropdown-toggle" id="signUpDroprightDocs" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Sign Up
+                                </a>
+                                <div class="dropdown-positioner">
+                                  <div class="dropdown-menu dropdown-menu-auto" aria-labelledby="signUpDroprightDocs">
+                                    <a class="dropdown-item" href="@@webRoot/sign-up-cover.html">
+                                      Cover
+                                    </a>
+                                    <a class="dropdown-item" href="@@webRoot/sign-up.html">
+                                      Simple
+                                    </a>
+                                    <a class="dropdown-item" data-toggle="modal" href="#modalSignUp">
+                                      Modal
+                                    </a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="dropdown-item dropright">
+                                <a class="dropdown-link dropdown-toggle" id="passwordResetDroprightDocs" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Password Reset
+                                </a>
+                                <div class="dropdown-positioner">
+                                  <div class="dropdown-menu dropdown-menu-auto" aria-labelledby="passwordResetDroprightDocs">
+                                    <a class="dropdown-item" href="@@webRoot/password-reset-cover.html">
+                                      Cover
+                                    </a>
+                                    <a class="dropdown-item" href="@@webRoot/password-reset.html">
+                                      Simple
+                                    </a>
+                                    <a class="dropdown-item" data-toggle="modal" href="#modalPasswordReset">
+                                      Modal
+                                    </a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="dropdown-item dropright">
+                                <a class="dropdown-link dropdown-toggle" id="errorsDroprightDocs" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Errors
+                                </a>
+                                <div class="dropdown-positioner">
+                                  <div class="dropdown-menu dropdown-menu-auto" aria-labelledby="errorsDroprightDocs">
+                                    <a class="dropdown-item" href="@@webRoot/error-cover.html">
+                                      Cover
+                                    </a>
+                                    <a class="dropdown-item" href="@@webRoot/error.html">
+                                      Simple
+                                    </a>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="docsDropdownDocs" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Docs
+                          </a>
+                          <div class="dropdown-positioner">
+                            <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="docsDropdownDocs">
+                              <a class="d-flex align-items-center text-reset text-decoration-none" href="#">
+
+                                <!-- Icon -->
+                                <div class="icon text-primary-light">
+                                  @@include("../partials/icons/duotone-icons/General/Clipboard.svg")
+                                </div>
+
+                                <div class="ml-3">
+
+                                  <!-- Heading -->
+                                  <h6 class="text-uppercase text-primary mb-0">
+                                    Documentation
+                                  </h6>
+
+                                  <!-- Text -->
+                                  <span>Compiling and building.</span>
+
+                                </div>
+
+                              </a>
+                              <a class="d-flex align-items-center text-reset text-decoration-none mt-5" href="@@webRoot/docs/alerts.html">
+
+                                <!-- Icon -->
+                                <div class="icon text-primary-light">
+                                  @@include("../partials/icons/duotone-icons/Layout/Layout-arrange.svg")
+                                </div>
+
+                                <div class="ml-3">
+
+                                  <!-- Heading -->
+                                  <h6 class="text-uppercase text-primary mb-0">
+                                    Components
+                                  </h6>
+
+                                  <!-- Text -->
+                                  <span>Full list of pieces in the theme</span>
+
+                                </div>
+
+                              </a>
+                              <a class="d-flex align-items-center text-reset text-decoration-none mt-5" href="#">
+
+                                <!-- Icon -->
+                                <div class="icon text-primary-light">
+                                  @@include("../partials/icons/duotone-icons/Files/File.svg")
+                                </div>
+
+                                <div class="ml-3">
+
+                                  <!-- Heading -->
+                                  <h6 class="text-uppercase text-primary mb-0">
+                                    Changelog
+                                  </h6>
+
+                                  <!-- Text -->
+                                  <span>This is the new version</span>
+
+                                </div>
+
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                          <div class="nav-link">
+
+                            <!-- Text -->
+                            <span>
+                              Sans Serif Headers
+                            </span>
+
+                            <!-- Switch -->
+                            <form class="ml-auto mr-n3">
+                              <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input family-switch" id="familySwitchMobileDocs" onchange="switchFamily(this.checked)">
+                                <label class="custom-control-label" for="familySwitchMobileDocs"></label>
+                              </div>
+                            </form>
+
+
+                          </div>
+                        </li>
+                      </ul>
+
+                    </div>
+
+                  </div>
+                </nav>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": []
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+//
+// aos.scss
+//
+
+[data-aos="wipe-left"],
+[data-aos="wipe-right"] {
+  transition: .3s ease all;
+  &.aos-animate {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+[data-aos="wipe-left"] {
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+}
+
+[data-aos="wipe-right"] {
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}

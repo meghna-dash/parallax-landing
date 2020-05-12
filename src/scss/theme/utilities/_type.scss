@@ -1,0 +1,130 @@
+//
+// type.scss
+//
+
+// Font family
+
+.font-family-sans-serif {
+  font-family: $font-family-sans-serif !important;
+}
+
+.font-family-serif {
+  font-family: $font-family-serif !important;
+}
+
+
+// Font size
+
+.font-size-h2 {
+  font-size: $h2-font-size !important;
+}
+
+.font-size-h3 {
+  font-size: $h3-font-size !important;
+}
+
+.font-size-lg {
+  font-size: $font-size-lg !important;
+}
+
+.font-size-sm {
+  font-size: $font-size-sm !important;
+}
+
+.font-size-xs {
+  font-size: $font-size-xs !important;
+}
+
+.font-size-xxs {
+  font-size: $font-size-xxs !important;
+}
+
+
+// Colors
+
+.text-white-20 {
+  color: fade-out($white, .8) !important;
+}
+
+.text-white-60 {
+  color: fade-out($white, .4) !important;
+}
+
+a.text-white-60:hover {
+  color: fade-out($white, .2) !important;
+}
+
+.text-white-80 {
+  color: fade-out($white, .2) !important;
+}
+
+.text-white-50 {
+  color: fade-out($white, .5) !important;
+}
+
+.text-gray-300 {
+  color: $gray-300 !important;
+}
+
+.text-gray-500 {
+  color: $gray-500 !important;
+}
+
+.text-gray-600 {
+  color: $gray-600 !important;
+}
+
+.text-gray-800 {
+  color: $gray-800 !important;
+}
+
+
+// Underline
+
+[class*="text-underline-"] {
+  background: repeat-x left 1em / 1em .15em;
+}
+
+@each $color, $value in $theme-colors {
+  .text-underline-#{$color} {
+    @if $color=="warning" {
+      background-image: linear-gradient(to right, fade-out($value, .6));
+    }
+
+    @else {
+      background-image: linear-gradient(to right, fade-out($value, .8));
+    }
+  }
+}
+
+
+// Brand colors
+
+@each $color, $value in $brand-colors {
+  .text-#{$color} {
+    color: $value !important;
+  }
+}
+
+
+// Line height
+
+.line-height-reset {
+  line-height: 1;
+}
+
+
+// Aa text (demo only)
+
+#text-aa-serif,
+#text-aa-sans-serif {
+  transition: $transition-base;
+}
+
+#text-aa-serif {
+  color: $white;
+}
+
+#text-aa-sans-serif {
+  color: rgba($white, .2);
+}

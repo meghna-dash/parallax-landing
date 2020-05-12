@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Figma"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Figma",
+            "isCustom": false,
+            "description": "Goodkit was designed in Figma, the best new design tool.",
+            "bootstrapDocs": "",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Heading -->
+            <h3 class="font-family-sans-serif mb-4" id="whyFigma">Why Figma?</h3>
+
+            <!-- Text -->
+            <p>
+              While Figma is a relatively new design tool, it has taken the top spot in our design toolkit. Having been a Sketch user since it's inception, it was a big decision to switch...but we so glad we did. Here are the biggest benefits we've found with Figma:
+            </p>
+
+            <!-- List -->
+            <ul>
+              <li>Performance is significantly better with large files</li>
+              <li>Work on any machine and you have "the latest"</li>
+              <li>Built in version history</li>
+              <li>Components and shared styles are better suited for building a design system</li>
+              <li>The ability to work collaboratively at the same time</li>
+            </ul>
+
+            <!-- Text -->
+            <p>
+              The only downsides we've seen are that it takes a while to get used to different shortcut keys, and pasting assets into files doesn't work as well. The transition is hard in the beginning, but well worth it.
+            </p>
+
+            <!-- Screenshot -->
+            <img class="img-fluid mb-7" src="@@webRoot/assets/img/homepage/figma.jpg">
+
+            <!-- Heading -->
+            <h3 class="font-family-sans-serif mb-4" id="unofficialFile">Unofficial Figma File</h3>
+
+            <!-- Text -->
+            <p class="text-gray-700">
+              Since we work pretty fluidly between Figma and actual code, we've decided it's a better investment of time to continue improving Goodkit over babysitting our design file. That said, we realize it can be super useful to have a design resource to rough out new pages or spin up component variations. To that end, we provide an "unofficial" Goodkit Figma file for you to play with.
+            </p>
+
+            <!-- Text -->
+            <p class="text-gray-700">
+              The file is far from perfect, and is relatively disorganized, but the type and colors systems are well utilized and the overall layouts are quite close to the live product. To play with design:
+            </p>
+
+            <!-- List -->
+            <ol class="text-gray-700">
+              <li><a href="https://www.figma.com" target="_blank">Download Figma</a></li>
+              <li>Open the Figma link from the <code>README.md</code></li>
+              <li>The file is "read-only", so you'll have to duplicate it! Go to your grid of documents in Figma, click the ellipsis icon on <code>Goodkit (Distributed)</code>, and then "Duplicate" to create an editable version.</li>
+            </ol>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Why Figma", "url": "#whyFigma"}, {"title": "Unofficial file", "url": "#unofficialFile"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

@@ -1,0 +1,26 @@
+//
+// pagination.scss
+//
+
+.pagination .page-item:first-child .page-link {
+  border-top-left-radius: $pagination-border-radius;
+  border-bottom-left-radius: $pagination-border-radius;
+}
+
+.pagination .page-item:last-child .page-link {
+  border-top-right-radius: $pagination-border-radius;
+  border-bottom-right-radius: $pagination-border-radius;
+}
+
+
+// Sizing
+
+.pagination-sm .page-item:first-child .page-link {
+  border-top-left-radius: $pagination-border-radius-sm;
+  border-bottom-left-radius: $pagination-border-radius-sm;
+}
+
+.pagination-sm .page-item:last-child .page-link {
+  border-top-right-radius: $pagination-border-radius-sm;
+  border-bottom-right-radius: $pagination-border-radius-sm;
+}

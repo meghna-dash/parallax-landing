@@ -1,58 +1,46 @@
 {
-  "name": "vidcomp",
-  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@redq/reuse-modal": "^1.2.4",
-    "next": "^9.1.5",
-    "rc-drawer": "^1.10.1",
-    "rc-progress": "^2.5.1",
-    "rc-tabs": "^9.6.4",
-    "react": "^16.12.0",
-    "react-accessible-accordion": "^3.0.0",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-content-loader": "^4.2.2",
-    "react-countdown-now": "^2.1.1",
-    "react-countup": "^4.1.3",
-    "react-dom": "^16.12.0",
-    "react-gif-player": "^0.4.2",
-    "react-icons-kit": "^1.3.1",
-    "react-image": "^2.1.3",
-    "react-image-gallery": "^0.8.18",
-    "react-particles-js": "^2.6.0",
-    "react-reveal": "^1.2.2",
-    "react-rnd": "^10.0.0",
-    "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.3.0",
-    "react-scroll-parallax": "^2.1.2",
-    "react-scrollspy": "^3.4.0",
-    "react-select": "^3.0.4",
-    "react-stickynode": "^2.1.1",
-    "react-typing-effect": "^2.0.2",
-    "reactstrap": "^8.4.1",
-    "styled-components": "^4.3.2",
-    "styled-system": "^4.1.0"
-  },
+  "name": "goodkit",
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "keywords": [],
+  "author": "Good Themes",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "@popperjs/core": "^2.1.1",
+    "aos": "^3.0.0-beta.6",
+    "bootstrap": "^4.4.1",
+    "countup.js": "^1.9.3",
+    "flag-icon-css": "^3.4.6",
+    "flickity": "^2.2.1",
+    "flickity-fade": "^1.0.0",
+    "gulp-rename": "^2.0.0",
+    "highlightjs": "^9.16.2",
+    "jarallax": "^1.12.0",
+    "jquery": "^3.4.1",
+    "smooth-scroll": "^16.1.3",
+    "typed.js": "^2.0.11"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.1.1",
+    "gulp-if": "^3.0.0",
+    "gulp-npm-dist": "^1.0.3",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^4.0.1"
   }
 }

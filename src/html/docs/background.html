@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Background"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Background",
+            "isCustom": true,
+            "description": "Background utilities to easily change background sizing, position, and color properties.",
+            "bootstrapDocs": "",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Color",
+            "id": "color",
+            "isCustom": false,
+            "description": "Additional background color utilities."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body d-flex flex-wrap">
+
+                <!-- Items -->
+                <div class="bg-dark-50" style="width: 100px; height: 100px; margin: .5rem;"></div>
+                <div class="bg-gray-200" style="width: 100px; height: 100px; margin: .5rem;"></div>
+                <div class="bg-gray-800" style="width: 100px; height: 100px; margin: .5rem;"></div>
+                <div class="bg-gray-900" style="width: 100px; height: 100px; margin: .5rem;"></div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;bg-dark-50&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;bg-gray-200&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;bg-gray-800&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;bg-gray-900&quot;&gt;&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Cover",
+            "id": "cover",
+            "isCustom": false,
+            "description": "Sets the <code>background-size</code> property to <code>cover</code>."
+            })
+
+            <!-- Image -->
+            <div class="py-12 bg-cover rounded-sm mb-4" style="background-image: url(@@webRoot/assets/img/career/hero.jpg);"></div>
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;bg-cover&quot;&nbsp;style=&quot;background-image:&nbsp;url(@@webRoot/assets/img/career/hero.jpg);&quot;&gt;&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Gradient light",
+            "id": "gradientLight",
+            "isCustom": false,
+            "description": "Adds a background image gradient that goes from <code>transparent</code> to <code>$light</code>."
+            })
+
+            <!-- Image -->
+            <div class="py-12 rounded-sm bg-gradient-light mb-4"></div>
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;bg-gradient-light&quot;&gt;&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Checkered",
+            "id": "checkered",
+            "isCustom": false,
+            "description": "Adds a \"checkered\" background."
+            })
+
+            <!-- Image -->
+            <div class="py-12 rounded-sm bg-checkered mb-4"></div>
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;bg-checkered&quot;&gt;&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Color", "url": "#color"}, {"title": "Cover", "url": "#cover"}, {"title": "Gradient light", "url": "#gradientLight"}, {"title": "Checkered", "url": "#checkered"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

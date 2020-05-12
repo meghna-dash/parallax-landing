@@ -1,0 +1,40 @@
+//
+// forms.scss
+//
+
+// Form control
+
+.form-control {
+  background-clip: border-box;
+}
+
+
+// Underline
+
+.form-control-underline {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: $input-border-width;
+  border-bottom-color: $border-color;
+
+  &:focus {
+    background-color: transparent;
+    border-bottom-color: $primary;
+  }
+}
+
+
+// Feedback
+
+.form-control.is-valid,
+.form-control.is-invalid {
+  background-size: $form-feedback-bg-size;
+}
+
+.custom-select.is-valid,
+.custom-select.is-invalid {
+  background-size: $custom-select-bg-size, $form-feedback-bg-size;
+}

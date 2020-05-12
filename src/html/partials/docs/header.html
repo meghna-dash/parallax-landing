@@ -1,0 +1,41 @@
+<!-- Heading -->
+<div class="d-flex align-items-center mb-2">
+
+  @@if (title) {
+  <!-- Heading -->
+  <h1 class="font-family-sans-serif mb-0">
+    @@title
+  </h1>
+  }
+
+  @@if (isCustom) {
+  <!-- Badge -->
+  <div class="badge badge-primary-soft h6 font-family-sans-serif mb-0 ml-3">Goodkit Exclusive</div>
+  }
+
+</div>
+
+<!-- Text -->
+@@if (description) {
+<p class="font-size-lg @@if (bootstrapDocs) { mb-5 }">
+  @@description
+</p>
+}
+
+@@if (bootstrapDocs) {
+<!-- Link -->
+<p>
+  <a href="@@bootstrapDocs" target="_blank">
+    <i class="fe fe-external-link pr-1"></i> Bootstrap Documentation
+  </a>
+</p>
+}
+
+@@if (pluginDocs) {
+<!-- Link -->
+<p>
+  <a href="@@pluginDocs" target="_blank">
+    <i class="fe fe-external-link pr-1"></i> Plugin Documentation
+  </a>
+</p>
+}

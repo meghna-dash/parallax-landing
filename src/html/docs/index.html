@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Introduction"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Introduction",
+            "isCustom": false,
+            "description": "How to get started with Goodkit!",
+            "bootstrapDocs": "",
+            "pluginDocs": ""
+            })
+
+            <!-- Text -->
+            <p>
+              This guide will help you get started with Goodkit! All the important stuff – compiling the source, file structure, build tools, file includes – is documented here, but should you have any questions, always feel free to reach out to support@goodthemes.co.
+            </p>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "New & extended components",
+            "id": "newAndExtendedComponents",
+            "isCustom": false,
+            "description": "Goodkit extends Bootstrap by not only building on top of its existing components, but also introducing entirely new components and plugins. The best way to get an overview of this is to run through the components.html page."
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Dev setup",
+            "id": "devSetup",
+            "isCustom": false,
+            "description": "To get started, you need to do the following:"
+            })
+
+            <!-- List -->
+            <ol>
+              <li>
+                <strong>Make sure you have Node installed</strong> since Goodkit uses npm to manage dependencies. If you don't, installing is quite easy, just visit the <a href="https://nodejs.org/en/download/">Node Downloads page</a> and install it.
+              </li>
+              <li>
+                <strong>Unzip your theme and open your command line</strong>, making sure your command line prompt is at the root of the unzipped theme directory.
+              </li>
+              <li>
+                <strong class="badge badge-danger-soft"><code>npm install gulp-cli -g</code></strong>: If you don't have the Gulp command line interface, you need to install it.
+              </li>
+              <li>
+                <strong class="badge badge-danger-soft"><code>npm install</code></strong>: Open your command line to the root directory of your unzipped theme and run to install all of Goodkit's dependencies.
+              </li>
+            </ol>
+
+            <!-- Text -->
+            <p>
+              It's that simple! If you're not used to using terminal, don't worry, this is as advanced as it gets. If you want to kill the server and stop Gulp, just hit <code>Control + C</code>.
+            </p>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Compiling",
+            "id": "compiling",
+            "isCustom": false,
+            "description": "Gulp is used to manage Goodkit development. Open your command line to the root directory of the theme to use the following commands:"
+            })
+
+            <!-- List -->
+            <ul>
+              <li>
+                <strong class="badge badge-danger-soft"><code>gulp</code></strong>: Compile and watch the SCSS/JS/HTML, use Live Reload to update browsers instantly, start a server, and pop a tab in your default browser. Any changes made to the source files will be compiled as soon as you save the file.
+              </li>
+              <li>
+                <strong class="badge badge-danger-soft"><code>gulp build</code></strong>: Generates a <code>/dist</code> directory with all the production files.
+              </li>
+            </ul>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "File structure",
+            "id": "fileStructure",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- List -->
+            <ul class="text-gray-700">
+              <li>
+                <strong>📁 dist</strong> - Generated production files
+                <ul>
+                  <li>
+                    <strong>📁 assets</strong>
+                    <ul>
+                      <li>
+                        <strong>📁 css</strong> - Compiled CSS
+                      </li>
+                      <li>
+                        <strong>📁 fonts</strong> - Feather icons
+                      </li>
+                      <li>
+                        <strong>📁 img</strong> - Image assets
+                      </li>
+                      <li>
+                        <strong>📁 js</strong> - Compiled Javascript
+                      </li>
+                      <li>
+                        <strong>📁 libs</strong> - Third party plugins
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>📁 docs</strong> - Compiled documentation
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>📁 node_modules</strong> - Directory where <code>npm</code> installs dependencies.
+              </li>
+              <li>
+                <strong>📁 src</strong>
+                <ul>
+                  <li>
+                    <strong>📁 html</strong> - HTML source
+                    <ul>
+                      <li>
+                        <strong>📁 docs</strong> - Documentation source
+                      </li>
+                      <li>
+                        <strong>📁 partials</strong> - HTML partials and source SVG images
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>📁 js</strong> - Javascript source
+                  </li>
+                  <li>
+                    <strong>📁 scss</strong> - SCSS source for theme
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>📄 .browserslistrc</strong> - The config to share target browsers and Node.js versions between different front-end tools
+              </li>
+              <li>
+                <strong>📄 .gitignore</strong> - Hide all unnecessary files from Git
+              </li>
+              <li>
+                <strong>📄 gulpfile.js</strong> - All the build commands
+              </li>
+              <li>
+                <strong>📄 package.json</strong> - List of dependencies and npm information
+              </li>
+              <li>
+                <strong>📄 package-lock.json</strong> - Describes a dependency tree
+              </li>
+            </ul>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Gulp file includes",
+            "id": "gulpFileIncludes",
+            "isCustom": false,
+            "description": "The gulp-file-include package is used to make partials easier to use for initial development. For Goodkit, we only use it for a handful of components that are found on most pages. The following partials are available:"
+            })
+
+            <!-- List -->
+            <ul>
+              <li>
+                <code>footer.html</code>
+                <ul>
+                  <li>
+                    <code>@@classList (string)</code> - Parameter for passing additional classnames
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <code>head.html</code>
+                <ul>
+                  <li>
+                    <code>@@pageTitle (string)</code> - Parameter for the page title
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <code>modals.html</code>
+              </li>
+              <li>
+                <code>navbar.html</code>
+                <ul>
+                  <li>
+                    <code>@@classList (string)</code> - Parameter for passing additional classnames
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <code>script.html</code>
+              </li>
+            </ul>
+
+            <!-- Text -->
+            <p>
+              Easily create new <code>.html</code> partials inside the <code>/partials</code> folder and point to them from any file by specifying the path to the partial file and using the <code>@@include</code> keyword.
+            </p>
+
+            <!-- Text -->
+            <p>
+              Please read the <a href="https://www.npmjs.com/package/gulp-file-include" target="_blank">official package documentation</a> for more info.
+            </p>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Customizing SCSS",
+            "id": "customizingScss",
+            "isCustom": false,
+            "description": "There are 2 basic ways to customize your theme..."
+            })
+
+            <!-- List -->
+            <ol>
+              <li>
+                <strong>Customizing SCSS.</strong> This is more versatile and sustainable way to customize Goodkit, but requires the <code>gulp</code> compilation steps outlined above. The 2 major benefits of this strategy are using variable overrides to easily customize theme styles, plus you never have to touch Bootstrap or Goodkit's source, meaning future updates will be much, much, simpler. There are 2 provided files that make this strategy simple to implement:
+                <ul>
+                  <li>
+                    <code>user-variables.scss</code>: This file can be used to override Bootstrap core and Goodkit variables for customizing elements that have been tied to variables.
+                  </li>
+                  <li>
+                    <code>user.scss</code>: This file can be used for writing custom SCSS that will be compiled alongside Bootstrap and Goodkit's core files.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Compiled CSS.</strong> If you plan on using Goodkit "as is", or only need limited customization, feel free to simply attach the compiled <code>theme.css</code> or <code>theme.min.css</code> file in the <code>dist/assets/css</code> directory.
+              </li>
+            </ol>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "New & extended components", "url": "#newAndExtendedComponents"}, {"title": "Dev setup", "url": "#devSetup"}, {"title": "Compiling", "url": "#compiling"}, {"title": "File structure", "url": "#fileStructure"}, {"title": "Gulp file includes", "url": "#gulpFileIncludes"}, {"title": "Customizing SCSS", "url": "#customizingScss"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

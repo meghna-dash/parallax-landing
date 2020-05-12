@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Avatars"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Avatars",
+            "isCustom": true,
+            "description": "Create and group avatars of different sizes and shapes with a single component.",
+            "bootstrapDocs": "",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Sizing",
+            "id": "sizing",
+            "isCustom": false,
+            "description": "Using Bootstrap’s typical naming structure, you can create a standard avatar, or scale it up to different sizes based on what’s needed."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <div class="avatar avatar-xxl">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <div class="avatar avatar-xl">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <div class="avatar avatar-lg">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <div class="avatar">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <div class="avatar avatar-sm">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <div class="avatar avatar-xs">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;avatar&nbsp;avatar-xxl&quot;&gt;<br />&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded-circle&quot;&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;avatar&nbsp;avatar-xl&quot;&gt;<br />&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded-circle&quot;&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;avatar&nbsp;avatar-lg&quot;&gt;<br />&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded-circle&quot;&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;avatar&quot;&gt;<br />&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded-circle&quot;&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;avatar&nbsp;avatar-sm&quot;&gt;<br />&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded-circle&quot;&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;avatar&nbsp;avatar-xs&quot;&gt;<br />&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded-circle&quot;&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Status Indicator",
+            "id": "statusIndicator",
+            "isCustom": false,
+            "description": "Add an online or offline status indicator to show user's availability."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <div class="avatar avatar-xxl avatar-offline">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <div class="avatar avatar-xl avatar-online">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <div class="avatar avatar-lg avatar-offline">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <div class="avatar avatar-online">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <div class="avatar avatar-sm avatar-offline">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <div class="avatar avatar-xs avatar-online">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;avatar&nbsp;avatar-online&quot;&gt;<br />&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded-circle&quot;&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;avatar&nbsp;avatar-offline&quot;&gt;<br />&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded-circle&quot;&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Shape",
+            "id": "shape",
+            "isCustom": false,
+            "description": "Change the shape of an avatar with the default Bootstrap image classes."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <div class="avatar avatar-xxl">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded">
+                </div>
+
+                <div class="avatar avatar-xxl">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <div class="avatar avatar-lg">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded">
+                </div>
+
+                <div class="avatar avatar-lg">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+                <div class="avatar">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded">
+                </div>
+
+                <div class="avatar">
+                  <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;avatar&quot;&gt;<br />&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded&quot;&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;avatar&quot;&gt;<br />&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded-circle&quot;&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Ratio",
+            "id": "ratio",
+            "isCustom": false,
+            "description": "Change the proportional relationship between the width and height of an avatar to 4 by 3 with an <code>.avatar-4by3</code> modifier."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <div class="avatar avatar-xxl avatar-4by3">
+                  <img src="../assets/img/avatars/avatar-jumbo-1.jpg" alt="..." class="avatar-img rounded">
+                </div>
+
+                <div class="avatar avatar-xl avatar-4by3">
+                  <img src="../assets/img/avatars/avatar-jumbo-1.jpg" alt="..." class="avatar-img rounded">
+                </div>
+
+                <div class="avatar avatar-lg avatar-4by3">
+                  <img src="../assets/img/avatars/avatar-jumbo-1.jpg" alt="..." class="avatar-img rounded">
+                </div>
+
+                <div class="avatar avatar-4by3">
+                  <img src="../assets/img/avatars/avatar-jumbo-1.jpg" alt="..." class="avatar-img rounded">
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;avatar&nbsp;avatar-lg&nbsp;avatar-4by3&quot;&gt;<br />&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/photos/photo-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded&quot;&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Initials",
+            "id": "initials",
+            "isCustom": false,
+            "description": "You won't always have an image for every user, so easily use initials instead."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <div class="avatar avatar-xxl">
+                  <span class="avatar-title rounded-circle">CF</span>
+                </div>
+
+                <div class="avatar avatar-xl">
+                  <span class="avatar-title rounded-circle">CF</span>
+                </div>
+
+                <div class="avatar avatar-lg">
+                  <span class="avatar-title rounded-circle">CF</span>
+                </div>
+
+                <div class="avatar">
+                  <span class="avatar-title rounded-circle">CF</span>
+                </div>
+
+                <div class="avatar avatar-sm">
+                  <span class="avatar-title rounded-circle">CF</span>
+                </div>
+
+                <div class="avatar avatar-xs">
+                  <span class="avatar-title rounded-circle">CF</span>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;avatar&nbsp;avatar-xxl&quot;&gt;<br />&nbsp;&nbsp;&lt;span&nbsp;class=&quot;avatar-title&nbsp;rounded-circle&quot;&gt;CF&lt;/span&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;avatar&nbsp;avatar-xl&quot;&gt;<br />&nbsp;&nbsp;&lt;span&nbsp;class=&quot;avatar-title&nbsp;rounded-circle&quot;&gt;CF&lt;/span&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;avatar&nbsp;avatar-lg&quot;&gt;<br />&nbsp;&nbsp;&lt;span&nbsp;class=&quot;avatar-title&nbsp;rounded-circle&quot;&gt;CF&lt;/span&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;avatar&quot;&gt;<br />&nbsp;&nbsp;&lt;span&nbsp;class=&quot;avatar-title&nbsp;rounded-circle&quot;&gt;CF&lt;/span&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;avatar&nbsp;avatar-sm&quot;&gt;<br />&nbsp;&nbsp;&lt;span&nbsp;class=&quot;avatar-title&nbsp;rounded-circle&quot;&gt;CF&lt;/span&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;avatar&nbsp;avatar-xs&quot;&gt;<br />&nbsp;&nbsp;&lt;span&nbsp;class=&quot;avatar-title&nbsp;rounded-circle&quot;&gt;CF&lt;/span&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Groups",
+            "id": "groups",
+            "isCustom": false,
+            "description": "Easily group avatars of any size, shape and content with a single component. Each avatar can also use an <a> to link to the corresponding profile."
+              })
+
+              <!-- Card -->
+              <div class="card card-sm docs-card">
+                <div class="card-body">
+
+                  <div class="avatar-group">
+                    <div class="avatar avatar-lg">
+                      <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                    </div>
+                    <div class="avatar avatar-lg">
+                      <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                    </div>
+                    <div class="avatar avatar-lg">
+                      <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                    </div>
+                    <div class="avatar avatar-lg">
+                      <span class="avatar-title rounded-circle">CF</span>
+                    </div>
+                  </div>
+
+                  <div class="avatar-group">
+                    <div class="avatar">
+                      <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                    </div>
+                    <div class="avatar">
+                      <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                    </div>
+                    <div class="avatar">
+                      <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                    </div>
+                    <div class="avatar">
+                      <span class="avatar-title rounded-circle">CF</span>
+                    </div>
+                  </div>
+
+                  <div class="avatar-group">
+                    <div class="avatar avatar-xs">
+                      <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                    </div>
+                    <div class="avatar avatar-xs">
+                      <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                    </div>
+                    <div class="avatar avatar-xs">
+                      <img src="../assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                    </div>
+                    <div class="avatar avatar-xs">
+                      <span class="avatar-title rounded-circle">CF</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card-footer">
+                  <code class="html highlight">
+                    &lt;div&nbsp;class=&quot;avatar-group&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;avatar&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded-circle&quot;&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;avatar&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded-circle&quot;&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;avatar&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;src=&quot;../assets/img/avatars/avatar-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;class=&quot;avatar-img&nbsp;rounded-circle&quot;&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;avatar&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;avatar-title&nbsp;rounded-circle&quot;&gt;CF&lt;/span&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+                  </code>
+                </div>
+              </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Sizing", "url": "#sizing"}, {"title": "Status indicator", "url": "#statusIndicator"}, {"title": "Shape", "url": "#shape"}, {"title": "Ratio", "url": "#ratio"}, {"title": "Initials", "url": "#initials"}, {"title": "Groups", "url": "#groups"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

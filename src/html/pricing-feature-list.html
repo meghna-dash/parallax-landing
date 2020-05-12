@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-dark bg-dark"
+    })
+
+    <!-- WELCOME -->
+    <section class="pt-6 pt-md-11 bg-dark">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 text-center text-white">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-warning mb-5">
+              Simple Pricing
+            </h6>
+
+            <!-- Heading -->
+            <h1 class="display-3 mb-4">
+              Pricing to fit your needs.
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg mb-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-bottom text-dark pb-18">
+        <div class="shape-img pb-8 pb-md-11">
+          @@include("partials/shapes/angles/angle-bottom-left.svg")
+        </div>
+      </div>
+    </div>
+
+    <!-- PRICING -->
+    <section class="pt-10 pt-md-12">
+      <div class="container-lg">
+        <div class="row align-items-center no-gutters">
+          <div class="col-md-7">
+
+            <!-- Card -->
+            <div class="position-relative">
+
+              <!-- Decoration -->
+              <div class="position-absolute bottom-left text-warning ml-n10 mb-n10">
+                @@include("partials/decorations/decoration-2.svg")
+              </div>
+
+              <!-- Card -->
+              <div class="card mb-6 mb-md-0">
+                <div class="card-body position-relative bg-white text-center pb-0">
+
+                  <!-- Heading -->
+                  <h3 class="display-4 mb-4">
+                    Standard
+                  </h3>
+
+                  <!-- Text -->
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+                  </p>
+
+                </div>
+                <div class="card-body position-relative bg-white">
+
+                  <!-- List group -->
+                  <ul class="list-group list-group-flush mt-n5">
+                    <li class="list-group-item d-flex align-items-center">
+
+                      <!-- Title -->
+                      <strong>Fees</strong>
+
+                      <!-- Text -->
+                      <span class="text-right ml-auto">0.25% per trade</span>
+
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+
+                      <!-- Title -->
+                      <strong>Rebalances</strong>
+
+                      <!-- Text -->
+                      <span class="text-right ml-auto">12 per year</span>
+
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+
+                      <!-- Title -->
+                      <strong>Support</strong>
+
+                      <!-- Text -->
+                      <span class="text-right ml-auto">24 hour chat</span>
+
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="card-footer position-relative border-top">
+                  <div class="row">
+                    <div class="col-12 col-lg">
+
+                      <!-- Price -->
+                      <div class="display-4 font-weight-bolder text-center text-lg-left mb-4 mb-lg-0">
+                        <span class="font-size-h3 align-middle">$</span>
+                        <span class="mx-n2">49</span>
+                        <span class="font-size-h2 align-middle">/mo</span>
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-lg-auto">
+
+                      <!-- Button -->
+                      <a class="btn btn-primary btn-block" href="#!">
+                        Get Started
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-5">
+
+            <!-- Card -->
+            <div class="card bg-gray-800">
+              <div class="card-body text-center text-white py-md-10 py-xl-12">
+
+                <!-- Heading -->
+                <h3 class="display-4 mb-4">
+                  Professional
+                </h3>
+
+                <!-- Text -->
+                <p class="text-white-80 mb-0">
+                  We offer variable pricing with discounts for larger organizations. Get in touch with us and we’ll figure out a tier that works well for your needs.
+                </p>
+
+              </div>
+              <div class="card-footer position-relative border-top border-white-5">
+                <div class="row">
+                  <div class="col-12 col-xl">
+
+                    <!-- Price -->
+                    <div class="display-4 font-weight-bolder text-center text-xl-left text-white mb-4 mb-xl-0">
+                      <span class="font-size-h3 align-middle">$</span>
+                      <span class="mx-n2">99</span>
+                      <span class="font-size-h2 align-middle">/mo</span>
+                    </div>
+
+                  </div>
+                  <div class="col-12 col-xl-auto">
+
+                    <!-- Button -->
+                    <a class="btn btn-primary btn-block" href="#!">
+                      Get Started
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISION -->
+    <section class="pt-10 pt-md-12">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Form -->
+            <form class="d-flex d-md-none align-items-center justify-content-center mb-6">
+
+              <!-- Heading -->
+              <span class="mr-5">
+                Standard
+              </span>
+
+              <!-- Switch -->
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="featuresSwitch" data-toggle="table-features" data-target="#tableFeatures">
+                <label class="custom-control-label" for="featuresSwitch"></label>
+              </div>
+
+              <!-- Heading -->
+              <span class="ml-4">
+                Custom
+              </span>
+
+            </form>
+
+            <!-- Table -->
+            <div class="table-responsive">
+              <table class="table table-flush table-features mb-0" id="tableFeatures">
+                <tbody>
+                  <tr>
+                    <th class="d-flex align-items-center">
+
+                      <!-- Icon -->
+                      <div class="icon text-primary d-none d-md-block">
+                        @@include("partials/icons/duotone-icons/General/Clipboard.svg")
+                      </div>
+
+                      <div class="ml-md-2">
+
+                        <!-- Title -->
+                        <p class="font-size-lg font-weight-bold text-nowrap mb-0">
+                          Basics
+                        </p>
+
+                        <!-- Text -->
+                        <p class="font-size-sm text-muted mt-n1 mb-0">
+                          The bottom line
+                        </p>
+
+                      </div>
+
+                    </th>
+                    <th class="text-center">
+
+                      <!-- Title -->
+                      <p class="font-weight-bold mb-0">
+                        Standard
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm mt-n1 mb-0">
+                        <a href="#!">Free trial</a>
+                      </p>
+
+                    </th>
+                    <th class="text-center">
+
+                      <!-- Title -->
+                      <p class="font-weight-bold mb-0">
+                        Custom
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-primary mt-n1 mb-0">
+                        <a href="#!">Talk to sales</a>
+                      </p>
+
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      Contacts Sync
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Group Messaging
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Auto Thumb Generation
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      API Access
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      3rd Party Integrations
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Custom Dashboards
+                    </td>
+                    <td class="text-center">
+                      -
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Extended Data Retention
+                    </td>
+                    <td class="text-center">
+                      -
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      DDOS Protection
+                    </td>
+                    <td class="text-center">
+                      -
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      &nbsp;
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-flex align-items-center">
+
+                      <!-- Icon -->
+                      <div class="icon text-primary d-none d-md-block">
+                        @@include("partials/icons/duotone-icons/General/Shield-Protected.svg")
+                      </div>
+
+                      <div class="ml-md-2">
+
+                        <!-- Title -->
+                        <p class="font-size-lg font-weight-bold text-nowrap mb-0">
+                          Security
+                        </p>
+
+                        <!-- Text -->
+                        <p class="font-size-sm text-muted mt-n1 mb-0">
+                          Keeping you safe
+                        </p>
+
+                      </div>
+
+                    </th>
+                    <th class="text-center">
+
+                      <!-- Title -->
+                      <p class="font-weight-bold mb-0">
+                        Standard
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm mt-n1 mb-0">
+                        <a href="#!">Free trial</a>
+                      </p>
+
+                    </th>
+                    <th class="text-center">
+
+                      <!-- Title -->
+                      <p class="font-weight-bold mb-0">
+                        Custom
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-primary mt-n1 mb-0">
+                        <a href="#!">Talk to sales</a>
+                      </p>
+
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      Contacts Sync
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Group Messaging
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Auto Thumb Generation
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      API Access
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      3rd Party Integrations
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Custom Dashboards
+                    </td>
+                    <td class="text-center">
+                      -
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Extended Data Retention
+                    </td>
+                    <td class="text-center">
+                      -
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      DDOS Protection
+                    </td>
+                    <td class="text-center">
+                      -
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      &nbsp;
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="d-flex align-items-center">
+
+                      <!-- Icon -->
+                      <div class="icon text-primary d-none d-md-block">
+                        @@include("partials/icons/duotone-icons/Communication/Chat#5.svg")
+                      </div>
+
+                      <div class="ml-md-2">
+
+                        <!-- Title -->
+                        <p class="font-size-lg font-weight-bold mb-0">
+                          Support
+                        </p>
+
+                        <!-- Text -->
+                        <p class="font-size-sm text-muted mt-n1 mb-0">
+                          Helping you out
+                        </p>
+
+                      </div>
+
+                    </th>
+                    <th class="text-center">
+
+                      <!-- Title -->
+                      <p class="font-weight-bold mb-0">
+                        Standard
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm mt-n1 mb-0">
+                        <a href="#!">Free trial</a>
+                      </p>
+
+                    </th>
+                    <th class="text-center">
+
+                      <!-- Title -->
+                      <p class="font-weight-bold mb-0">
+                        Custom
+                      </p>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-primary mt-n1 mb-0">
+                        <a href="#!">Talk to sales</a>
+                      </p>
+
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      Contacts Sync
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Group Messaging
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Auto Thumb Generation
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      API Access
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      3rd Party Integrations
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Custom Dashboards
+                    </td>
+                    <td class="text-center">
+                      -
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Extended Data Retention
+                    </td>
+                    <td class="text-center">
+                      -
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      DDOS Protection
+                    </td>
+                    <td class="text-center">
+                      -
+                    </td>
+                    <td class="text-center">
+                      <span class="text-primary">
+                        @@include("partials/icons/icon-check-circle.svg")
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>
+                      &nbsp;
+                    </td>
+                    <td class="text-center">
+
+                      <!-- Button -->
+                      <a class="btn btn-primary" href="#!">Free Trial</a>
+
+                    </td>
+                    <td class="text-center">
+
+                      <!-- Button -->
+                      <a class="btn btn-primary" href="#!">Contact Sales</a>
+
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="pt-10 pt-md-12">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 text-center">
+
+            <!-- Divider -->
+            <hr class="hr-sm border-warning mb-10 mb-md-12">
+
+            <!-- Heading -->
+            <h2 class="display-4 mb-4">
+              Frequently asked questions.
+            </h2>
+
+            <!-- Text -->
+            <p class="text-muted mb-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+          </div>
+        </div>
+        <div class="row justify-content-center mt-n8 mt-md-n9">
+          <div class="col-md-6 col-lg-5">
+
+            <!-- Item -->
+            <div class="mt-8 mt-md-9">
+
+              <!-- Heading -->
+              <h3 class="font-family-sans-serif mb-4">
+                Does my plan include support?
+              </h3>
+
+              <!-- Text -->
+              <p class="text-muted mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus massa, tincidunt at nunc sed, venenatis convallis neque. Praesent aliquet lacus quis ipsum lobortis faucibus. Aenean lorem lacus, finibus a dictum sit amet.
+              </p>
+
+            </div>
+
+            <!-- Item -->
+            <div class="mt-8 mt-md-9">
+
+              <!-- Heading -->
+              <h3 class="font-family-sans-serif mb-4">
+                Am I locked in once I sign up?
+              </h3>
+
+              <!-- Text -->
+              <p class="text-muted mb-0">
+                Suspendisse potenti. Donec nec magna dui. Proin a nibh nisl. Duis convallis odio eget augue sodales accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus massa, tincidunt at nunc sed, venenatis convallis.
+              </p>
+
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-5">
+
+            <!-- Item -->
+            <div class="mt-8 mt-md-9">
+
+              <!-- Heading -->
+              <h3 class="font-family-sans-serif mb-4">
+                Who owns my data with Goodkit?
+              </h3>
+
+              <!-- Text -->
+              <p class="text-muted mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus massa, tincidunt at nunc sed, venenatis convallis neque. Praesent aliquet lacus quis ipsum lobortis faucibus. Aenean lorem lacus, finibus a dictum sit amet.
+              </p>
+
+            </div>
+
+            <!-- Item -->
+            <div class="mt-8 mt-md-9">
+
+              <!-- Heading -->
+              <h3 class="font-family-sans-serif mb-4">
+                Why is this theme the best?
+              </h3>
+
+              <!-- Text -->
+              <p class="text-muted mb-0">
+                Suspendisse potenti. Donec nec magna dui. Proin a nibh nisl. Duis convallis odio eget augue sodales accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tellus massa, tincidunt at nunc sed, venenatis convallis.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="position-relative py-10 py-md-12">
+
+      <!-- Decoration -->
+      <div class="position-absolute bottom-right text-warning">
+        @@include("partials/decorations/decoration-3.svg")
+      </div>
+
+      <!-- Content -->
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+
+            <!-- Divider -->
+            <hr class="hr-sm border-warning mb-10 mb-md-12">
+
+            <!-- Heading -->
+            <h2 class="display-3 text-center mb-4">
+              Need to <span class="text-underline-warning">chat?</span>
+            </h2>
+
+            <!-- Text -->
+            <p class="text-center text-muted mb-9">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+            <!-- Form -->
+            <form>
+              <div class="form-group">
+                <label class="sr-only" for="contactName">
+                  Your name
+                </label>
+                <input class="form-control" id="contactName" type="text" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="contactEmail">
+                  Your email
+                </label>
+                <input class="form-control" id="contactEmail" type="email" placeholder="Your email">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="contactText">
+                  How can we help?
+                </label>
+                <textarea class="form-control" id="contactText" placeholder="How can we help?" rows="6"></textarea>
+              </div>
+              <button class="btn btn-block btn-primary">
+                Contact Sales
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    @@include("partials/footer.html", {
+    "classList": "bg-dark border-multicolor"
+    })
+
+    <!-- JAVASCRIPT -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

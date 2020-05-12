@@ -1,0 +1,136 @@
+//
+// images.scss
+//
+
+// Fluid
+
+.img-fluid > * {
+  width: 100%;
+}
+
+
+// Image grid
+
+.img-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// 1
+
+.img-grid-1 .img-grid-item:nth-child(1) {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.img-grid-1 .img-grid-item:nth-child(2) {
+  width: 15%;
+  margin-top: 15%;
+  margin-left: -80%;
+}
+
+.img-grid-1 .img-grid-item:nth-child(3) {
+  width: 20%;
+  margin-top: 10%;
+  margin-left: 60%;
+}
+
+.img-grid-1 .img-grid-item:nth-child(4) {
+  width: 20%;
+  margin-top: 40%;
+  margin-left: -85%;
+}
+
+.img-grid-1 .img-grid-item:nth-child(5) {
+  width: 15%;
+  margin-top: 40%;
+  margin-left: 55%;
+}
+
+.img-grid-1 .img-grid-item:nth-child(6) {
+  width: 15%;
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+.img-grid-1 .img-grid-item:nth-child(7) {
+  width: 20%;
+  margin-top: -10%;
+  margin-left: 10%;
+}
+
+// 2
+
+.img-grid-2 .img-grid-item:nth-child(1) {
+  width: 55%;
+  margin-top: 0%;
+  margin-left: 35%;
+  z-index: 2;
+}
+
+.img-grid-2 .img-grid-item:nth-child(2) {
+  width: 55%;
+  margin-top: -30%;
+  margin-left: 0%;
+  z-index: 1;
+}
+
+.img-grid-2 .img-grid-item:nth-child(3) {
+  width: 60%;
+  margin-top: -35%;
+  margin-left: 40%;
+  z-index: 0;
+}
+
+// 3
+
+.img-grid-3 .img-grid-item:nth-child(1) {
+  width: 80%;
+  margin-top: 15%;
+  margin-left: 10%;
+}
+
+.img-grid-3 .img-grid-item:nth-child(2) {
+  width: 30%;
+  margin-left: -20%;
+}
+
+.img-grid-3 .img-grid-item:nth-child(3) {
+  width: 25%;
+  margin-top: 55%;
+  margin-left: -40%;
+}
+
+.img-grid-3 .img-grid-item:nth-child(4) {
+  width: 100%;
+  margin-top: 75%;
+  margin-left: -85%;
+
+  @include media-breakpoint-up(md) {
+    width: 40%;
+    margin-top: 40%;
+  }
+}
+
+// 4
+
+.img-grid-4 .img-grid-item:nth-child(1) {
+  width: 70%;
+  margin-top: 0%;
+  margin-left: 30%;
+  z-index: 2;
+}
+
+.img-grid-4 .img-grid-item:nth-child(2) {
+  width: 75%;
+  margin-top: -15%;
+  margin-left: 0%;
+  z-index: 0;
+}
+
+.img-grid-4 .img-grid-item:nth-child(3) {
+  width: 40%;
+  margin-top: -25%;
+  margin-left: 50%;
+  z-index: 1;
+}

@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Badges"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Badges",
+            "isCustom": false,
+            "description": "A small count and labeling component.",
+            "bootstrapDocs": "https://getbootstrap.com/docs/4.0/components/badge/",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <span class="badge badge-primary">Primary</span>
+                <span class="badge badge-secondary">Secondary</span>
+                <span class="badge badge-success">Success</span>
+                <span class="badge badge-danger">Danger</span>
+                <span class="badge badge-warning">Warning</span>
+                <span class="badge badge-info">Info</span>
+                <span class="badge badge-light">Light</span>
+                <span class="badge badge-dark">Dark</span>
+
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Soft",
+            "id": "soft",
+            "isCustom": true,
+            "description": "Creates a soft variant of a corresponding contextual badge variation. These can be used exactly like Bootstrap's core badges, including modifying classes like <code>.badge-pill</code>, as an <code>&lt;a&gt;</code> itself, or inside of <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> elements."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Badges -->
+                <span class="badge badge-primary-soft">Primary</span>
+                <span class="badge badge-secondary-soft">Secondary</span>
+                <span class="badge badge-success-soft">Success</span>
+                <span class="badge badge-info-soft">Info</span>
+                <span class="badge badge-warning-soft">Warning</span>
+                <span class="badge badge-danger-soft">Danger</span>
+                <span class="badge badge-light-soft">Light</span>
+                <span class="badge badge-dark-soft">Dark</span>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;span&nbsp;class=&quot;badge&nbsp;badge-primary-soft&quot;&gt;Primary&lt;/span&gt;<br />&lt;span&nbsp;class=&quot;badge&nbsp;badge-secondary-soft&quot;&gt;Secondary&lt;/span&gt;<br />&lt;span&nbsp;class=&quot;badge&nbsp;badge-success-soft&quot;&gt;Success&lt;/span&gt;<br />&lt;span&nbsp;class=&quot;badge&nbsp;badge-info-soft&quot;&gt;Info&lt;/span&gt;<br />&lt;span&nbsp;class=&quot;badge&nbsp;badge-warning-soft&quot;&gt;Warning&lt;/span&gt;<br />&lt;span&nbsp;class=&quot;badge&nbsp;badge-danger-soft&quot;&gt;Danger&lt;/span&gt;<br />&lt;span&nbsp;class=&quot;badge&nbsp;badge-light-soft&quot;&gt;Light&lt;/span&gt;<br />&lt;span&nbsp;class=&quot;badge&nbsp;badge-dark-soft&quot;&gt;Dark&lt;/span&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Uppercase",
+            "id": "uppercase",
+            "isCustom": false,
+            "description": "Combine badges with text utilities to get a completely new look."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Badge -->
+                <span class="badge badge-primary h6 text-uppercase">Primary</span>
+                <span class="badge badge-primary-soft h6 text-uppercase">Primary soft</span>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;span&nbsp;class=&quot;badge&nbsp;badge-primary&nbsp;h6&nbsp;text-uppercase&quot;&gt;Primary&lt;/span&gt;<br />&lt;span&nbsp;class=&quot;badge&nbsp;badge-primary-soft&nbsp;h6&nbsp;text-uppercase&quot;&gt;Primary&nbsp;soft&lt;/span&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Soft", "url": "#soft"}, {"title": "Uppercase", "url": "#uppercase"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

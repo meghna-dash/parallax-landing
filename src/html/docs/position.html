@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Position"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Position",
+            "isCustom": true,
+            "description": "Additional responsive positioning utilities.",
+            "bootstrapDocs": "https://getbootstrap.com/docs/4.4/utilities/position/",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- List -->
+            <ul>
+              <li>
+                <code>.top-{sm|md|lg|xl}-left</code> - positions an element in the top left corner.
+              </li>
+              <li>
+                <code>.top-{sm|md|lg|xl}-right</code> - positions an element in the top right corner.
+              </li>
+              <li>
+                <code>.top-{sm|md|lg|xl}-center</code> - positions an element on top centered horizontally.
+              </li>
+              <li>
+                <code>.bottom-{sm|md|lg|xl}-left</code> - positions an element in the bottom left corner.
+              </li>
+              <li>
+                <code>.bottom-{sm|md|lg|xl}-right</code> - positions an element in the bottom right corner.
+              </li>
+              <li>
+                <code>.bottom-{sm|md|lg|xl}-center</code> - positions an element on bottom centered horizontally.
+              </li>
+            </ul>
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;position-absolute&nbsp;top-left&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;position-absolute&nbsp;top-right&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;position-absolute&nbsp;top-center&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;position-absolute&nbsp;bottom-left&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;position-absolute&nbsp;bottom-right&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;position-absolute&nbsp;bottom-center&quot;&gt;&lt;/div&gt;<br /><br />&lt;!--&nbsp;Responsive&nbsp;--&gt;<br />&lt;div&nbsp;class=&quot;position-absolute&nbsp;top-center&nbsp;top-md-left&quot;&gt;&lt;/div&gt;<br />&lt;div&nbsp;class=&quot;position-absolute&nbsp;bottom-center&nbsp;bottom-lg-right&quot;&gt;&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": []
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

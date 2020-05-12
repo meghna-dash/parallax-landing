@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light"
+    })
+
+    <!-- CONTENT -->
+    <section class="pt-6 pt-md-6 pb-10 pb-md-12">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 text-center">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary mb-5">
+              Contact us
+            </h6>
+
+            <!-- Heading -->
+            <h1 class="display-3 mb-4">
+              How can we help you?
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-9">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+            </p>
+
+            <!-- Items -->
+            <div class="row mb-9">
+              <div class="col-md py-md-4 mb-6 mb-md-0">
+
+                <!-- Chat -->
+                <a class="text-reset text-decoration-none" href="#!">
+
+                  <!-- Icon -->
+                  <div class="icon text-primary-light mb-3">
+                    @@include("partials/icons/duotone-icons/Communication/Chat#6.svg")
+                  </div>
+
+                  <!-- Heading -->
+                  <h6 class="text-uppercase mb-0">
+                    Live chat
+                  </h6>
+
+                  <!-- Text -->
+                  <small class="text-muted">
+                    Wait time of ~10 minutes
+                  </small>
+
+                </a>
+
+              </div>
+              <div class="col-md py-md-4 mb-6 mb-md-0 border-left-md">
+
+                <!-- Chat -->
+                <a class="text-reset text-decoration-none" href="mailto:#!">
+
+                  <!-- Icon -->
+                  <div class="icon text-primary-light mb-3">
+                    @@include("partials/icons/duotone-icons/Communication/Mail-opened.svg")
+                  </div>
+
+                  <!-- Heading -->
+                  <h6 class="text-uppercase mb-0">
+                    Email us
+                  </h6>
+
+                  <!-- Text -->
+                  <small class="text-muted">
+                    We reply in ~24 hours
+                  </small>
+
+                </a>
+
+              </div>
+              <div class="col-md py-md-4 border-left-md">
+
+                <!-- Chat -->
+                <a class="text-reset text-decoration-none" href="tel:#!">
+
+                  <!-- Icon -->
+                  <div class="icon text-primary-light mb-3">
+                    @@include("partials/icons/duotone-icons/Communication/Active-call.svg")
+                  </div>
+
+                  <!-- Heading -->
+                  <h6 class="text-uppercase mb-0">
+                    Call
+                  </h6>
+
+                  <!-- Text -->
+                  <small class="text-muted">
+                    7am - 9pm PST
+                  </small>
+
+                </a>
+
+              </div>
+            </div>
+
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+
+                  <!-- Name -->
+                  <div class="form-group">
+                    <label class="sr-only" for="contactName">
+                      Your name
+                    </label>
+                    <input class="form-control" id="contactName" type="text" placeholder="Your name">
+                  </div>
+
+                </div>
+                <div class="col-md-6">
+
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label class="sr-only" for="contactEmail">
+                      Your email
+                    </label>
+                    <input class="form-control" id="contactEmail" type="email" placeholder="Your email">
+                  </div>
+
+                </div>
+                <div class="col-12">
+
+                  <!-- Message -->
+                  <div class="form-group">
+                    <label class="sr-only" for="contactMessage">
+                      Your message
+                    </label>
+                    <textarea class="form-control" id="contactMessage" placeholder="Your message" rows="7"></textarea>
+                  </div>
+
+                </div>
+              </div>
+              <button class="btn btn-block btn-primary">
+                Send a Message
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    @@include("partials/footer.html", {
+    "classList": "bg-dark border-multicolor"
+    })
+
+    <!-- JAVASCRIPT -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

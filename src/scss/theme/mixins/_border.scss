@@ -1,0 +1,9 @@
+//
+// border.scss
+//
+
+@mixin border-multicolor {
+  border-width: 0;
+  border-top: $border-width * 4 solid;
+  border-image: linear-gradient(to right, $gray-600, $gray-600 20%, $danger 20%, $danger 40%, $warning 40%, $warning 60%, $primary 60%, $primary 80%, #FFCCCC 80%) 1;
+}

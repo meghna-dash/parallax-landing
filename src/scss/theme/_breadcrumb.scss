@@ -1,0 +1,32 @@
+//
+// breadcrumb.scss
+//
+
+// Divider
+
+.breadcrumb-item + .breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  font-family: "Feather";
+}
+
+// Variant
+
+.breadcrumb-dark {
+  background-color: $breadcrumb-dark-bg;
+}
+
+.breadcrumb-dark .breadcrumb-item {
+  color: $breadcrumb-dark-active-color;
+}
+
+.breadcrumb-dark .breadcrumb-item > a {
+  color: $breadcrumb-dark-color;
+}
+
+.breadcrumb-dark .breadcrumb-item + .breadcrumb-item::before {
+  color: $breadcrumb-dark-divider-color;
+}
