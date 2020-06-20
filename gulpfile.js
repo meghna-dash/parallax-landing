@@ -13,7 +13,7 @@ const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 const useref = require('gulp-useref');
 
-const gtag = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156446909-3"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-156446909-3");</script>';
+// const gtag = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156446909-3"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-156446909-3");</script>';
 
 const paths = {
   src: {
@@ -135,7 +135,7 @@ gulp.task('useref', () => {
 gulp.task('useref:preview', () => {
   return gulp
     .src(paths.dist.html.files)
-    .pipe(replace('</head>', '  <!-- Global site tag (gtag.js) - Google Analytics -->\n    ' + gtag + '\n\n  </head>'))
+    // .pipe(replace('</head>', '  <!-- Global site tag (gtag.js) - Google Analytics -->\n    ' + gtag + '\n\n  </head>'))
     .pipe(useref())
     .pipe(cached())
     .pipe(gulpif('*.js', uglify()))

@@ -11,11 +11,12 @@ $gray-300: #DCE0F3 !default;
 $gray-500: #8D9AAE !default;
 $gray-600: #575A7B !default;
 $gray-800: #342E6C !default;
-$gray-900: #2B265A !default;
-$black: #1B1642 !default;
+$gray-900: #082b6e !default;
+$black: #082b6e !default;
 
 $primary-dark: #564CAF !default;
-$primary: #6658EA !default;
+$primary: #f7598b !default;
+$main: #187bcd !default;
 $primary-light: #687DED !default;
 $success: #2CD4A2 !default;
 $warning: #F5C070 !default;
@@ -104,7 +105,7 @@ $spacers: map-merge(
     10: ($spacer * 5), // 80px
     11: ($spacer * 6), // 96px
     12: ($spacer * 8), // 128px
-    13: ($spacer * 10), // 160px 
+    13: ($spacer * 10), // 160px
     14: ($spacer * 12), // 192px
     15: ($spacer * 14), // 224px
     16: ($spacer * 16), // 256px
@@ -193,7 +194,7 @@ $border-sizing: map-merge(
     "5": 5,
     "6": 6,
     "7": 7
-  ), 
+  ),
   $border-sizing
 );
 /* beautify ignore:end */

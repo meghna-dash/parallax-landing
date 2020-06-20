@@ -38,8 +38,10 @@
 
     <title>Parallax</title>
 
+    <link href="/prism/prism.css" rel="stylesheet" />
   </head>
   <body style="overflow-x: visible;">
+    <script src="/prism/prism.js"></script>
 
     <!-- MODALS -->
     <!-- Sign in -->
@@ -279,7 +281,9 @@
       <div class="container-lg">
 
         <!-- Brand -->
-        <a class="navbar-brand d-lg-none" href="./index.html">Parallax</a>
+        <a class="navbar-brand d-lg-none" href="./index.html">
+          <img src="assets/img/logo.png" style="width: 200px; height: auto" alt="...">
+        </a>
 
         <!-- Toggler -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -292,50 +296,33 @@
           <!-- Navigation -->
           <ul class="navbar-nav justify-content-end w-100">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="landingsDropdown" href="https://dash.parallaxux.com/auth/sign-up" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Get Started
+              <a class="nav-link dropdown-toggle" id="landingsDropdown" href="./blog.html" role="button" aria-haspopup="true" aria-expanded="false">
+                Blog
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Learn More
+              <a class="nav-link dropdown-toggle" id="pagesDropdown" href="./pricing.html" role="button" aria-haspopup="true" aria-expanded="false">
+                Pricing
               </a>
             </li>
           </ul>
 
           <!-- Brand -->
-          <a class="navbar-brand d-none d-lg-block px-lg-6" href="./index.html">Parallax</a>
+          <a class="navbar-brand d-none d-lg-block px-lg-6" href=".">
+            <img src="assets/img/logo.png" style="width: 270px; height: auto" alt="...">
+          </a>
 
           <!-- Navigation -->
           <ul class="navbar-nav justify-content-start w-100">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="accountDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Blog
+              <a class="nav-link dropdown-toggle" id="accountDropdown" href="https://dash.parallaxux.com" role="button" aria-haspopup="true" aria-expanded="false">
+                Log in
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="docsDropdown" href="./contact.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contact Us
+              <a class="nav-link dropdown-toggle" id="docsDropdown" href="https://dash.parallaxux.com/auth/sign-up" role="button" aria-haspopup="true" aria-expanded="false">
+                Try now
               </a>
-            </li>
-            <li class="nav-item d-lg-none">
-              <div class="nav-link">
-
-                <!-- Text -->
-                <span>
-                  Sans Serif Headers
-                </span>
-
-                <!-- Switch -->
-                <form class="ml-auto mr-n3">
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input family-switch" id="familySwitchMobile" onchange="switchFamily(this.checked)">
-                    <label class="custom-control-label" for="familySwitchMobile"></label>
-                  </div>
-                </form>
-
-
-              </div>
             </li>
           </ul>
 
@@ -356,7 +343,7 @@
 
               <!-- Heading -->
               <h1 class="display-2 mb-4">
-                Easy product guides for your new <span class="text-underline-warning d-none d-xl-inline"><span data-typed data-options='{"strings": ["SaaS platform", "management system", "e-learning platform", "medical assistant", "marketing platform"]}'></span></span><span class="text-underline-warning d-xl-none">business</span>.
+                We help your users <span class="text-underline-warning d-none d-xl-inline">succeed</span>.
               </h1>
 
             </div>
@@ -366,15 +353,18 @@
 
               <!-- Text -->
               <p class="lead text-muted">
-                Parallax helps you boost conversion and retention by providing product guides to your users when they need it, where they need it.
+                Blueriddle helps you boost customer satisfaction and reduce churn. Help your users when they need it, where they need it.
+              </p>
+              <p class="lead text-muted">
+                Try it for free. No credit card required.
               </p>
 
               <!-- Buttons -->
               <a class="btn btn-primary lift" href="https://dash.parallaxux.com/auth/sign-up" target="_blank">
-                Try Now
+                Try now
               </a>
-              <a class="btn btn-white lift ml-3" href="docs/index.html">
-                <span class="d-sm-none">Docs</span><span class="d-none d-sm-inline-block">Learn More</span>
+              <a class="btn btn-white lift ml-3" onclick="window.scrollBy(0, 650)">
+                Learn more
               </a>
 
             </div>
@@ -385,54 +375,71 @@
     </div>
 
     <!-- SHAPE -->
-    <div class="position-relative">
+    <!-- <div class="position-relative">
       <div class="shape shape-fluid-x shape-bottom text-white pb-18">
         <div class="shape-img pb-9 pb-md-15">
           <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 0h100v25H75L25 50H0z" fill="currentColor"/></svg>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- TASKS -->
-    <section class="pt-10 pt-md-12 bg-dark">
+    <!-- <section class="pt-10 pt-md-12 bg-dark">
       <div class="container-lg">
         <div class="row">
           <div class="col-12">
 
-            <!-- Decoration -->
             <div class="position-absolute top-center top-md-left text-warning mt-n8 ml-md-n8">
               <svg width="185" height="186" viewBox="0 0 185 186" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="currentColor"/><circle cx="22" cy="2" r="2" fill="currentColor"/><circle cx="42" cy="2" r="2" fill="currentColor"/><circle cx="62" cy="2" r="2" fill="currentColor"/><circle cx="82" cy="2" r="2" fill="currentColor"/><circle cx="102" cy="2" r="2" fill="currentColor"/><circle cx="122" cy="2" r="2" fill="currentColor"/><circle cx="142" cy="2" r="2" fill="currentColor"/><circle cx="162" cy="2" r="2" fill="currentColor"/><circle cx="182" cy="2" r="2" fill="currentColor"/><circle cx="2" cy="22" r="2" fill="currentColor"/><circle cx="22" cy="22" r="2" fill="currentColor"/><circle cx="42" cy="22" r="2" fill="currentColor"/><circle cx="62" cy="22" r="2" fill="currentColor"/><circle cx="82" cy="22" r="2" fill="currentColor"/><circle cx="102" cy="22" r="2" fill="currentColor"/><circle cx="122" cy="22" r="2" fill="currentColor"/><circle cx="142" cy="22" r="2" fill="currentColor"/><circle cx="162" cy="22" r="2" fill="currentColor"/><circle cx="182" cy="22" r="2" fill="currentColor"/><circle cx="2" cy="42" r="2" fill="currentColor"/><circle cx="22" cy="42" r="2" fill="currentColor"/><circle cx="42" cy="42" r="2" fill="currentColor"/><circle cx="62" cy="42" r="2" fill="currentColor"/><circle cx="82" cy="42" r="2" fill="currentColor"/><circle cx="102" cy="42" r="2" fill="currentColor"/><circle cx="122" cy="42" r="2" fill="currentColor"/><circle cx="142" cy="42" r="2" fill="currentColor"/><circle cx="162" cy="42" r="2" fill="currentColor"/><circle cx="182" cy="42" r="2" fill="currentColor"/><circle cx="2" cy="62" r="2" fill="currentColor"/><circle cx="22" cy="62" r="2" fill="currentColor"/><circle cx="42" cy="62" r="2" fill="currentColor"/><circle cx="62" cy="62" r="2" fill="currentColor"/><circle cx="82" cy="62" r="2" fill="currentColor"/><circle cx="102" cy="62" r="2" fill="currentColor"/><circle cx="122" cy="62" r="2" fill="currentColor"/><circle cx="142" cy="62" r="2" fill="currentColor"/><circle cx="162" cy="62" r="2" fill="currentColor"/><circle cx="182" cy="62" r="2" fill="currentColor"/><circle cx="2" cy="82" r="2" fill="currentColor"/><circle cx="22" cy="82" r="2" fill="currentColor"/><circle cx="42" cy="82" r="2" fill="currentColor"/><circle cx="62" cy="82" r="2" fill="currentColor"/><circle cx="82" cy="82" r="2" fill="currentColor"/><circle cx="102" cy="82" r="2" fill="currentColor"/><circle cx="122" cy="82" r="2" fill="currentColor"/><circle cx="142" cy="82" r="2" fill="currentColor"/><circle cx="162" cy="82" r="2" fill="currentColor"/><circle cx="182" cy="82" r="2" fill="currentColor"/><circle cx="2" cy="102" r="2" fill="currentColor"/><circle cx="22" cy="102" r="2" fill="currentColor"/><circle cx="42" cy="102" r="2" fill="currentColor"/><circle cx="62" cy="102" r="2" fill="currentColor"/><circle cx="82" cy="102" r="2" fill="currentColor"/><circle cx="102" cy="102" r="2" fill="currentColor"/><circle cx="122" cy="102" r="2" fill="currentColor"/><circle cx="142" cy="102" r="2" fill="currentColor"/><circle cx="162" cy="102" r="2" fill="currentColor"/><circle cx="182" cy="102" r="2" fill="currentColor"/><circle cx="2" cy="122" r="2" fill="currentColor"/><circle cx="22" cy="122" r="2" fill="currentColor"/><circle cx="42" cy="122" r="2" fill="currentColor"/><circle cx="62" cy="122" r="2" fill="currentColor"/><circle cx="82" cy="122" r="2" fill="currentColor"/><circle cx="102" cy="122" r="2" fill="currentColor"/><circle cx="122" cy="122" r="2" fill="currentColor"/><circle cx="142" cy="122" r="2" fill="currentColor"/><circle cx="162" cy="122" r="2" fill="currentColor"/><circle cx="182" cy="122" r="2" fill="currentColor"/><circle cx="2" cy="142" r="2" fill="currentColor"/><circle cx="22" cy="142" r="2" fill="currentColor"/><circle cx="42" cy="142" r="2" fill="currentColor"/><circle cx="62" cy="142" r="2" fill="currentColor"/><circle cx="82" cy="142" r="2" fill="currentColor"/><circle cx="102" cy="142" r="2" fill="currentColor"/><circle cx="122" cy="142" r="2" fill="currentColor"/><circle cx="142" cy="142" r="2" fill="currentColor"/><circle cx="162" cy="142" r="2" fill="currentColor"/><circle cx="182" cy="142" r="2" fill="currentColor"/><circle cx="2" cy="162" r="2" fill="currentColor"/><circle cx="22" cy="162" r="2" fill="currentColor"/><circle cx="42" cy="162" r="2" fill="currentColor"/><circle cx="62" cy="162" r="2" fill="currentColor"/><circle cx="82" cy="162" r="2" fill="currentColor"/><circle cx="102" cy="162" r="2" fill="currentColor"/><circle cx="122" cy="162" r="2" fill="currentColor"/><circle cx="142" cy="162" r="2" fill="currentColor"/><circle cx="162" cy="162" r="2" fill="currentColor"/><circle cx="182" cy="162" r="2" fill="currentColor"/><circle cx="2" cy="182" r="2" fill="currentColor"/><circle cx="22" cy="182" r="2" fill="currentColor"/><circle cx="42" cy="182" r="2" fill="currentColor"/><circle cx="62" cy="182" r="2" fill="currentColor"/><circle cx="82" cy="182" r="2" fill="currentColor"/><circle cx="102" cy="182" r="2" fill="currentColor"/><circle cx="122" cy="182" r="2" fill="currentColor"/><circle cx="142" cy="182" r="2" fill="currentColor"/><circle cx="162" cy="182" r="2" fill="currentColor"/><circle cx="182" cy="182" r="2" fill="currentColor"/></svg>
             </div>
 
-            <!-- Stack -->
             <div class="card-stack">
 
-              <!-- Card -->
               <div class="card-stack-item mb-9">
                 <div class="card card-lg rounded overflow-hidden">
                   <div class="row no-gutters">
-                    <div class="col-md order-md-1 d-flex align-items-end bg-primary">
-                      <img class="card-img-top" src="assets/img/panel.png" alt="...">
+                    <div class="col-md order-md-1 d-flex bg-main">
+                      <img class="card-img rounded-top-left" src="assets/img/illustrations/illustration-9.png" alt="..." style="top: 0; bottom: 0; margin: auto; margin-left: -25px; position: absolute">
                     </div>
-                    <div class="col-md-5 order-md-0 d-flex align-items-center bg-white">
+
+                    <div class="col-md-7 order-md-0 d-flex align-items-center bg-white">
                       <div class="card-body text-center">
 
-                        <!-- Icon -->
-                        <div class="icon text-primary-light mx-auto mb-4">
-                          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M6 3h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2zm-.5 2a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm12 0a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm-12 4a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm12 0a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm-12 4a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm12 0a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm0 4a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm-12 0a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1z" fill="#335EEA" opacity=".3"/><path d="M11.352 14.572l2.605-1.78a.5.5 0 00.001-.825l-2.605-1.792a.5.5 0 00-.783.412v3.572a.5.5 0 00.782.413z" fill="#335EEA"/></g></svg>
-                        </div>
-
-                        <!-- Heading -->
                         <h1 class="font-family-sans-serif mb-4 mt-auto">
-                          Eliminate confusion about how to use your product
+                          Enable your customers to <span class="text-underline-warning">find success</span>.
                         </h1>
 
-                        <!-- Text -->
                         <p>
-                          Bad onboarding and a lack of support are some of the biggest causes of churn in software products. Parallax helps you show your users exactly how to get started with your product without you having to be over their shoulder. We help you deliver video guides that are easy for you and your users.
+                          Parallax lets you bring users closer to that powerful "aha" moment without needing to be in the room with them. The more successful your users are early on, the more likely they are to keep using your product.
                         </p>
 
-                        <!-- Link -->
+                        <a class="h6 text-uppercase text-decoration-none mt-auto" href="https://dash.parallaxux.com/auth/sign-up">
+                          Get Started <i class="fe fe-arrow-right"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-stack-item mb-9">
+                <div class="card card-lg rounded overflow-hidden">
+                  <div class="row no-gutters">
+                    <div class="col-md d-flex align-items-end">
+                      <img class="card-img-top" src="assets/img/panel.png" alt="..." style="border: 2px solid #ddd; border-radius: 16px;">
+                    </div>
+                    <div class="col-md-7 order-md-0 d-flex align-items-center bg-white">
+                      <div class="card-body text-center">
+
+                        <h1 class="font-family-sans-serif mb-4 mt-auto">
+                          Eliminate confusion about how to <span class="text-underline-warning">use your product</span>.
+                        </h1>
+
+                        <p>
+                          Bad onboarding and a lack of support are two of the biggest causes of churn in software products. Parallax helps you show your users exactly how to use your product without you having to be in the room. Deliver video guides that are easy for you and your users.
+                        </p>
+
                         <a class="h6 text-uppercase text-decoration-none mt-auto" href="https://dash.parallaxux.com/auth/sign-up">
                           Get Started <i class="fe fe-arrow-right"></i>
                         </a>
@@ -448,49 +455,41 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- OVERFLOW -->
     <div class="overflow-hidden">
 
       <!-- SHAPE -->
-      <div class="position-relative">
+      <!-- <div class="position-relative">
         <div class="shape shape-fluid-x shape-bottom text-dark">
           <div class="shape-img pb-8 pb-md-11">
             <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 0h100v50H75L25 25H0z" fill="currentColor"/></svg>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- ABOUT -->
-      <section class="bg-light pt-12 pt-md-16">
+      <section class="bg-white pt-12 pt-md-16">
         <div class="container-lg">
           <div class="row align-items-center justify-content-between">
-            <div class="col-md-5">
+            <div class="col-md-7">
 
-              <!-- Card -->
+              <!-- Video -->
               <div class="position-relative">
-
-                <!-- Decoration -->
-                <div class="position-absolute top-center top-md-left text-warning mt-n9 ml-md-n9">
-                  <svg width="278" height="278" viewBox="0 0 278 278" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M3 0h2v8H3z"/><path fill="currentColor" d="M0 3h8v2H0zM33 0h2v8h-2z"/><path fill="currentColor" d="M30 3h8v2h-8zM63 0h2v8h-2z"/><path fill="currentColor" d="M60 3h8v2h-8zM93 0h2v8h-2z"/><path fill="currentColor" d="M90 3h8v2h-8zM123 0h2v8h-2z"/><path fill="currentColor" d="M120 3h8v2h-8zM153 0h2v8h-2z"/><path fill="currentColor" d="M150 3h8v2h-8zM183 0h2v8h-2z"/><path fill="currentColor" d="M180 3h8v2h-8zM213 0h2v8h-2z"/><path fill="currentColor" d="M210 3h8v2h-8zM243 0h2v8h-2z"/><path fill="currentColor" d="M240 3h8v2h-8zM273 0h2v8h-2z"/><path fill="currentColor" d="M270 3h8v2h-8zM3 30h2v8H3z"/><path fill="currentColor" d="M0 33h8v2H0zM33 30h2v8h-2z"/><path fill="currentColor" d="M30 33h8v2h-8zM63 30h2v8h-2z"/><path fill="currentColor" d="M60 33h8v2h-8zM93 30h2v8h-2z"/><path fill="currentColor" d="M90 33h8v2h-8zM123 30h2v8h-2z"/><path fill="currentColor" d="M120 33h8v2h-8zM153 30h2v8h-2z"/><path fill="currentColor" d="M150 33h8v2h-8zM183 30h2v8h-2z"/><path fill="currentColor" d="M180 33h8v2h-8zM213 30h2v8h-2z"/><path fill="currentColor" d="M210 33h8v2h-8zM243 30h2v8h-2z"/><path fill="currentColor" d="M240 33h8v2h-8zM273 30h2v8h-2z"/><path fill="currentColor" d="M270 33h8v2h-8zM3 60h2v8H3z"/><path fill="currentColor" d="M0 63h8v2H0zM33 60h2v8h-2z"/><path fill="currentColor" d="M30 63h8v2h-8zM63 60h2v8h-2z"/><path fill="currentColor" d="M60 63h8v2h-8zM93 60h2v8h-2z"/><path fill="currentColor" d="M90 63h8v2h-8zM123 60h2v8h-2z"/><path fill="currentColor" d="M120 63h8v2h-8zM153 60h2v8h-2z"/><path fill="currentColor" d="M150 63h8v2h-8zM183 60h2v8h-2z"/><path fill="currentColor" d="M180 63h8v2h-8zM213 60h2v8h-2z"/><path fill="currentColor" d="M210 63h8v2h-8zM243 60h2v8h-2z"/><path fill="currentColor" d="M240 63h8v2h-8zM273 60h2v8h-2z"/><path fill="currentColor" d="M270 63h8v2h-8zM3 90h2v8H3z"/><path fill="currentColor" d="M0 93h8v2H0zM33 90h2v8h-2z"/><path fill="currentColor" d="M30 93h8v2h-8zM63 90h2v8h-2z"/><path fill="currentColor" d="M60 93h8v2h-8zM93 90h2v8h-2z"/><path fill="currentColor" d="M90 93h8v2h-8zM123 90h2v8h-2z"/><path fill="currentColor" d="M120 93h8v2h-8zM153 90h2v8h-2z"/><path fill="currentColor" d="M150 93h8v2h-8zM183 90h2v8h-2z"/><path fill="currentColor" d="M180 93h8v2h-8zM213 90h2v8h-2z"/><path fill="currentColor" d="M210 93h8v2h-8zM243 90h2v8h-2z"/><path fill="currentColor" d="M240 93h8v2h-8zM273 90h2v8h-2z"/><path fill="currentColor" d="M270 93h8v2h-8zM3 120h2v8H3z"/><path fill="currentColor" d="M0 123h8v2H0zM33 120h2v8h-2z"/><path fill="currentColor" d="M30 123h8v2h-8zM63 120h2v8h-2z"/><path fill="currentColor" d="M60 123h8v2h-8zM93 120h2v8h-2z"/><path fill="currentColor" d="M90 123h8v2h-8zM123 120h2v8h-2z"/><path fill="currentColor" d="M120 123h8v2h-8zM153 120h2v8h-2z"/><path fill="currentColor" d="M150 123h8v2h-8zM183 120h2v8h-2z"/><path fill="currentColor" d="M180 123h8v2h-8zM213 120h2v8h-2z"/><path fill="currentColor" d="M210 123h8v2h-8zM243 120h2v8h-2z"/><path fill="currentColor" d="M240 123h8v2h-8zM273 120h2v8h-2z"/><path fill="currentColor" d="M270 123h8v2h-8zM3 150h2v8H3z"/><path fill="currentColor" d="M0 153h8v2H0zM33 150h2v8h-2z"/><path fill="currentColor" d="M30 153h8v2h-8zM63 150h2v8h-2z"/><path fill="currentColor" d="M60 153h8v2h-8zM93 150h2v8h-2z"/><path fill="currentColor" d="M90 153h8v2h-8zM123 150h2v8h-2z"/><path fill="currentColor" d="M120 153h8v2h-8zM153 150h2v8h-2z"/><path fill="currentColor" d="M150 153h8v2h-8zM183 150h2v8h-2z"/><path fill="currentColor" d="M180 153h8v2h-8zM213 150h2v8h-2z"/><path fill="currentColor" d="M210 153h8v2h-8zM243 150h2v8h-2z"/><path fill="currentColor" d="M240 153h8v2h-8zM273 150h2v8h-2z"/><path fill="currentColor" d="M270 153h8v2h-8zM3 180h2v8H3z"/><path fill="currentColor" d="M0 183h8v2H0zM33 180h2v8h-2z"/><path fill="currentColor" d="M30 183h8v2h-8zM63 180h2v8h-2z"/><path fill="currentColor" d="M60 183h8v2h-8zM93 180h2v8h-2z"/><path fill="currentColor" d="M90 183h8v2h-8zM123 180h2v8h-2z"/><path fill="currentColor" d="M120 183h8v2h-8zM153 180h2v8h-2z"/><path fill="currentColor" d="M150 183h8v2h-8zM183 180h2v8h-2z"/><path fill="currentColor" d="M180 183h8v2h-8zM213 180h2v8h-2z"/><path fill="currentColor" d="M210 183h8v2h-8zM243 180h2v8h-2z"/><path fill="currentColor" d="M240 183h8v2h-8zM273 180h2v8h-2z"/><path fill="currentColor" d="M270 183h8v2h-8zM3 210h2v8H3z"/><path fill="currentColor" d="M0 213h8v2H0zM33 210h2v8h-2z"/><path fill="currentColor" d="M30 213h8v2h-8zM63 210h2v8h-2z"/><path fill="currentColor" d="M60 213h8v2h-8zM93 210h2v8h-2z"/><path fill="currentColor" d="M90 213h8v2h-8zM123 210h2v8h-2z"/><path fill="currentColor" d="M120 213h8v2h-8zM153 210h2v8h-2z"/><path fill="currentColor" d="M150 213h8v2h-8zM183 210h2v8h-2z"/><path fill="currentColor" d="M180 213h8v2h-8zM213 210h2v8h-2z"/><path fill="currentColor" d="M210 213h8v2h-8zM243 210h2v8h-2z"/><path fill="currentColor" d="M240 213h8v2h-8zM273 210h2v8h-2z"/><path fill="currentColor" d="M270 213h8v2h-8zM3 240h2v8H3z"/><path fill="currentColor" d="M0 243h8v2H0zM33 240h2v8h-2z"/><path fill="currentColor" d="M30 243h8v2h-8zM63 240h2v8h-2z"/><path fill="currentColor" d="M60 243h8v2h-8zM93 240h2v8h-2z"/><path fill="currentColor" d="M90 243h8v2h-8zM123 240h2v8h-2z"/><path fill="currentColor" d="M120 243h8v2h-8zM153 240h2v8h-2z"/><path fill="currentColor" d="M150 243h8v2h-8zM183 240h2v8h-2z"/><path fill="currentColor" d="M180 243h8v2h-8zM213 240h2v8h-2z"/><path fill="currentColor" d="M210 243h8v2h-8zM243 240h2v8h-2z"/><path fill="currentColor" d="M240 243h8v2h-8zM273 240h2v8h-2z"/><path fill="currentColor" d="M270 243h8v2h-8zM3 270h2v8H3z"/><path fill="currentColor" d="M0 273h8v2H0zM33 270h2v8h-2z"/><path fill="currentColor" d="M30 273h8v2h-8zM63 270h2v8h-2z"/><path fill="currentColor" d="M60 273h8v2h-8zM93 270h2v8h-2z"/><path fill="currentColor" d="M90 273h8v2h-8zM123 270h2v8h-2z"/><path fill="currentColor" d="M120 273h8v2h-8zM153 270h2v8h-2z"/><path fill="currentColor" d="M150 273h8v2h-8zM183 270h2v8h-2z"/><path fill="currentColor" d="M180 273h8v2h-8zM213 270h2v8h-2z"/><path fill="currentColor" d="M210 273h8v2h-8zM243 270h2v8h-2z"/><path fill="currentColor" d="M240 273h8v2h-8zM273 270h2v8h-2z"/><path fill="currentColor" d="M270 273h8v2h-8z"/></svg>
-                </div>
-
-                <!-- Card -->
-                <iframe
-                  class="position-relative img-fluid rounded shadow-lg"
-                  width="200%"
-                  height="200%"
-                  src="https://www.youtube.com/embed/QQAbtIXptEI?rel=0?version=3&autoplay=1&controls=0&loop=1&playlist=QQAbtIXptEI&modestbranding=1"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                >
-                </iframe>
+                  <video
+                    preload="metadata"
+                    autoplay
+                    loop
+                    width="100%"
+                    height="100%"
+                  >
+                    <source src="https://parallax-videos.s3.amazonaws.com/examples/user_view.mp4" type="video/mp4">
+                  </video>
               </div>
 
             </div>
-            <div class="col-md-6 text-center text-md-left">
+            <div class="col-md-5 text-center text-md-left">
 
               <!-- Heading -->
               <h2 class="display-4 mb-4">
@@ -501,13 +500,9 @@
               <p class="text-muted">
                 Help your users answer questions like “how do I create a new project?”, “how do I change my security settings?”, and “how do I start a new instance?”.
               </p>
-
-              <!-- List -->
-              <ul class="list-checked list-checked-warning mb-0">
-                <li>Teach users how to user your product</li>
-                <li>Increase customer satisfaction and retention</li>
-                <li>3</li>
-              </ul>
+              <p class="text-muted">
+                The Parallax widget will deliver your video guides without having to leave your platform.
+              </p>
 
             </div>
           </div>
@@ -515,36 +510,26 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="bg-light pt-10 pt-md-12 pb-9 pb-md-11">
+      <section class="bg-white pt-12 pt-md-12 pb-9 pb-md-11">
         <div class="container-lg">
           <div class="row align-items-center justify-content-between">
-            <div class="col-md-5 col-lg-6 order-md-1">
+            <div class="col-md-7 col-lg-7 order-md-1">
 
-              <!-- Image -->
-              <div class="position-relative mb-8 mb-md-0">
-
-                <!-- Decoration -->
-                <div class="position-absolute top-right text-primary-light mr-n8 mt-n8">
-                  <svg width="185" height="186" viewBox="0 0 185 186" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="currentColor"/><circle cx="22" cy="2" r="2" fill="currentColor"/><circle cx="42" cy="2" r="2" fill="currentColor"/><circle cx="62" cy="2" r="2" fill="currentColor"/><circle cx="82" cy="2" r="2" fill="currentColor"/><circle cx="102" cy="2" r="2" fill="currentColor"/><circle cx="122" cy="2" r="2" fill="currentColor"/><circle cx="142" cy="2" r="2" fill="currentColor"/><circle cx="162" cy="2" r="2" fill="currentColor"/><circle cx="182" cy="2" r="2" fill="currentColor"/><circle cx="2" cy="22" r="2" fill="currentColor"/><circle cx="22" cy="22" r="2" fill="currentColor"/><circle cx="42" cy="22" r="2" fill="currentColor"/><circle cx="62" cy="22" r="2" fill="currentColor"/><circle cx="82" cy="22" r="2" fill="currentColor"/><circle cx="102" cy="22" r="2" fill="currentColor"/><circle cx="122" cy="22" r="2" fill="currentColor"/><circle cx="142" cy="22" r="2" fill="currentColor"/><circle cx="162" cy="22" r="2" fill="currentColor"/><circle cx="182" cy="22" r="2" fill="currentColor"/><circle cx="2" cy="42" r="2" fill="currentColor"/><circle cx="22" cy="42" r="2" fill="currentColor"/><circle cx="42" cy="42" r="2" fill="currentColor"/><circle cx="62" cy="42" r="2" fill="currentColor"/><circle cx="82" cy="42" r="2" fill="currentColor"/><circle cx="102" cy="42" r="2" fill="currentColor"/><circle cx="122" cy="42" r="2" fill="currentColor"/><circle cx="142" cy="42" r="2" fill="currentColor"/><circle cx="162" cy="42" r="2" fill="currentColor"/><circle cx="182" cy="42" r="2" fill="currentColor"/><circle cx="2" cy="62" r="2" fill="currentColor"/><circle cx="22" cy="62" r="2" fill="currentColor"/><circle cx="42" cy="62" r="2" fill="currentColor"/><circle cx="62" cy="62" r="2" fill="currentColor"/><circle cx="82" cy="62" r="2" fill="currentColor"/><circle cx="102" cy="62" r="2" fill="currentColor"/><circle cx="122" cy="62" r="2" fill="currentColor"/><circle cx="142" cy="62" r="2" fill="currentColor"/><circle cx="162" cy="62" r="2" fill="currentColor"/><circle cx="182" cy="62" r="2" fill="currentColor"/><circle cx="2" cy="82" r="2" fill="currentColor"/><circle cx="22" cy="82" r="2" fill="currentColor"/><circle cx="42" cy="82" r="2" fill="currentColor"/><circle cx="62" cy="82" r="2" fill="currentColor"/><circle cx="82" cy="82" r="2" fill="currentColor"/><circle cx="102" cy="82" r="2" fill="currentColor"/><circle cx="122" cy="82" r="2" fill="currentColor"/><circle cx="142" cy="82" r="2" fill="currentColor"/><circle cx="162" cy="82" r="2" fill="currentColor"/><circle cx="182" cy="82" r="2" fill="currentColor"/><circle cx="2" cy="102" r="2" fill="currentColor"/><circle cx="22" cy="102" r="2" fill="currentColor"/><circle cx="42" cy="102" r="2" fill="currentColor"/><circle cx="62" cy="102" r="2" fill="currentColor"/><circle cx="82" cy="102" r="2" fill="currentColor"/><circle cx="102" cy="102" r="2" fill="currentColor"/><circle cx="122" cy="102" r="2" fill="currentColor"/><circle cx="142" cy="102" r="2" fill="currentColor"/><circle cx="162" cy="102" r="2" fill="currentColor"/><circle cx="182" cy="102" r="2" fill="currentColor"/><circle cx="2" cy="122" r="2" fill="currentColor"/><circle cx="22" cy="122" r="2" fill="currentColor"/><circle cx="42" cy="122" r="2" fill="currentColor"/><circle cx="62" cy="122" r="2" fill="currentColor"/><circle cx="82" cy="122" r="2" fill="currentColor"/><circle cx="102" cy="122" r="2" fill="currentColor"/><circle cx="122" cy="122" r="2" fill="currentColor"/><circle cx="142" cy="122" r="2" fill="currentColor"/><circle cx="162" cy="122" r="2" fill="currentColor"/><circle cx="182" cy="122" r="2" fill="currentColor"/><circle cx="2" cy="142" r="2" fill="currentColor"/><circle cx="22" cy="142" r="2" fill="currentColor"/><circle cx="42" cy="142" r="2" fill="currentColor"/><circle cx="62" cy="142" r="2" fill="currentColor"/><circle cx="82" cy="142" r="2" fill="currentColor"/><circle cx="102" cy="142" r="2" fill="currentColor"/><circle cx="122" cy="142" r="2" fill="currentColor"/><circle cx="142" cy="142" r="2" fill="currentColor"/><circle cx="162" cy="142" r="2" fill="currentColor"/><circle cx="182" cy="142" r="2" fill="currentColor"/><circle cx="2" cy="162" r="2" fill="currentColor"/><circle cx="22" cy="162" r="2" fill="currentColor"/><circle cx="42" cy="162" r="2" fill="currentColor"/><circle cx="62" cy="162" r="2" fill="currentColor"/><circle cx="82" cy="162" r="2" fill="currentColor"/><circle cx="102" cy="162" r="2" fill="currentColor"/><circle cx="122" cy="162" r="2" fill="currentColor"/><circle cx="142" cy="162" r="2" fill="currentColor"/><circle cx="162" cy="162" r="2" fill="currentColor"/><circle cx="182" cy="162" r="2" fill="currentColor"/><circle cx="2" cy="182" r="2" fill="currentColor"/><circle cx="22" cy="182" r="2" fill="currentColor"/><circle cx="42" cy="182" r="2" fill="currentColor"/><circle cx="62" cy="182" r="2" fill="currentColor"/><circle cx="82" cy="182" r="2" fill="currentColor"/><circle cx="102" cy="182" r="2" fill="currentColor"/><circle cx="122" cy="182" r="2" fill="currentColor"/><circle cx="142" cy="182" r="2" fill="currentColor"/><circle cx="162" cy="182" r="2" fill="currentColor"/><circle cx="182" cy="182" r="2" fill="currentColor"/></svg>
-                </div>
-
-                <!-- Image -->
-                <iframe
-                  class="position-relative img-fluid rounded shadow-lg"
-                  width="200%"
-                  height="200%"
-                  src="https://www.youtube.com/embed/ayqLdf4KwxQ?rel=0?version=3&autoplay=1&controls=0&loop=1&playlist=ayqLdf4KwxQ&modestbranding=1"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                >
-                </iframe>
-
+              <!-- Video -->
+              <div class="position-relative">
+                  <video
+                    preload="metadata"
+                    autoplay
+                    loop
+                    width="100%"
+                    height="100%"
+                  >
+                    <source src="https://parallax-videos.s3.amazonaws.com/examples/new_guide.mp4" type="video/mp4">
+                  </video>
               </div>
 
-
             </div>
-            <div class="col-md-6 col-lg-5 order-md-0">
+            <div class="col-md-5 col-lg-5 order-md-0">
 
               <!-- Heading -->
               <h2 class="display-4 mb-4">
@@ -552,8 +537,11 @@
               </h2>
 
               <!-- Text -->
-              <p class="text-muted mb-0">
-                We include an unofficial Figma file with Goodkit. It's not perfectly organized, but it's component based and covers all our landings, pages, authentication options, and even navigations.
+              <p class="text-muted">
+                It takes less than 15 minutes to set up Parallax, from just getting started, to your users being able to access all your tutorials.
+              </p>
+              <p class="text-muted">
+                Our goal is to make it as simple as possible for you to keep your users satisfied and on track.
               </p>
 
             </div>
@@ -563,7 +551,7 @@
 
       <!-- SHAPE -->
       <div class="position-relative">
-        <div class="shape shape-fluid-x shape-bottom text-light">
+        <div class="shape shape-fluid-x shape-bottom text-white">
           <div class="shape-img pb-8 pb-md-11">
             <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 0h100v25H75L25 50H0z" fill="currentColor"/></svg>
           </div>
@@ -586,41 +574,46 @@
             <div class="col-md-10 col-lg-8 text-center">
 
               <!-- Preheading -->
-              <h6 class="text-uppercase text-warning mb-5">
+              <h6 class="text-uppercase text-primary mb-5">
                 Quick Setup
               </h6>
 
               <!-- Heading -->
               <h2 class="display-4 text-white mb-9">
-                Setting up Parallax is easy. Just add this code to <span class="text-underline-primary-light">your application</span>.
+                Setting up Parallax is simple. Just add this script to <span class="text-underline-primary-light">your code</span>.
               </h2>
 
             </div>
           </div>
         </div>
 
-        <!-- Slider -->
-        <div class="flickity-buttons-responsive flickity-items-fade" data-flickity='{"imagesLoaded": true, "wrapAround": true}'>
+        <div class="row justify-content-center">
           <div style="width: calc(100% - 2rem); max-width: 920px;">
 
-            <!-- Image -->
-            <a href="./blog-post.html">
-              <img class="img-fluid rounded" src="assets/img/script.png" alt="...">
-            </a>
+            <pre>
+              <code class="language-markup">
+                &lt;script type=text/javascript>
+                  var projectID="project_id";
+                  window.sessionStorage.setItem("project_id", projectID);
+                  document.addEventListener("DOMContentLoaded", (event) => {
+                    var head = document.getElementsByTagName("head").item(0);
+                    var recorderScript = document.createElement("script");
+                    var injectScript = document.createElement("script");
+                    recorderScript.setAttribute("type", "text/javascript");
+                    injectScript.setAttribute("type", "text/javascript");
+                    recorderScript.setAttribute("src", "recorder_url");
+                    injectScript.setAttribute("src", "inject_url");
+                    head.appendChild(recorderScript);
+                    head.appendChild(injectScript);
+                  });
+                &lt;/script>
+              </code>
+            </pre>
 
-            <!-- Body -->
             <div class="flickity-hidden py-6 text-center">
-
-              <!-- Heading -->
-              <h6 class="text-uppercase text-white">
-                Simply add this to the head of your application.
-              </h6>
-
-              <!-- Text -->
-              <p class="font-size-sm text-center text-white-80 mb-0">
-                The head of your application is most likely public/index.html.
+              <p class="font-size-sm text-center text-white-80 mb-2">
+                After setting up an account, we'll provide you a unique version of this script for your product.
               </p>
-
             </div>
 
           </div>
@@ -647,7 +640,6 @@
       </div>
 
 
-
       <!-- PRICING -->
       <section class="pt-10 pt-md-12">
         <div class="container-lg position-relative" style="z-index: 1;">
@@ -671,8 +663,12 @@
                         <div class="col-md-10 col-lg-8 text-center">
 
                           <!-- Preheading -->
-                          <h6 class="text-uppercase text-primary mb-5">
+                          <h6 class="text-uppercase text-primary">
                             Free Trial
+                          </h6>
+
+                          <h6 class="text-uppercase text-muted">
+                            No Credit Card Required
                           </h6>
 
                           <!-- Heading -->
@@ -686,8 +682,8 @@
                           </p>
 
                           <!-- Button -->
-                          <a class="btn btn-primary lift" href="#!">
-                            Get Started
+                          <a class="btn btn-primary lift" href="https://dash.parallaxux.com/auth/sign-up">
+                            Try now
                           </a>
 
                         </div>
@@ -737,7 +733,10 @@
                   <!-- Collapse -->
                   <div class="collapse show" id="faqOne" data-parent="#faq">
                     <p class="text-white-80 mt-2 mb-0">
-                      Even with dedicated onboarding flows, products can initially look overly complex and scare customers away. We want to help those users better engage with those products from day one by identifying their sticking points as they navigate and guiding them to the completion of tasks. That way, they can understand the value of the product much quicker and are more likely to continue using the product.
+                      Even with dedicated onboarding flows, products can initially look overly complex and scare customers away. We want to help those users better engage with those products from day one by identifying their sticking points and guiding them to the completion of tasks.
+                    </p>
+                    <p class="text-white-80 mt-2 mb-0">
+                      That way, they can understand the value of the product much quicker and are more likely to continue using your product.
                     </p>
                   </div>
 
@@ -752,7 +751,7 @@
                   <!-- Collapse -->
                   <div class="collapse" id="faqTwo" data-parent="#faq">
                     <p class="text-white-80 mt-2 mb-0">
-                      Even the most valuable Saas products face a problem with early retention because users are confused by complex platforms and menu options. Even using analytics tools, it is difficult for companies to anticipate everything a user wants to see during the onboarding process. Bloated onboarding flows also turn users away. Our approach to solving this problem is by presenting users relevant guides when they need it. We believe that better initial engagement and guidance can help users better understand and stick with SaaS products (i.e. reduce churn).
+                      Parallax doesn't interfere with your existing onboarding flow. In fact, we allow you to augment your existing flow with a more on-demand experience.
                     </p>
                   </div>
 
@@ -767,8 +766,10 @@
                   <!-- Collapse -->
                   <div class="collapse" id="faqThree" data-parent="#faq">
                     <p class="text-white-80 mt-2 mb-0">
-                      Session replay companies like Hotjar and Fullstory help bridge the gap between users and products, and they collect the data needed to guide users around SaaS products.
-                      Intercom tackles a similar angle by helping you directly communicate with customers, but they focus more on leads and initial conversions. There are also lots of chatbot companies like Chatfuel that automatically handle some user concerns, but they aren’t specific to products.
+                      There are plenty of products providing onboarding software and product tours, but most are heavy and have steep learning curves. We get you off the ground in minimal time.
+                    </p>
+                    <p class="text-white-80 mt-2 mb-0">
+                      Other products exist to display your guides and videos, but they require your users to switch between platforms. Parallax keeps it all in-app to reduce friction.
                     </p>
                   </div>
 
@@ -783,7 +784,10 @@
                   <!-- Collapse -->
                   <div class="collapse" id="faqFour" data-parent="#faq">
                     <p class="text-white-80 mt-2 mb-0">
-                      There are lots of existing products that help companies better understand their users through analytics and session replay, but they all face the same problem: they help the product team see and identify issues, but it still takes time for the designers and engineers to roll out fixes. Even then, many designs are based on how the dev and product teams — not the users — think about the product. Users get frustrated during this extensive process and often end up leaving new products.
+                      Your UX team does a fantastic job to optimize your users' journeys, but it still takes time to notice problems, build and test new code, and release it to your users.
+                    </p>
+                    <p class="text-white-80 mt-2 mb-0">
+                      We let you provide immediate relief to your users, so they aren't in the cold after they submit a ticket or contact your team.
                     </p>
                   </div>
 

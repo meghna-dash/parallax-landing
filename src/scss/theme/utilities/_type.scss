@@ -88,11 +88,11 @@ a.text-white-60:hover {
 @each $color, $value in $theme-colors {
   .text-underline-#{$color} {
     @if $color=="warning" {
-      background-image: linear-gradient(to right, fade-out($value, .6));
+      background-image: -webkit-gradient(linear,left top,right top,from(rgba(0, 157, 251,.4)));
     }
 
     @else {
-      background-image: linear-gradient(to right, fade-out($value, .8));
+      background-image: -webkit-gradient(linear,left top,right top,from(rgba(0, 157, 251,.4)));
     }
   }
 }

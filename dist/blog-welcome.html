@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="./assets/css/theme.css">
     <!-- endbuild -->
 
-    <title>Goodkit</title>
+    <title>Parallax</title>
 
   </head>
   <body>
@@ -275,11 +275,13 @@
 
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-lg">
 
         <!-- Brand -->
-        <a class="navbar-brand d-lg-none" href="./index.html">Parallax</a>
+        <a class="navbar-brand d-lg-none" href="./index.html">
+          <img src="assets/img/logo.png" style="width: 200px; height: auto" alt="...">
+        </a>
 
         <!-- Toggler -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -292,50 +294,33 @@
           <!-- Navigation -->
           <ul class="navbar-nav justify-content-end w-100">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="landingsDropdown" href="https://dash.parallaxux.com/auth/sign-up" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Get Started
+              <a class="nav-link dropdown-toggle" id="landingsDropdown" href="./blog.html" role="button" aria-haspopup="true" aria-expanded="false">
+                Blog
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Learn More
+              <a class="nav-link dropdown-toggle" id="pagesDropdown" href="./pricing.html" role="button" aria-haspopup="true" aria-expanded="false">
+                Pricing
               </a>
             </li>
           </ul>
 
           <!-- Brand -->
-          <a class="navbar-brand d-none d-lg-block px-lg-6" href="./index.html">Parallax</a>
+          <a class="navbar-brand d-none d-lg-block px-lg-6" href=".">
+            <img src="assets/img/logo.png" style="width: 270px; height: auto" alt="...">
+          </a>
 
           <!-- Navigation -->
           <ul class="navbar-nav justify-content-start w-100">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="accountDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Blog
+              <a class="nav-link dropdown-toggle" id="accountDropdown" href="https://dash.parallaxux.com" role="button" aria-haspopup="true" aria-expanded="false">
+                Log in
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="docsDropdown" href="./contact.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contact Us
+              <a class="nav-link dropdown-toggle" id="docsDropdown" href="https://dash.parallaxux.com/auth/sign-up" role="button" aria-haspopup="true" aria-expanded="false">
+                Try now
               </a>
-            </li>
-            <li class="nav-item d-lg-none">
-              <div class="nav-link">
-
-                <!-- Text -->
-                <span>
-                  Sans Serif Headers
-                </span>
-
-                <!-- Switch -->
-                <form class="ml-auto mr-n3">
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input family-switch" id="familySwitchMobile" onchange="switchFamily(this.checked)">
-                    <label class="custom-control-label" for="familySwitchMobile"></label>
-                  </div>
-                </form>
-
-
-              </div>
             </li>
           </ul>
 
@@ -346,165 +331,79 @@
 
 
     <!-- WELCOME -->
-    <section class="bg-cover py-13 py-md-17" style="background-image: url(assets/img/blog/header.jpg);">
+    <section class="bg-white">
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6 col-lg-5 order-md-1 position-relative" style="z-index: 1;">
+
+            <!-- Image -->
+            <img class="img-fluid mw-md-125 mb-4 mb-md-0" src="assets/img/coworking/hero-1.jpg" alt="...">
+
+          </div>
+          <div class="col-md-6 order-md-0 pt-6 pt-md-10 pb-12 pb-md-13 text-center text-md-left">
+
+            <!-- Preheading -->
+            <h6 class="font-family-sans-serif text-primary mb-5">
+              Our Updates
+            </h6>
+
+            <!-- Heading -->
+            <h1 class="display-3 text-gray-900 mb-4">
+              Welcome to Parallax.
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg text-gray-900 mb-0">
+              We're excited to bring you Parallax, our solution to help you boost your customers' success.
+            </p>
+
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- SHAPE -->
     <div class="position-relative">
       <div class="shape shape-fluid-x shape-top text-white">
-        <div class="shape-img pb-5">
+        <div class="shape-img pb-8 pb-md-10">
           <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 25h25L75 0h25v50H0z" fill="currentColor"/></svg>
         </div>
       </div>
     </div>
 
     <!-- CONTENT -->
-    <section class="py-10 py-md-12">
+    <section class="py-9 py-md-11">
       <div class="container-lg">
         <div class="row justify-content-center">
-          <div class="col-md-10 col-lg-8 text-center">
-
-            <!-- Preheading -->
-            <h6 class="text-uppercase text-primary mb-5">
-              Work Life
-            </h6>
-
-            <!-- Heading -->
-            <h1 class="display-3 mb-4">
-              Remote or Local Work?
-            </h1>
-
-            <!-- Text -->
-            <p class="font-size-lg text-gray-600 mb-9">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
-            </p>
-
-          </div>
-        </div>
-        <div class="row justify-content-center">
           <div class="col-md-10 col-lg-8">
-
-            <!-- Divider -->
-            <hr class="hr-sm border-warning mb-9">
 
             <!-- Text -->
             <p class="mb-9">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              We’re introducing Parallax, a platform that lets you help your users better navigate your product. When new users get onto your application, they often need help to get started and be successful. People want your product to solve a problem for them, and if it takes too long to see that goal, you’re likely to see high rates of churn, known as desired outcome churn.
             </p>
 
-            <!-- Heading -->
-            <h1 class="mb-4">
-              Big heading for a new topic
-            </h1>
-
-            <!-- Text -->
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            </p>
-
-            <!-- List -->
-            <ul class="list-checked list-checked-circle list-checked-primary mb-9">
-              <li>
-                <strong>All payments are processed</strong> securely through PayPal or Stripe. Bootstrap Themes does not directly process payments through the website.
-              </li>
-              <li>
-                <strong>You have 14 days</strong> to evaluate your purchase. If your purchase fails to meet expectations set by the seller, or is critically flawed in some way, contact Bootstrap Themes and we will issue a full refund pending a review.
-              </li>
-              <li>
-                <strong>Membership is a benefit</strong> for those who follow our terms and policies. We may at any time suspend or terminate your account.
-              </li>
-            </ul>
-
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-10">
-
-            <!-- Slider -->
-            <div class="flickity-buttons-adjacent flickity-buttons-rounded flickity-buttons-bottom-right mb-9" data-flickity='{"imagesLoaded": true, "pageDots": false, "wrapAround": true}'>
-              <div class="w-100">
-
-                <!-- Image -->
-                <img class="img-fluid" src="assets/img/blog/slider-1.jpg" alt="...">
-
-              </div>
-              <div class="w-100">
-
-                <!-- Image -->
-                <img class="img-fluid" src="assets/img/blog/slider-2.jpg" alt="...">
-
-              </div>
-              <div class="w-100">
-
-                <!-- Image -->
-                <img class="img-fluid" src="assets/img/blog/slider-3.jpg" alt="...">
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-10 col-lg-8">
-
-            <!-- Heading -->
-            <h2 class="mb-4">
-              Small heading for a smaller transition
-            </h2>
-
-            <!-- Text -->
             <p class="mb-9">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              The ideal situation is that you’re able to look over their shoulder and point them in the right direction, but this can get increasingly difficult at higher scale. It can take some time to onboard new users, and the people with the expertise to do this often don’t have time to sit down for every customer concern.
             </p>
 
-            <!-- Divider -->
+            <p class="mb-9">
+              You might provide in-depth guides and videos, but the likelihood is that a large chunk of users will never do more than glance at documentation. People don’t really like to leave the platform they’re on to learn how to complete a task, and their attention spans drop off after a couple minutes of reading or watching a video. A combination of these two can be deadly for your churn rate.
+            </p>
+
             <hr class="hr-sm border-top-3 mb-9">
 
-            <!-- Blockquote -->
             <blockquote class="mb-9">
               <p class="h1 text-primary text-center">
-                Teams struggle to make their onboarding experience as good as their core product, so the results are poor retention
+                Teams struggle to make their onboarding experience as good as their core product, so the results are poor satisfaction and retention.
               </p>
             </blockquote>
 
-            <!-- Divider -->
             <hr class="hr-sm border-top-3 mb-9">
 
-            <!-- Text -->
             <p class="mb-9">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+              We aim to provide a solution that lets you provide much-needed help for your users without overwhelming them with heavy, confusing onboarding flows and product tours. We believe that brief, stepped video guides with a specific purpose can do wonders in helping your users achieve early goals, especially when these guides are available in-application. The easier this process is for both you and your users, the better you'll be able to help them, and the more they'll be satisfied with your product.
             </p>
 
-            <!-- Images -->
-            <div class="row mb-9">
-              <div class="col-6">
-
-                <!-- Image -->
-                <img class="img-fluid rounded-sm" src="assets/img/blog/grid-thumb-1.jpg" alt="...">
-
-              </div>
-              <div class="col-6">
-
-                <!-- Image -->
-                <img class="img-fluid rounded-sm mb-6" src="assets/img/blog/grid-thumb-2.jpg" alt="...">
-
-                <!-- Image -->
-                <img class="img-fluid rounded-sm" src="assets/img/blog/grid-thumb-3.jpg" alt="...">
-
-              </div>
-            </div>
-
-            <!-- Heading -->
-            <h2 class="mb-4">
-              Small heading for a smaller transition
-            </h2>
-
-            <!-- Text -->
-            <p class="mb-9">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-            </p>
-
-            <!-- Divider -->
             <hr class="my-9">
 
             <!-- Footer -->
@@ -512,7 +411,7 @@
 
               <!-- Avatar -->
               <div class="avatar avatar-sm">
-                <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-1.jpg" alt="...">
+                <img class="avatar-img rounded-circle" src="assets/img/sid.jpg" alt="...">
               </div>
 
               <!-- Body -->
@@ -520,12 +419,12 @@
 
                 <!-- Title -->
                 <h4 class="font-family-sans-serif mb-0">
-                  Katie Williams
+                  Sidharth Potdar
                 </h4>
 
                 <!-- Position -->
                 <p class="small text-muted mt-n1 mb-0">
-                  Published 2/15/2020
+                  5/14/2020
                 </p>
 
               </div>
@@ -560,214 +459,6 @@
       </div>
     </div>
 
-    <!-- RELATED -->
-    <section class="pt-8 pt-md-9 pb-10 pb-md-12 bg-dark">
-      <div class="container-lg">
-        <div class="row justify-content-center">
-          <div class="col-md-10 col-lg-8 text-center text-white">
-
-            <!-- Heading -->
-            <h2 class="display-3 mb-4">
-              Related Readings
-            </h2>
-
-            <!-- Text -->
-            <p class="mb-9">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-            </p>
-
-          </div>
-        </div>
-        <div class="row mt-n6">
-          <div class="col-md-4">
-
-            <!-- Card -->
-            <div class="card card-sm rounded-top-left rounded-bottom-right lift lift-lg mt-6">
-
-              <!-- Image -->
-              <img class="card-img-top rounded-top-left" src="assets/img/blog/post-header-1.jpg" alt="...">
-
-              <!-- Shape -->
-              <div class="position-relative">
-                <div class="shape shape-fluid-x shape-top text-white">
-                  <div class="shape-img pb-5">
-                    <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 25h25L75 0h25v50H0z" fill="currentColor"/></svg>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Body -->
-              <div class="card-body">
-
-                <!-- Heading -->
-                <h2 class="mb-2">
-                  Build a culture where everyone designs.
-                </h2>
-
-                <!-- Text -->
-                <p class="font-size-sm mb-4">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-                </p>
-
-                <!-- Footer -->
-                <div class="d-flex align-items-center">
-
-                  <!-- Avatar -->
-                  <div class="avatar avatar-xs">
-                    <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-3.jpg" alt="...">
-                  </div>
-
-                  <!-- Body -->
-                  <div class="ml-4 text-left">
-
-                    <!-- Title -->
-                    <p class="small mb-0">
-                      Danielle Callan
-                    </p>
-
-                    <!-- Position -->
-                    <p class="small text-muted mt-n1 mb-0">
-                      March 31, 2020
-                    </p>
-
-                  </div>
-
-                </div>
-
-                <!-- Link -->
-                <a class="stretched-link" href="blog-post.html"></a>
-
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-4">
-
-            <!-- Card -->
-            <div class="card card-sm rounded-top-left rounded-bottom-right lift lift-lg mt-6">
-
-              <!-- Image -->
-              <img class="card-img-top rounded-top-left" src="assets/img/blog/post-header-2.jpg" alt="...">
-
-              <!-- Shape -->
-              <div class="position-relative">
-                <div class="shape shape-fluid-x shape-top text-white">
-                  <div class="shape-img pb-5">
-                    <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 25h25L75 0h25v50H0z" fill="currentColor"/></svg>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Body -->
-              <div class="card-body">
-
-                <!-- Heading -->
-                <h2 class="mb-2">
-                  Detach your worth from your work.
-                </h2>
-
-                <!-- Text -->
-                <p class="font-size-sm mb-4">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-                </p>
-
-                <!-- Footer -->
-                <div class="d-flex align-items-center">
-
-                  <!-- Avatar -->
-                  <div class="avatar avatar-xs">
-                    <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-5.jpg" alt="...">
-                  </div>
-
-                  <!-- Body -->
-                  <div class="ml-4 text-left">
-
-                    <!-- Title -->
-                    <p class="small mb-0">
-                      Brooke Baker
-                    </p>
-
-                    <!-- Position -->
-                    <p class="small text-muted mt-n1 mb-0">
-                      April 19, 2020
-                    </p>
-
-                  </div>
-
-                </div>
-
-                <!-- Link -->
-                <a class="stretched-link" href="blog-post.html"></a>
-
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-4">
-
-            <!-- Card -->
-            <div class="card card-sm rounded-top-left rounded-bottom-right lift lift-lg mt-6">
-
-              <!-- Image -->
-              <img class="card-img-top rounded-top-left" src="assets/img/blog/post-header-3.jpg" alt="...">
-
-              <!-- Shape -->
-              <div class="position-relative">
-                <div class="shape shape-fluid-x shape-top text-white">
-                  <div class="shape-img pb-5">
-                    <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 25h25L75 0h25v50H0z" fill="currentColor"/></svg>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Body -->
-              <div class="card-body">
-
-                <!-- Heading -->
-                <h2 class="mb-2">
-                  Designers can learn from interior design.
-                </h2>
-
-                <!-- Text -->
-                <p class="font-size-sm mb-4">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-                </p>
-
-                <!-- Footer -->
-                <div class="d-flex align-items-center">
-
-                  <!-- Avatar -->
-                  <div class="avatar avatar-xs">
-                    <img class="avatar-img rounded-circle" src="assets/img/avatars/avatar-4.jpg" alt="...">
-                  </div>
-
-                  <!-- Body -->
-                  <div class="ml-4 text-left">
-
-                    <!-- Title -->
-                    <p class="small mb-0">
-                      Catherine Westerly
-                    </p>
-
-                    <!-- Position -->
-                    <p class="small text-muted mt-n1 mb-0">
-                      May 01, 2020
-                    </p>
-
-                  </div>
-
-                </div>
-
-                <!-- Link -->
-                <a class="stretched-link" href="blog-post.html"></a>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- CTA -->
     <section class="bg-dark">
@@ -783,7 +474,7 @@
 
             <!-- Heading -->
             <h1 class="text-white mb-0">
-              Get your news <span class="text-warning">delivered</span>
+              Get your news <span class="text-primary-light">delivered</span>.
             </h1>
 
             <!-- Text -->
