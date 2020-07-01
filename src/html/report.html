@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Example Report"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white"
+    })
+
+    <!-- CONTENT -->
+    <>
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-10 text-center">
+
+            <h1 class="display-3 mb-4">
+              Report 6/30
+            </h1>
+
+            <p class="font-size-lg text-gray-600 mb-9">
+              This is an example report based on insights we've curated for a <strong> web analytics company. </strong> We've removed or modified any sensitive information.
+            </p>
+
+            <div class="row">
+              <div class="col">
+                <!-- Divider -->
+                <hr class="hr-sm border-warning mb-10 mb-md-12">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-8">
+                <img class="position-relative img-fluid rounded shadow-lg" src="assets/img/source.png" alt="...">
+              </div>
+              <div class="col-md-4">
+                <p class="font-size-lg">
+                  We've analyzed 153 sales calls, 98 research calls, and 55 CRM entries so you don't have to — that's <strong> over 200 hours of data. </strong>
+                </p>
+                <p class="font-size-lg">
+                  Here's what we've found.
+                </p>
+              </div>
+            </div>
+
+
+
+          </div>
+            <div class="row justify-content-between" style="padding-top: 45px">
+              <div class="col-md-4">
+                <h3>
+                  Top reason customers bought
+                </h3>
+                <p>
+                  Personalized customer service
+                </p>
+              </div>
+              <div class="col-md-4">
+                <h3>
+                  Top question prospects asked
+                </h3>
+                <p>
+                  How does your pricing structure work?
+                </p>
+              </div>
+              <div class="col-md-4">
+                <h3>
+                  Top emerging trend
+                </h3>
+                <p>
+                  Changes made to support remote work environments
+                </p>
+              </div>
+            </div>
+
+            <!-- Heading -->
+            <h1 class="mb-4" style="padding-top: 23px">
+              Product Insights
+            </h1>
+
+            <div class="container-lg">
+              <div class="row">
+                <div class="col">
+                  <!-- Divider -->
+                  <hr class="hr-sm border-warning mb-10 mb-md-12">
+                </div>
+              </div>
+              <h2>
+                What your 153 prospects were calling about
+              </h2>
+              <div class="row justify-content-between">
+                <div class="col-md-6">
+                  <img class="position-relative img-fluid rounded shadow-lg" src="assets/img/calling_about.png" alt="...">
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    40% of your prospects were interested in Heatmaps to help them understand where their users are clicking.
+                  </p>
+                  <p>
+                    29% of your prospects were interested in Session Replay to help them understand what their users are doing on their site.
+                  </p>
+                  <p>
+                    17% of your prospects were interested in Scroll Maps to help them visualize page fold.
+                  </p>
+                </div>
+              </div>
+              <br/>
+
+              <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-10">
+
+                  <!-- Heading -->
+                  <h2 class="mb-4">
+                    Questions your customers have
+                  </h2>
+
+                  <!-- List -->
+                  <ul class="list-checked list-checked-circle list-checked-primary mb-9">
+                    <li>
+                      <strong>How does your pricing structure work?</strong> Which plan is right for their needs? (45% of calls)
+                    </li>
+                    <li>
+                      <strong>Which integrations are being added?</strong> How can they hear about them? (28% of calls)
+                    </li>
+                    <li>
+                      <strong>How can they contribute feature requests and bug reports?</strong> How can they keep track of reports? (20% of calls)
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
+              <div class="row justify-content-between">
+                <div class="col-md-4">
+
+                  <!-- Header -->
+                  <div class="position-sticky mb-8" style="top: 2rem;">
+
+                    <!-- Heading -->
+                    <h2 class="mb-4">
+                      Product Feedback
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="mb-0">
+                      What are your customers saying about your product?
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <!-- List group -->
+                  <div class="list-group list-group-lg list-group-flush mt-n7 mb-9" id="faqData">
+                    <div class="list-group-item">
+
+                      <!-- Heading -->
+                      <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqDataOne" role="button" aria-expanded="true" aria-controls="faqDataOne">
+                        Organizing and sharing segments.
+                      </a>
+
+                      <!-- Collapse -->
+                      <div class="collapse show" id="faqDataOne" data-parent="#faqData">
+                        <p class="mt-2 mb-0">
+                          "They've made some recent improvement here but it can still be a little cumbersome to share segments with teammates. And you quickly end up with a ton of different segments "starred" so you don't lose them." <strong> — research call </strong>
+                        </p>
+                        <p class="mt-2 mb-0">
+                          "Not very robust segmentation and has limitations for what filters you can add to segments. No way to pull in data from other sources like a CRM." <strong> — CRM data </strong>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div class="list-group-item">
+
+                      <!-- Heading -->
+                      <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqDataTwo" role="button" aria-expanded="false" aria-controls="faqDataTwo">
+                        Better organization in the notes feature.
+                      </a>
+
+                      <!-- Collapse -->
+                      <div class="collapse" id="faqDataTwo" data-parent="#faqData">
+                        <p class="mt-2 mb-0">
+                          "I'd love to be able to group my notes together or use tags so that I can see common themes emerge." <strong> — sales call </strong>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div class="list-group-item">
+
+                      <!-- Heading -->
+                      <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqDataThree" role="button" aria-expanded="false" aria-controls="faqDataThree">
+                        Positive UI feedback.
+                      </a>
+
+                      <!-- Collapse -->
+                      <div class="collapse" id="faqDataThree" data-parent="#faqData">
+                        <p class="mt-2 mb-0">
+                          "The playback interface is intuitive and the ability to automatically skip inactive time saves us a lot of time in reviewing activity." <strong> — research call </strong>
+                        </p>
+                      </div>
+
+                    </div>
+                    <div class="list-group-item">
+
+                      <!-- Heading -->
+                      <a class="collapse-toggle font-size-lg font-weight-bold text-decoration-none text-reset" data-toggle="collapse" href="#faqDataThree" role="button" aria-expanded="false" aria-controls="faqDataThree">
+                        Negative UI feedback & complaints.
+                      </a>
+
+                      <!-- Collapse -->
+                      <div class="collapse" id="faqDataThree" data-parent="#faqData">
+                        <p class="mt-2 mb-0">
+                          "The UI is quite busy... I'm not what I would consider to be a 'power user' of the tool yet so at times it can seem a bit overwhelming." <strong> — sales call </strong>
+                        </p>
+                        <p class="mt-2 mb-0">
+                          "The images you see are sometimes misaligned just enough to be inaccurate. An example is that a piece of UI may appear not on-screen in FS, but when we look it actually is on-screen. A relatively minor inconvenience, given the rest of the value." <strong> — CRM data </strong>
+                        </p>
+                        <p class="mt-2 mb-0">
+                          "They need something in the UI to show that your matched result falls under which session, and allow you a quick link to the rest of that session. There are times I need to see what happened well before the error happened. A quick link to the rest of that session prior to my error point would be slick." <strong> — research call </strong>
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8">
+
+            <!-- Heading -->
+            <h2 class="mb-4">
+              Pricing
+            </h2>
+
+            <div class="row justify-content-between">
+              <div class="col-md-6">
+                <img class="position-relative img-fluid rounded shadow-lg" src="assets/img/pricing_chart.jpeg" style="width: 450px; height: auto"alt="...">
+              </div>
+              <div class="col-md-6">
+                <!-- List -->
+                <ul class="list-checked list-checked-circle list-checked-primary mb-9">
+                  <li>
+                    <strong>Customers are potentially willing to pay more monthly for more support for your product.</strong> Potential higher price tier for more planning & counsel?
+                  </li>
+                  <li>
+                    <strong>A few pricing concerns, specifically with clarity about pricing structure, but most seem very happy with the value they get.</strong> You could potentially charge more, since they seem to primarily value customer service over pricing sensitivity.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+
+            <div class="row justify-content-center">
+              <h1 class="mb-4" style="padding-top: 80px">
+                Market Insights
+              </h1>
+
+              <div class="container-lg">
+                <div class="row">
+                  <div class="col">
+                    <!-- Divider -->
+                    <hr class="hr-sm border-warning mb-10 mb-md-12">
+                  </div>
+                </div>
+                <div class="row justify-content-between">
+                  <div class="col-md-6">
+                    <h2>
+                      Competitors Mentioned
+                    </h2>
+                    <img class="position-relative img-fluid rounded shadow-lg" src="assets/img/competitors.png" style="width: 450px; height: auto"alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <h2 class="mb-4">
+                      What other tools do prospects use?
+                    </h2>
+                    <img class="position-relative img-fluid rounded shadow-lg" src="assets/img/tools_used.png" style="width: 450px; height: auto"alt="...">
+                  </div>
+                </div>
+
+
+                <!-- Heading -->
+              </div>
+            </div>
+            <br/>
+
+            <!-- Heading -->
+            <h2 class="mb-4" style="padding-top: 23px">
+              Why do your customers buy?
+            </h2>
+
+            <!-- List -->
+            <ul class="list-checked list-checked-circle list-checked-primary mb-9">
+              <li>
+                <strong>Personalized customer service – human touch.</strong>
+              </li>
+              <li>
+                <strong>Easy on-boarding</strong>
+              </li>
+              <li>
+                <strong>Reports are emailed instead of digging through transcripts.</strong>
+              </li>
+            </ul>
+
+            <!-- Blockquote -->
+            <blockquote class="mb-9">
+              <p class="h1 text-primary text-center">
+                "Using your product would save me over a dozen hours every week. Getting started also sounds really simple — tell me more."
+              </p>
+            </blockquote>
+
+
+            <!-- Footer -->
+            <footer class="d-flex align-items-center">
+
+              <!-- Body -->
+              <div class="ml-4">
+
+                <!-- Title -->
+                <h4 class="font-family-sans-serif mb-0">
+                  Report by Blueriddle
+                </h4>
+
+                <!-- Position -->
+                <p class="small text-muted mt-n1 mb-0" style="padding-bottom: 23px">
+                  Generated 6/30/2020
+                </p>
+
+              </div>
+
+            </footer>
+
+          </div>
+        </div>
+      </div>
+    </>
+
+    <!-- FOOTER -->
+    @@include("partials/footer.html", {
+    "classList": "bg-dark"
+    })
+
+    <!-- JAVASCRIPT -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>
