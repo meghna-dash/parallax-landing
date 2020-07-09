@@ -15,29 +15,59 @@
     <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
     <link rel="stylesheet" href="./assets/fonts/feather/feather.css">
 
-    <!-- 
+    <!--
       Theme Sans Serif CSS
       Remove the "disabled" attribute if you want to enable Sans Serif for headings.
     -->
-    <!-- build:css ./assets/css/theme-sans-serif.min.css id="themeSansSerif" disabled -->
-    <link rel="stylesheet" href="./assets/css/theme-sans-serif.css" id="themeSansSerif" disabled>
-    <!-- endbuild -->
+    <link rel="stylesheet" href="./assets/css/theme-sans-serif.min.css" id="themeSansSerif" disabled>
 
-    <!--
-      Demo JS
-      Remove the code below on a production website.
-    -->
-    <!-- build:js ./assets/js/demo.min.js -->
-    <script src="./assets/js/demo.js"></script>
-    <!-- endbuild -->
 
     <!-- Theme CSS -->
-    <!-- build:css ./assets/css/theme.min.css -->
-    <link rel="stylesheet" href="./assets/css/theme.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
 
-    <title>Sift</title>
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '658356188362619');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1"
+    src="https://www.facebook.com/tr?id=658356188362619&ev=PageView
+    &noscript=1"/>
+    </noscript>
 
+    <script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+    window['_fs_org'] = 'WAWCT';
+    window['_fs_namespace'] = 'FS';
+    (function(m,n,e,t,l,o,g,y){
+        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+        g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+        o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+        g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+        g.anonymize=function(){g.identify(!!0)};
+        g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+        g.log = function(a,b){g("log",[a,b])};
+        g.consent=function(a){g("consent",!arguments.length||a)};
+        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+        g.clearUserCookie=function(){};
+        g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+        if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+        g._v="1.2.0";
+    })(window,document,window['_fs_namespace'],'script','user');
+    </script>
+
+    <title>Where's your Amazon package really coming from?</title>
 
   </head>
   <body>
@@ -299,94 +329,160 @@
     </div>
 
 
-    <!-- WELCOME -->
-
-    <section class="pt-6 pt-md-10">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-lg">
-        <div class="row align-items-center">
-          <div class="col-md-6 col-xl-5 text-center text-md-left mt-md-n8" data-aos="fade-up">
-            <img class="position-relative" src="assets/img/sift-logo.png" style="padding-bottom: 150px" width="100px"alt="..." data-aos="fade-up" data-aos-delay="200">
 
-            <!-- Heading -->
-            <h1 class="display-3 mb-4" style="color: #2E3542">
-              Filter products by country of origin
-            </h1>
+        <!-- Brand -->
+        <a class="navbar-brand d-lg-none" href="./index.html">
+          <img src="assets/img/logo.png" style="width: 200px; height: auto" alt="...">
+        </a>
 
-            <!-- Text -->
-            <p class="font-size-lg" style="color: #585D68">
-              Take the guesswork out of shopping. Sift tells you if your products are coming from China.
-            </p>
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Buttons -->
-            <div class="mb-8 mb-md-0">
-              <a class="btn btn-primary-light lift" href="https://airtable.com/shrBfvmFbXP1OB8uW">
-                Get Started
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Brand -->
+        <a class="navbar-brand d-none d-lg-block px-lg-6" href=".">
+          <img src="assets/img/logo.png" style="width: 270px; height: auto" alt="...">
+        </a>
+
+          <!-- Navigation -->
+          <ul class="navbar-nav justify-content-start w-100">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-item" id="blog" href="./blog.html" role="button" aria-haspopup="true" aria-expanded="false">
+                Blog
               </a>
-            </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-item" id="pricing" href="https://airtable.com/shrBfvmFbXP1OB8uW" role="button" aria-haspopup="true" aria-expanded="false">
+                Join Waitlist
+              </a>
+            </li>
+          </ul>
 
-          </div>
-          <div class="col-md-5 offset-md-1 offset-xl-2 align-self-start d-none d-md-block">
 
-            <!-- Blur -->
-            <img class="position-absolute img-fluid mw-125 mt-n9" style="padding-top: 100px" src="assets/img/blurs/blur-1.svg" alt="..." data-aos="fade-up" data-aos-delay="100">
+        </div>
 
-          </div>
-          <div class="col-md-4 offset-md-n4">
+      </div>
+    </nav>
+
+
+    <!-- WELCOME -->
+    <section class="bg-white">
+      <div class="container-lg">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md-6 col-lg-5 order-md-1 position-relative" style="z-index: 1;">
 
             <!-- Image -->
-            <div class="position-relative">
-
-              <!-- Decoration -->
-              <div class="position-absolute bottom-right text-primary-light mr-n8 mb-n6" data-aos="fade-up" data-aos-delay="150">
-                <svg width="185" height="186" viewBox="0 0 185 186" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="currentColor"/><circle cx="22" cy="2" r="2" fill="currentColor"/><circle cx="42" cy="2" r="2" fill="currentColor"/><circle cx="62" cy="2" r="2" fill="currentColor"/><circle cx="82" cy="2" r="2" fill="currentColor"/><circle cx="102" cy="2" r="2" fill="currentColor"/><circle cx="122" cy="2" r="2" fill="currentColor"/><circle cx="142" cy="2" r="2" fill="currentColor"/><circle cx="162" cy="2" r="2" fill="currentColor"/><circle cx="182" cy="2" r="2" fill="currentColor"/><circle cx="2" cy="22" r="2" fill="currentColor"/><circle cx="22" cy="22" r="2" fill="currentColor"/><circle cx="42" cy="22" r="2" fill="currentColor"/><circle cx="62" cy="22" r="2" fill="currentColor"/><circle cx="82" cy="22" r="2" fill="currentColor"/><circle cx="102" cy="22" r="2" fill="currentColor"/><circle cx="122" cy="22" r="2" fill="currentColor"/><circle cx="142" cy="22" r="2" fill="currentColor"/><circle cx="162" cy="22" r="2" fill="currentColor"/><circle cx="182" cy="22" r="2" fill="currentColor"/><circle cx="2" cy="42" r="2" fill="currentColor"/><circle cx="22" cy="42" r="2" fill="currentColor"/><circle cx="42" cy="42" r="2" fill="currentColor"/><circle cx="62" cy="42" r="2" fill="currentColor"/><circle cx="82" cy="42" r="2" fill="currentColor"/><circle cx="102" cy="42" r="2" fill="currentColor"/><circle cx="122" cy="42" r="2" fill="currentColor"/><circle cx="142" cy="42" r="2" fill="currentColor"/><circle cx="162" cy="42" r="2" fill="currentColor"/><circle cx="182" cy="42" r="2" fill="currentColor"/><circle cx="2" cy="62" r="2" fill="currentColor"/><circle cx="22" cy="62" r="2" fill="currentColor"/><circle cx="42" cy="62" r="2" fill="currentColor"/><circle cx="62" cy="62" r="2" fill="currentColor"/><circle cx="82" cy="62" r="2" fill="currentColor"/><circle cx="102" cy="62" r="2" fill="currentColor"/><circle cx="122" cy="62" r="2" fill="currentColor"/><circle cx="142" cy="62" r="2" fill="currentColor"/><circle cx="162" cy="62" r="2" fill="currentColor"/><circle cx="182" cy="62" r="2" fill="currentColor"/><circle cx="2" cy="82" r="2" fill="currentColor"/><circle cx="22" cy="82" r="2" fill="currentColor"/><circle cx="42" cy="82" r="2" fill="currentColor"/><circle cx="62" cy="82" r="2" fill="currentColor"/><circle cx="82" cy="82" r="2" fill="currentColor"/><circle cx="102" cy="82" r="2" fill="currentColor"/><circle cx="122" cy="82" r="2" fill="currentColor"/><circle cx="142" cy="82" r="2" fill="currentColor"/><circle cx="162" cy="82" r="2" fill="currentColor"/><circle cx="182" cy="82" r="2" fill="currentColor"/><circle cx="2" cy="102" r="2" fill="currentColor"/><circle cx="22" cy="102" r="2" fill="currentColor"/><circle cx="42" cy="102" r="2" fill="currentColor"/><circle cx="62" cy="102" r="2" fill="currentColor"/><circle cx="82" cy="102" r="2" fill="currentColor"/><circle cx="102" cy="102" r="2" fill="currentColor"/><circle cx="122" cy="102" r="2" fill="currentColor"/><circle cx="142" cy="102" r="2" fill="currentColor"/><circle cx="162" cy="102" r="2" fill="currentColor"/><circle cx="182" cy="102" r="2" fill="currentColor"/><circle cx="2" cy="122" r="2" fill="currentColor"/><circle cx="22" cy="122" r="2" fill="currentColor"/><circle cx="42" cy="122" r="2" fill="currentColor"/><circle cx="62" cy="122" r="2" fill="currentColor"/><circle cx="82" cy="122" r="2" fill="currentColor"/><circle cx="102" cy="122" r="2" fill="currentColor"/><circle cx="122" cy="122" r="2" fill="currentColor"/><circle cx="142" cy="122" r="2" fill="currentColor"/><circle cx="162" cy="122" r="2" fill="currentColor"/><circle cx="182" cy="122" r="2" fill="currentColor"/><circle cx="2" cy="142" r="2" fill="currentColor"/><circle cx="22" cy="142" r="2" fill="currentColor"/><circle cx="42" cy="142" r="2" fill="currentColor"/><circle cx="62" cy="142" r="2" fill="currentColor"/><circle cx="82" cy="142" r="2" fill="currentColor"/><circle cx="102" cy="142" r="2" fill="currentColor"/><circle cx="122" cy="142" r="2" fill="currentColor"/><circle cx="142" cy="142" r="2" fill="currentColor"/><circle cx="162" cy="142" r="2" fill="currentColor"/><circle cx="182" cy="142" r="2" fill="currentColor"/><circle cx="2" cy="162" r="2" fill="currentColor"/><circle cx="22" cy="162" r="2" fill="currentColor"/><circle cx="42" cy="162" r="2" fill="currentColor"/><circle cx="62" cy="162" r="2" fill="currentColor"/><circle cx="82" cy="162" r="2" fill="currentColor"/><circle cx="102" cy="162" r="2" fill="currentColor"/><circle cx="122" cy="162" r="2" fill="currentColor"/><circle cx="142" cy="162" r="2" fill="currentColor"/><circle cx="162" cy="162" r="2" fill="currentColor"/><circle cx="182" cy="162" r="2" fill="currentColor"/><circle cx="2" cy="182" r="2" fill="currentColor"/><circle cx="22" cy="182" r="2" fill="currentColor"/><circle cx="42" cy="182" r="2" fill="currentColor"/><circle cx="62" cy="182" r="2" fill="currentColor"/><circle cx="82" cy="182" r="2" fill="currentColor"/><circle cx="102" cy="182" r="2" fill="currentColor"/><circle cx="122" cy="182" r="2" fill="currentColor"/><circle cx="142" cy="182" r="2" fill="currentColor"/><circle cx="162" cy="182" r="2" fill="currentColor"/><circle cx="182" cy="182" r="2" fill="currentColor"/></svg>
-              </div>
-
-              <!-- Image -->
-              <div class="text-center">
-                <img class="position-relative img-fluid rounded-top-left rounded-bottom-right shadow-lg" width="600px" src="assets/img/example.png" alt="..." data-aos="fade-up" data-aos-delay="200">
-              </div>
-
-            </div>
+            <img class="img-fluid mw-md-150 mb-4 mb-md-0" src="assets/img/illustrations/illustration-9.png" alt="...">
 
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section class="py-10 py-md-12">
-      <div class="container-lg">
-        <div class="row justify-content-center">
-          <div class="col-md-10 col-lg-7 col-xl-6 text-center">
-
-            <!-- Divider -->
-            <hr class="hr-sm border-warning mb-10 mb-md-12">
+          <div class="col-md-6 order-md-0 pt-6 pt-md-10 pb-12 pb-md-13 text-center text-md-left">
 
             <!-- Preheading -->
-            <h6 class="text-uppercase mb-5" style="color: #585D68">
-              Waitlist
+            <h6 class="font-family-sans-serif text-primary mb-5">
+              Our Updates
             </h6>
 
             <!-- Heading -->
-            <h2 class="display-4  mb-4" style="color: #2E3542">
-              Leaderboard
-            </h2>
+            <h1 class="display-3 text-gray-900 mb-4">
+              Week 1 - Welcome
+            </h1>
 
             <!-- Text -->
-            <p class="mb-9" style="color: #585D68">
-              Get started with Sift for free to see where your Amazon products really come from. Refer more people to try it out, and you'll get access even sooner.
+            <p class="font-size-lg text-gray-900 mb-0">
+              Where's your Amazon package really coming from?
             </p>
 
           </div>
         </div>
-        <div class="row justify-content-center">
-          <iframe class="airtable-embed" src="https://airtable.com/embed/shrncxhUqQo7EmUPd?backgroundColor=red&layout=card" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+      </div>
+    </section>
 
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-fluid-x shape-top text-white">
+        <div class="shape-img pb-8 pb-md-10">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M0 25h25L75 0h25v50H0z" fill="currentColor"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <section class="py-5 py-md-5">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8">
+
+            <!-- Text -->
+            <p class="mb-7">
+              We’ve seen increasing concerns about products originating in China — not just because of COVID-19, but also due to the CCP’s horrendous record of <a href="https://www.hrw.org/world-report/2020/country-chapters/global">human rights violations</a>, <a href="https://www.wsj.com/articles/china-pulls-back-from-one-disputed-border-makes-new-claims-on-another-11594052370">border conflicts</a>, <a href="https://www.businessinsider.com/foreign-intelligence-agents-china-spying-on-americans-zoom-2020-4">suspicious spyware</a>, and <a href="https://www.nytimes.com/2019/08/06/business/economy/china-currency-manipulator.html">economic manipulations</a>. There have even been <a href="https://www.washingtonpost.com/national/religion/ap-exclusive-hair-weaves-from-chinese-prison-camps-seized/2020/07/01/11be0df2-bb9c-11ea-97c1-6cf116ffe26c_story.html">reports</a> that products brought into the United States are being sourced from the CCP’s Uyghur internment camps.
+            </p>
+
+            <p class="mb-7">
+                Simply stated, we cannot endorse such a blatant disregard for human rights. At the very least, we should take the simple step of ensuring that the products we consume every day do not come from Chinese detention camps. How we spend is our voice as consumers, but a lack of information makes it difficult to speak intelligently.
+            </p>
+
+            <p class="mb-7">
+              Unfortunately, even though India has taken steps to compel online retailers like Amazon and Flipkart to label the country of origin for all goods sold online, other countries (including the United States) have taken no such measures. It’s estimated that <a href="https://www.marketplacepulse.com/articles/40-of-merchants-on-amazon-based-in-china">40% of Amazon’s top sellers are based in China</a> — and that number is growing.
+            </p>
+
+
+            <p class="mb-7">
+              That’s why we’re excited to introduce Blueriddle, a way for you to see where the products you buy actually come from.
+            </p>
+
+            <p class="mb-7">
+              With Blueriddle, you don’t have to spend time digging through reviews and seller profiles just to know what you’re spending your money on. We dig deeper for information about the seller and manufacturer, listen to other buyers, and are continuously improving our methods. If you want to make more informed buying decisions, join our waitlist below to get early access to this free resource.
+            </p>
+
+            <div class="mb-9 mb-md-0 text-center">
+              <a class="btn btn-primary lift" href="https://airtable.com/shrBfvmFbXP1OB8uW">
+                Join Waitlist
+              </a>
+            </div>
+
+            <hr class="my-9">
+
+            <!-- Footer -->
+            <footer class="d-flex align-items-center">
+
+              <!-- Avatar -->
+              <div class="avatar avatar-sm">
+                <img class="avatar-img rounded-circle" src="assets/img/pics/sid.jpg" alt="...">
+              </div>
+
+              <!-- Body -->
+              <div class="ml-4">
+
+                <!-- Title -->
+                <h4 class="font-family-sans-serif mb-0">
+                  Sidharth Potdar
+                </h4>
+
+                <!-- Position -->
+                <p class="small text-muted mt-n1 mb-0">
+                  July 8, 2020
+                </p>
+
+              </div>
+
+            </footer>
+
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <section>
+      <div class="container-lg" />
+    </section>
+
     <!-- JAVASCRIPT -->
     <!-- Polyfills -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.find,Array.prototype.includes,Array.from,Object.entries,Promise,Object.assign"></script>
@@ -408,27 +504,7 @@
     <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
 
     <!-- Theme JS -->
-    <!-- build:js ./assets/js/theme.min.js -->
-    <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/card-stack.js"></script>
-    <script src="./assets/js/countup.js"></script>
-    <script src="./assets/js/fancybox.js"></script>
-    <script src="./assets/js/flickity.js"></script>
-    <script src="./assets/js/highlight.js"></script>
-    <script src="./assets/js/modal.js"></script>
-    <script src="./assets/js/navbar.js"></script>
-    <script src="./assets/js/navbar-dropdown.js"></script>
-    <script src="./assets/js/password.js"></script>
-    <script src="./assets/js/popovers.js"></script>
-    <script src="./assets/js/price.js"></script>
-    <script src="./assets/js/prices.js"></script>
-    <script src="./assets/js/smooth-scroll.js"></script>
-    <script src="./assets/js/svgshim.js"></script>
-    <script src="./assets/js/table.js"></script>
-    <script src="./assets/js/table-features.js"></script>
-    <script src="./assets/js/tooltips.js"></script>
-    <script src="./assets/js/typed.js"></script>
-    <!-- endbuild -->
+    <script src="./assets/js/theme.min.js"></script>
 
 
   </body>

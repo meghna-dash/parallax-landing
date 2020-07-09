@@ -15,26 +15,57 @@
     <link rel="stylesheet" href="../assets/libs/jarallax/dist/jarallax.css">
     <link rel="stylesheet" href="../assets/fonts/feather/feather.css">
 
-    <!-- 
+    <!--
       Theme Sans Serif CSS
       Remove the "disabled" attribute if you want to enable Sans Serif for headings.
     -->
-    <!-- build:css ../assets/css/theme-sans-serif.min.css id="themeSansSerif" disabled -->
-    <link rel="stylesheet" href="../assets/css/theme-sans-serif.css" id="themeSansSerif" disabled>
-    <!-- endbuild -->
+    <link rel="stylesheet" href="../assets/css/theme-sans-serif.min.css" id="themeSansSerif" disabled>
 
-    <!--
-      Demo JS
-      Remove the code below on a production website.
-    -->
-    <!-- build:js ../assets/js/demo.min.js -->
-    <script src="../assets/js/demo.js"></script>
-    <!-- endbuild -->
 
     <!-- Theme CSS -->
-    <!-- build:css ../assets/css/theme.min.css -->
-    <link rel="stylesheet" href="../assets/css/theme.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="../assets/css/theme.min.css">
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+     fbq('init', '658356188362619');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+     <img height="1" width="1"
+    src="https://www.facebook.com/tr?id=658356188362619&ev=PageView
+    &noscript=1"/>
+    </noscript>
+
+    <script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+    window['_fs_org'] = 'WAWCT';
+    window['_fs_namespace'] = 'FS';
+    (function(m,n,e,t,l,o,g,y){
+        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+        g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+        o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+        g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+        g.anonymize=function(){g.identify(!!0)};
+        g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+        g.log = function(a,b){g("log",[a,b])};
+        g.consent=function(a){g("consent",!arguments.length||a)};
+        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+        g.clearUserCookie=function(){};
+        g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+        if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+        g._v="1.2.0";
+    })(window,document,window['_fs_namespace'],'script','user');
+    </script>
 
     <title>Goodkit</title>
 
@@ -315,38 +346,25 @@
         <!-- Collapse -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+        <!-- Brand -->
+        <a class="navbar-brand d-none d-lg-block px-lg-6" href="..">
+          <img src="assets/img/logo.png" style="width: 270px; height: auto" alt="...">
+        </a>
+
           <!-- Navigation -->
-          <ul class="navbar-nav justify-content-end w-100">
+          <ul class="navbar-nav justify-content-start w-100">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-item" id="blog" href="../blog.html" role="button" aria-haspopup="true" aria-expanded="false">
                 Blog
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-item" id="pricing" href="../pricing.html" role="button" aria-haspopup="true" aria-expanded="false">
-                Pricing
+              <a class="nav-link dropdown-item" id="pricing" href="https://airtable.com/shrBfvmFbXP1OB8uW" role="button" aria-haspopup="true" aria-expanded="false">
+                Join Waitlist
               </a>
             </li>
           </ul>
 
-          <!-- Brand -->
-          <a class="navbar-brand d-none d-lg-block px-lg-6" href="..">
-            <img src="assets/img/logo.png" style="width: 270px; height: auto" alt="...">
-          </a>
-
-          <!-- Navigation -->
-          <ul class="navbar-nav justify-content-start w-100">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-item" id="report" href="../sift.html">
-                Sift
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-item" id="logIn" href="https://app.blueriddle.io" role="button" aria-haspopup="true" aria-expanded="false">
-                Log in
-              </a>
-            </li>
-          </ul>
 
         </div>
 
@@ -953,27 +971,7 @@
     <script src="../assets/libs/typed.js/lib/typed.min.js"></script>
 
     <!-- Theme JS -->
-    <!-- build:js ../assets/js/theme.min.js -->
-    <script src="../assets/js/aos.js"></script>
-    <script src="../assets/js/card-stack.js"></script>
-    <script src="../assets/js/countup.js"></script>
-    <script src="../assets/js/fancybox.js"></script>
-    <script src="../assets/js/flickity.js"></script>
-    <script src="../assets/js/highlight.js"></script>
-    <script src="../assets/js/modal.js"></script>
-    <script src="../assets/js/navbar.js"></script>
-    <script src="../assets/js/navbar-dropdown.js"></script>
-    <script src="../assets/js/password.js"></script>
-    <script src="../assets/js/popovers.js"></script>
-    <script src="../assets/js/price.js"></script>
-    <script src="../assets/js/prices.js"></script>
-    <script src="../assets/js/smooth-scroll.js"></script>
-    <script src="../assets/js/svgshim.js"></script>
-    <script src="../assets/js/table.js"></script>
-    <script src="../assets/js/table-features.js"></script>
-    <script src="../assets/js/tooltips.js"></script>
-    <script src="../assets/js/typed.js"></script>
-    <!-- endbuild -->
+    <script src="../assets/js/theme.min.js"></script>
 
 
   </body>

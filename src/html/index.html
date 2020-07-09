@@ -1,206 +1,109 @@
 <!doctype html>
-<html lang="en" style="overflow-x: visible;">
+<html lang="en">
   <head>
     @@include("partials/head.html", {
     "pageTitle": "Blueriddle"
     })
-    <link href="/prism/prism.css" rel="stylesheet" />
-  </head>
-  <body style="overflow-x: visible;">
-    <script src="/prism/prism.js"></script>
 
-    <!-- MODALS -->
+  </head>
+  <body>
+
     @@include("partials/modals.html")
 
-    <!-- NAVBAR -->
     @@include("partials/navbar.html", {
     "classList": "navbar-light"
     })
 
-    <!-- OVERFLOW -->
-    <div class="overflow-hidden">
 
-      <!-- WELCOME -->
-      <section class="pt-6 pt-md-11 pb-8 pb-md-9">
-        <div class="container-lg">
-          <div class="row justify-content-center">
-            <div class="col-md-12 col-xl-10 text-center">
+    <section class="pt-6 pt-md-12">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-xl-6 text-center text-md-left mt-md-n8" data-aos="fade-up">
 
-              <!-- Heading -->
-              <h1 class="display-2 mb-4">
-                Capture lost feedback from your <span class="text-underline-warning d-xl-inline d-xl-none">sales channels</span>.
-              </h1>
+            <h1 class="display-3 mb-4">
+              See <span class="text-underline-warning d-xl-inline d-xl-none">where</span> your Amazon products come from.
+            </h1>
 
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6 text-center">
+            <p class="lead text-muted">
+              Take the guesswork out of online shopping. The Blueriddle Chrome extension tells you if your products are coming from China, for free. It's what Amazon should be doing.
+            </p>
 
-              <!-- Text -->
-              <p class="lead text-muted">
-                Blueriddle helps you understand your prospects better by turning your sales calls and interactions into product & marketing insights.
-              </p>
-              <!-- <p class="lead text-muted">
-                Get started today.
-              </p> -->
-              <br />
-
-              <!-- Buttons -->
-              <a class="btn btn-primary lift" href="#modalSignUp" data-toggle="modal" data-target="#modalSignUp">
-                Request access
+            <div class="mb-8 mb-md-0">
+              <a class="btn btn-primary lift" href="https://airtable.com/shrBfvmFbXP1OB8uW">
+                Join Waitlist
               </a>
-              <a class="btn btn-white lift ml-3" onclick="window.scrollBy(0, 650)">
-                Learn more
+              <a class="btn btn-white lift" href="@@webRoot/blog-1.html">
+                Learn More
               </a>
-
             </div>
+
           </div>
-        </div>
-      </section>
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-5">
 
-    </div>
+            <!-- Image -->
+            <div class="position-relative">
 
+              <!-- Decoration -->
+              <div class="position-absolute bottom-right text-primary-light mr-n8 mb-n6" data-aos="fade-up" data-aos-delay="0">
+                @@include("partials/decorations/decoration-2.svg")
+              </div>
 
-    <!-- OVERFLOW -->
-    <div class="overflow-hidden">
-
-      <!-- ABOUT -->
-      <section class="bg-white pt-12 pt-md-16">
-        <div class="container-lg">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-md-7 col-lg-7">
-
-              <div class="col-md-6 col-lg-9 position-relative" style="z-index: 1;">
-                <img class="img-fluid mw-md-125 mb-4 mb-md-0" src="assets/img/illustrations/illustration-1.png" alt="...">
+              <!-- Image -->
+              <div class="text-center">
+                <img class="position-relative img-fluid rounded-top-left rounded-bottom-right shadow-lg mw-md-125 mb-8 mb-md-0" height="375px" src="assets/img/example.png" alt="..." data-aos="fade-up" data-aos-delay="0">
               </div>
 
             </div>
-            <div class="col-md-5 text-center text-md-left">
 
-              <!-- Heading -->
-              <h2 class="display-4 mb-4">
-                Analyze every sales interaction.
-              </h2>
-
-              <!-- Text -->
-              <p class="text-muted">
-                Turn every sales call into a learning opportunity. Blueriddle transcribes and analyzes your calls to deliver valuable insights for your product and marketing teams.
-              </p>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section class="bg-white pt-12 pt-md-14">
-        <div class="container-lg">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-md-7 col-lg-7 order-md-1">
-
-              <div class="col-md-6 col-lg-9 position-relative" style="z-index: 1;">
-                <img class="img-fluid mw-md-125 mb-4 mb-md-0" style="min-width: 100%" src="assets/img/illustrations/illustration-5.png" alt="...">
-              </div>
-
-            </div>
-            <div class="col-md-5 text-center text-md-left">
-
-              <!-- Heading -->
-              <h2 class="display-4 mb-4">
-                Get insights without wasting time.
-              </h2>
-
-              <!-- Text -->
-              <p class="text-muted">
-                Understand why your customers buy, what questions they have, which features they want, and more key takeaways — all without having to go digging. Blueriddle finds and compiles the useful data for you.
-              </p>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SHAPE -->
-      <div class="position-relative">
-        <div class="shape shape-fluid-x shape-bottom text-white">
-          <div class="shape-img pb-8 pb-md-11">
-            @@include("partials/shapes/angles/angle-bottom-left.svg")
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- DECORATION -->
-      <div class="position-relative d-none d-mb-block">
-        <div class="position-absolute top-left text-warning ml-n9 mt-n2">
-          @@include("partials/decorations/decoration-2.svg")
-        </div>
-      </div>
+    <!-- PRICING -->
+    <section class="py-10 py-md-12">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-8 col-xl-8 text-center">
 
+            <!-- Divider -->
+            <hr class="hr-sm border-warning mb-10 mb-md-12">
 
-      <!-- PRICING -->
-      <section class="pt-10 pt-md-14">
-        <div class="container-lg position-relative" style="z-index: 1;">
-          <div class="row justify-content-center">
+            <!-- Preheading -->
+            <h6 class="text-uppercase mb-5 text-primary">
+              Waitlist
+            </h6>
 
-              <!-- Card -->
-              <div class="card rounded-top-left-lg rounded-bottom-right-lg mt-6">
-                <div class="card-body">
+            <!-- Heading -->
+            <h2 class="display-4 mb-4">
+              Leaderboard
+            </h2>
 
-                  <!-- CTA -->
-                  <section class="position-relative py-12 py-md-8 bg-white">
+            <!-- Text -->
+            <p class="mb-4 lead text-muted">
+              Get started with Blueriddle for free to see where your Amazon products really come from. We're currently accepting early users.
+            </p>
+            <p class="lead text-muted">
+              By signing up and referring others, you can get higher on our waitlist, as well as compete for a $50 Amazon gift card!
+            </p>
 
-                    <!-- Decoration -->
-                    <div class="position-absolute bottom-right text-warning">
-                      @@include("partials/decorations/decoration-3.svg")
-                    </div>
-
-                    <!-- Content -->
-                    <div class="container-lg">
-                      <div class="row justify-content-center">
-                        <div class="col-md-10 col-lg-8 text-center">
-
-                          <!-- Heading -->
-                          <h2 class="display-1 mb-4">
-                            Get started.
-                          </h2>
-
-                          <!-- Text -->
-                          <p>
-                            Close the gap in your feedback process. Sign up to get early access to Blueriddle today.
-                          </p>
-
-                          <!-- Button -->
-                          <a class="btn btn-primary lift" href="#modalSignUp" data-toggle="modal" data-target="#modalSignUp">
-                            Request access
-                          </a>
-
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-              </div>
+            <div class="mb-8 mb-md-8">
+              <a class="btn btn-primary lift" href="https://airtable.com/shrBfvmFbXP1OB8uW">
+                Join Waitlist
+              </a>
             </div>
-          </div>
-        </section>
-      </div>
 
-      <!-- SHAPE -->
-      <div class="position-relative">
-        <div class="shape shape-fluid-x shape-top text-dark pt-15">
-          <div class="shape-img pb-8 pb-md-12">
-            @@include("partials/shapes/angles/angle-top-right.svg")
           </div>
         </div>
+        <div class="row justify-content-center">
+          <iframe class="airtable-embed" src="https://airtable.com/embed/shrncxhUqQo7EmUPd?backgroundColor=red&layout=card" frameborder="0" onmousewheel="" width="70%" height="500px" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        </div>
       </div>
-
-
-    </div>
+    </section>
 
     <!-- FOOTER -->
-    @@include("partials/footer.html", {
-    "classList": "bg-dark border-top border-gray-900"
-    })
-
     <!-- JAVASCRIPT -->
     @@include("partials/scripts.html")
 
