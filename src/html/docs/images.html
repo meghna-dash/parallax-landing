@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Images"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Images",
+            "isCustom": false,
+            "description": "",
+            "bootstrapDocs": "https://getbootstrap.com/docs/4.4/content/images/",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Image grid",
+            "id": "imageGrid",
+            "isCustom": true,
+            "description": "Responsive image grid layouts."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Image grid -->
+                <div class="img-grid img-grid-1 w-xl-50">
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid rounded-top-left-lg rounded-bottom-right-lg shadow-lg" data-jarallax-element="-30" src="@@webRoot/assets/img/avatars/avatar-jumbo-1.jpg" alt="...">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid rounded-top-left rounded-bottom-right shadow-lg" data-jarallax-element="-85" src="@@webRoot/assets/img/avatars/avatar-2.jpg" alt="...">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid rounded-top-left rounded-bottom-right shadow-lg" data-jarallax-element="-45" src="@@webRoot/assets/img/avatars/avatar-8.jpg" alt="...">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid rounded-top-left rounded-bottom-right shadow-lg" data-jarallax-element="-50" src="@@webRoot/assets/img/avatars/avatar-10.jpg" alt="...">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid rounded-top-left rounded-bottom-right shadow-lg" data-jarallax-element="-20" src="@@webRoot/assets/img/avatars/avatar-6.jpg" alt="...">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid rounded-top-left rounded-bottom-right shadow-lg" data-jarallax-element="-15" src="@@webRoot/assets/img/avatars/avatar-4.jpg" alt="...">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid rounded-top-left rounded-bottom-right shadow-lg" data-jarallax-element="-10" src="@@webRoot/assets/img/avatars/avatar-3.jpg" alt="...">
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;img-grid&nbsp;img-grid-1&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;rounded-top-left-lg&nbsp;rounded-bottom-right-lg&nbsp;shadow-lg&quot;&nbsp;data-jarallax-element=&quot;-30&quot;&nbsp;src=&quot;@@webRoot/assets/img/avatars/avatar-jumbo-1.jpg&quot;&nbsp;alt=&quot;...&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;rounded-top-left&nbsp;rounded-bottom-right&nbsp;shadow-lg&quot;&nbsp;data-jarallax-element=&quot;-85&quot;&nbsp;src=&quot;@@webRoot/assets/img/avatars/avatar-2.jpg&quot;&nbsp;alt=&quot;...&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;rounded-top-left&nbsp;rounded-bottom-right&nbsp;shadow-lg&quot;&nbsp;data-jarallax-element=&quot;-45&quot;&nbsp;src=&quot;@@webRoot/assets/img/avatars/avatar-8.jpg&quot;&nbsp;alt=&quot;...&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;rounded-top-left&nbsp;rounded-bottom-right&nbsp;shadow-lg&quot;&nbsp;data-jarallax-element=&quot;-50&quot;&nbsp;src=&quot;@@webRoot/assets/img/avatars/avatar-10.jpg&quot;&nbsp;alt=&quot;...&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;rounded-top-left&nbsp;rounded-bottom-right&nbsp;shadow-lg&quot;&nbsp;data-jarallax-element=&quot;-20&quot;&nbsp;src=&quot;@@webRoot/assets/img/avatars/avatar-6.jpg&quot;&nbsp;alt=&quot;...&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;rounded-top-left&nbsp;rounded-bottom-right&nbsp;shadow-lg&quot;&nbsp;data-jarallax-element=&quot;-15&quot;&nbsp;src=&quot;@@webRoot/assets/img/avatars/avatar-4.jpg&quot;&nbsp;alt=&quot;...&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;rounded-top-left&nbsp;rounded-bottom-right&nbsp;shadow-lg&quot;&nbsp;data-jarallax-element=&quot;-10&quot;&nbsp;src=&quot;@@webRoot/assets/img/avatars/avatar-3.jpg&quot;&nbsp;alt=&quot;...&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;<br />
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Image grid -->
+                <div class="img-grid img-grid-2">
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid border border-4 border-md-7 border-white shadow" src="@@webRoot/assets/img/coworking/office-1.jpg" alt="..." data-jarallax-element="-75">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid border border-4 border-md-7 border-white shadow" src="@@webRoot/assets/img/coworking/office-2.jpg" alt="..." data-jarallax-element="-45">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid border border-4 border-md-7 border-white shadow" src="@@webRoot/assets/img/coworking/office-3.jpg" alt="..." data-jarallax-element="-25">
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;img-grid&nbsp;img-grid-2&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;border&nbsp;border-4&nbsp;border-md-7&nbsp;border-white&nbsp;shadow&quot;&nbsp;src=&quot;@@webRoot/assets/img/coworking/office-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;data-jarallax-element=&quot;-75&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;border&nbsp;border-4&nbsp;border-md-7&nbsp;border-white&nbsp;shadow&quot;&nbsp;src=&quot;@@webRoot/assets/img/coworking/office-2.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;data-jarallax-element=&quot;-45&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;border&nbsp;border-4&nbsp;border-md-7&nbsp;border-white&nbsp;shadow&quot;&nbsp;src=&quot;@@webRoot/assets/img/coworking/office-3.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;data-jarallax-element=&quot;-25&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Image grid -->
+                <div class="img-grid img-grid-3">
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid border border-4 border-md-7 border-white shadow" src="@@webRoot/assets/img/course/office-2.jpg" alt="..." data-jarallax-element="-55">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid border border-4 border-md-7 border-white shadow" src="@@webRoot/assets/img/course/office-1.jpg" alt="..." data-jarallax-element="-105">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid border border-4 border-md-7 border-white shadow" src="@@webRoot/assets/img/course/office-3.jpg" alt="..." data-jarallax-element="-35">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Card -->
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="position-static flickity-buttons-adjacent flickity-buttons-bottom-right" data-flickity='{"imagesLoaded": true, "pageDots": false, "wrapAround": true}'>
+                          <div class="w-100">
+                            <blockquote class="text-center pb-6 pb-md-0 mb-0">
+
+                              <!-- Logo -->
+                              <div class="img-fluid svg-shim text-pinterest text-center mx-auto mb-3 mb-md-5" style="max-width: 132px;">
+                                @@include("@@webRoot/partials/brands/logotype/pinterest.svg")
+                              </div>
+
+                              <!-- Text -->
+                              <p class="font-size-lg mb-5 mb-md-8">
+                                <q>
+                                  I walked in the door at Pinterest and realized within 15 minutes of my interviews that I was going to get this job thanks to Goodkit.
+                                </q>
+                              </p>
+
+                              <!-- Footer -->
+                              <div class="d-flex align-items-center justify-content-center">
+
+                                <!-- Avatar -->
+                                <div class="avatar avatar-sm">
+                                  <img class="avatar-img rounded-circle" src="@@webRoot/assets/img/avatars/avatar-5.jpg" alt="...">
+                                </div>
+
+                                <!-- Body -->
+                                <div class="ml-4 text-left">
+
+                                  <!-- Title -->
+                                  <p class="font-weight-bold mb-0">
+                                    Katie Williams
+                                  </p>
+
+                                  <!-- Position -->
+                                  <p class="small text-muted mt-n1 mb-0">
+                                    Developer at Pinterest
+                                  </p>
+
+                                </div>
+
+                              </div>
+
+                            </blockquote>
+                          </div>
+                          <div class="w-100">
+                            <blockquote class="text-center pb-6 pb-md-0 mb-0">
+
+                              <!-- Logo -->
+                              <div class="img-fluid svg-shim text-pinterest text-center mx-auto mb-3 mb-md-5" style="max-width: 102px;">
+                                @@include("@@webRoot/partials/brands/logotype/netflix.svg")
+                              </div>
+
+                              <!-- Text -->
+                              <p class="font-size-lg mb-5 mb-md-8">
+                                <q>
+                                  I started this course without understanding variables. I left with a full-time position at Netflix as a developer. Wild.
+                                </q>
+                              </p>
+
+                              <!-- Footer -->
+                              <div class="d-flex align-items-center justify-content-center">
+
+                                <!-- Avatar -->
+                                <div class="avatar avatar-sm">
+                                  <img class="avatar-img rounded-circle" src="@@webRoot/assets/img/avatars/avatar-3.jpg" alt="...">
+                                </div>
+
+                                <!-- Body -->
+                                <div class="ml-4 text-left">
+
+                                  <!-- Title -->
+                                  <p class="font-weight-bold mb-0">
+                                    Jenny Fyfe
+                                  </p>
+
+                                  <!-- Position -->
+                                  <p class="small text-muted mt-n1 mb-0">
+                                    React at Netflix
+                                  </p>
+
+                                </div>
+
+                              </div>
+
+                            </blockquote>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;img-grid&nbsp;img-grid-3&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;border&nbsp;border-4&nbsp;border-md-7&nbsp;border-white&nbsp;shadow&quot;&nbsp;src=&quot;@@webRoot/assets/img/course/office-2.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;data-jarallax-element=&quot;-55&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;border&nbsp;border-4&nbsp;border-md-7&nbsp;border-white&nbsp;shadow&quot;&nbsp;src=&quot;@@webRoot/assets/img/course/office-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;data-jarallax-element=&quot;-105&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;border&nbsp;border-4&nbsp;border-md-7&nbsp;border-white&nbsp;shadow&quot;&nbsp;src=&quot;@@webRoot/assets/img/course/office-3.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;data-jarallax-element=&quot;-35&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Card&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;card&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Image grid -->
+                <div class="img-grid img-grid-4">
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid border border-4 border-md-7 border-white shadow" src="@@webRoot/assets/img/career/office-1.jpg" alt="..." data-jarallax-element="-85">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid border border-4 border-md-7 border-white shadow" src="@@webRoot/assets/img/career/office-2.jpg" alt="..." data-jarallax-element="-50">
+
+                  </div>
+                  <div class="img-grid-item">
+
+                    <!-- Image -->
+                    <img class="img-fluid border border-4 border-md-7 border-white shadow" src="@@webRoot/assets/img/career/office-3.jpg" alt="..." data-jarallax-element="-25">
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;img-grid&nbsp;img-grid-4&quot;&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;border&nbsp;border-4&nbsp;border-md-7&nbsp;border-white&nbsp;shadow&quot;&nbsp;src=&quot;@@webRoot/assets/img/career/office-1.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;data-jarallax-element=&quot;-85&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;border&nbsp;border-4&nbsp;border-md-7&nbsp;border-white&nbsp;shadow&quot;&nbsp;src=&quot;@@webRoot/assets/img/career/office-2.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;data-jarallax-element=&quot;-50&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;img-grid-item&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&nbsp;border&nbsp;border-4&nbsp;border-md-7&nbsp;border-white&nbsp;shadow&quot;&nbsp;src=&quot;@@webRoot/assets/img/career/office-3.jpg&quot;&nbsp;alt=&quot;...&quot;&nbsp;data-jarallax-element=&quot;-25&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Image grid", "url": "#imageGrid"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

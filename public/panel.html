@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/preact/7.2.0/preact.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="https://vjs.zencdn.net/7.7.5/video.js"></script>
+    <script src="https://unpkg.com/preact?module"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script>window.React = { createElement: preact.h }</script>
+    <script type="text/babel">
+
+      class Panel extends preact.Component {
+        constructor(){
+          super();
+          this.state = {
+            projectID: null,
+            page: 1,
+            visible: false,
+            loaded: false,
+            guides: [],
+            currentGuide: null,
+            videosPlayed: new Set(),
+            currentUrl: ""
+          }
+          this.switchToVideoPage = this.switchToVideoPage.bind(this);
+        }
+
+        componentDidMount() {
+          window.addEventListener("message", this.handleEventMessage, false);
+          window.parent.postMessage({type: "pid"}, "*");
+          window.parent.postMessage({type: "url"}, "*");
+
+          var setup = () => {
+            if (this.state.projectID !== null) {
+              this.initialSetup();
+            } else {
+              setTimeout(() => { return setup(); }, 250);
+            }
+          }
+          setup();
+        }
+
+        initialSetup = () => {
+          var url = new URL("https://api.parallaxux.com/guides");
+          var params = {
+            projectID: this.state.projectID,
+            url: this.state.currentUrl
+          };
+          Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+          fetch(url)
+          .then(response => {
+            return response.json();
+          })
+          .then(data => {
+            this.setState({
+              guides: data
+            });
+          })
+          .catch(error => {
+            console.log(error);
+          });
+
+          var videosPlayed = sessionStorage.getItem("parallax-videosPlayed");
+          if (videosPlayed !== null) {
+            this.setState({
+              videosPlayed: new Set(JSON.parse(videosPlayed))
+            });
+          }
+
+          var currentGuide = sessionStorage.getItem("parallax-currentGuide");
+          if (currentGuide != null) {
+            currentGuide = JSON.parse(currentGuide)
+            this.setState({
+              currentGuide: currentGuide
+            });
+            this.switchToVideoPage(currentGuide);
+
+            var playTS = sessionStorage.getItem("parallax-playTS");
+            var pauseTS = sessionStorage.getItem("parallax-pauseTS");
+            var currTime = sessionStorage.getItem("parallax-currTime");
+            var setTS = 0;
+            var offsetBuffer = 0.05;
+
+            if (pauseTS !== null) {
+              setTS = (pauseTS - playTS) / 1000 - offsetBuffer;
+            } else if (currTime !== null) {
+              setTS = (Date.now() - playTS) / 1000 + currTime - offsetBuffer;
+            } else {
+              setTS = (Date.now() - playTS) / 1000 - offsetBuffer;
+            }
+            setTS = (setTS >=0 ) ? setTS : 0;
+
+            var setVideoTime = (ts) => {
+              var video = document.querySelector("#parallax-video");
+              if (video !== null) {
+                video.currentTime = ts;
+              } else {
+                setTimeout(() => { return setVideoTime(ts); }, 250);
+              }
+            }
+            setVideoTime(setTS);
+          }
+          this.setState({
+            loaded: true
+          });
+          window.parent.postMessage({type: "display"}, "*");
+        }
+
+        handleEventMessage = (event) => {
+          switch(event.data.type) {
+            case "url":
+              this.setState({
+                currentUrl: event.data.data
+              });
+              break;
+            case "pid":
+              this.setState({
+                projectID: event.data.data
+              });
+              break;
+          }
+        }
+
+        switchToVideoPage = (guide) => {
+          this.setState({
+            page: 2,
+            currentGuide: guide
+          });
+
+          var refreshVideo = () => {
+            var video = document.querySelector("#parallax-video");
+            if (video !== null) {
+              video.load();
+            } else {
+              setTimeout(() => { return refreshVideo(); }, 100);
+            }
+          }
+          refreshVideo();
+        }
+
+        switchToMainPage = () => {
+          this.setState({
+            page: 1,
+            currentGuide: null
+          });
+        }
+
+        toggle = () => {
+          if (this.state.visible) {
+            window.parent.postMessage({type: "close"}, "*");
+          } else {
+            window.parent.postMessage({type: "open"}, "*");
+          }
+          this.setState({
+            visible: !this.state.visible
+          });
+        }
+
+        onVideoPlay = () => {
+          sessionStorage.setItem("parallax-currentGuide", JSON.stringify(this.state.currentGuide));
+          sessionStorage.setItem("parallax-pauseTS", null);
+          sessionStorage.setItem("parallax-playTS", Date.now());
+
+          try {
+            var video = document.querySelector("#parallax-video");
+            sessionStorage.setItem("parallax-currTime", video.currentTime)
+          } catch(error) {
+            console.log("Error with setting guide time on refresh!");
+          }
+
+          if (!this.state.videosPlayed.has(this.state.currentGuide.id)) {
+            var newSet = new Set(this.state.videosPlayed);
+            newSet.add(this.state.currentGuide.id);
+            this.setState({
+              videosPlayed: newSet
+            });
+            sessionStorage.setItem("parallax-videosPlayed", JSON.stringify(Array.from(this.state.videosPlayed)));
+            window.parent.postMessage({ type: "guide_view", guideID: this.state.currentGuide.id }, "*");
+            var url = new URL("https://api.parallaxux.com/guides");
+            var params = {
+              projectID: this.state.projectID,
+              guideID: this.state.currentGuide.id
+            };
+            Object.keys(params).forEach(key => url.searchParams.append(key, params[key]));
+            fetch(url, {
+              method: "POST"
+            })
+            .then(response => {
+              //console.log(response.json());
+            })
+            .catch(error => {
+              console.log(error);
+            });
+          }
+        }
+
+        onVideoPause = () => {
+          sessionStorage.setItem("parallax-pauseTS", Date.now());
+          try {
+            var video = document.querySelector("#parallax-video");
+            sessionStorage.setItem("parallax-currTime", video.currentTime);
+          } catch(error) {
+            console.log("Error with setting guide time on refresh!");
+          }
+        }
+
+        render() {
+          return (
+            <div>
+            {this.state.loaded && this.state.visible &&
+              <div class="demo-card-square mdl-card">
+                <div class="mdl-card__title">
+                  <h3 class="mdl-card__title-text">Need Help?</h3>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  Click on a guide below to see a video tutorial
+                </div>
+                <div class="border-multicolor"></div>
+
+                <div class="mdl-card__menu">
+                  <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" onclick={this.toggle}>
+                    <i class="material-icons">close</i>
+                  </button>
+                </div>
+                <div>
+                  {this.state.page == 1 && this.state.guides.length > 0 && this.state.guides.map(guide => (
+                    <div class="card lift lift-lg">
+                      <div class="demo-card-wide mdl-card mdl-shadow--2dp video-cards">
+                        <div class="mdl-grid-override center">
+                          <div class="mdl-cell--1-col play-img center btn btn-primary btn-circle btn-sm">
+                            <button onClick={() => this.switchToVideoPage(guide)} class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                              <i class="material-icons">play_arrow</i>
+                            </button>
+                          </div>
+                          <div class="mdl-cell--3-col mdl-card__supporting-text">
+                            <strong>{guide.title}</strong>
+                            <br /><br />
+                            {guide.description.length > 75 ? guide.description.slice(0, 75) + "..." : guide.description}
+                          </div>
+                        </div>
+                      </div>
+                      <br />
+                    </div>
+                  ))}
+                  {this.state.page == 1 && this.state.guides.length == 0 &&
+                    <div>
+                      <div class="demo-card-wide mdl-card mdl-shadow--2dp video-cards">
+                        <div class="mdl-grid-override center mdl-cell--3-col mdl-card__supporting-text">
+                          Sorry, there are no available guides right now! Please try again later.
+                        </div>
+                      </div>
+                    </div>
+                  }
+                  {this.state.page == 2 &&
+                    <div>
+                      <div class="mdl-grid demo-card-wide mdl-card mdl-shadow--2dp video-cards">
+                        <div class="mdl-cell--1-col btn btn-primary btn-circle btn-sm">
+                          <button onClick={this.switchToMainPage} class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                            <i class="material-icons">keyboard_backspace</i>
+                          </button>
+                        </div>
+                        <div class="mdl-cell--3-col mdl-card__supporting-text">
+                          <strong>{this.state.currentGuide.title}</strong>
+                        </div>
+                        <div class="video-player-position center">
+                          <video
+                            id="parallax-video"
+                            controlsList="nodownload"
+                            controls
+                            preload="metadata"
+                            fluid="true"
+                            responsive="true"
+                            onplay={this.onVideoPlay}
+                            onpause={this.onVideoPause}
+                            style={{ maxWidth: "360px", maxHeight: "300px" }}
+                          >
+                            <source src={this.state.currentGuide.path} type="video/mp4"/>
+                          </video>
+                        </div>
+                      </div>
+                    </div>
+                  }
+                </div>
+                <a class="powered-by mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" target="_blank" rel="noopener noreferrer" href="https://parallaxux.com">
+                  Powered by Blueriddle
+                </a>
+              </div>
+            }
+            {this.state.loaded && !this.state.visible &&
+              <div>
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored mdl-js-ripple-effect" style="width: 60px; height: 60px; min-width: initial;" onclick={this.toggle}>
+                  <i class="material-icons">live_help</i>
+                </button>
+              </div>
+            }
+            </div>
+          )
+        }
+      }
+
+      preact.render(<Panel />, document.body);
+    </script>
+    <style>
+      .mdl-grid-override {
+        margin: 8px 8px 8px 24px;
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .creative-tim-logo {
+        max-width: 114px;
+        top: -2px;
+        position: relative;
+      }
+      .demo-card-square.mdl-card {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+      }
+      .demo-card-square > .mdl-card__title {
+        color: #f7598b;
+        padding-bottom: 8px;
+      }
+      .divider {
+        border-bottom: solid 1px lightgray;
+        width:  100%;
+        padding-top: 0px;
+        margin-bottom: 15px;
+      }
+      .video-cards {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 15px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px 0px, rgba(48, 71, 236, 0.5) 0px 2px 0px 0px inset;
+        width: 95%;
+        min-height: 10%;
+        height: 17%;
+        margin: auto;
+        paddingTop: 0px;
+      }
+      .center {
+        align-items: center;
+      }
+      .play-img {
+        display: block;
+        position: relative;
+        float: left;
+      }
+      .video-player-position {
+        width: 95%;
+        margin: auto;
+        margin-left: 5px;
+        height: 35%;
+      }
+      .left {
+        float: left;
+        width: 65%;
+      }
+      .right {
+        float: right;
+        width: 40%;
+      }
+      .border-multicolor {
+        border-width: 1;
+        border-top: 4px solid;
+        padding: 8px;
+        border-image: linear-gradient(to right, #082B6E, #082B6E 20%, #F7598B 20%, #F7598B 40%, #007BD4 40%, #6658EA 60%, #6658EA 60%, #007BD4 80%, #009DFB 80%) 1;
+      }
+      .powered-by {
+        height: 24px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      .lift {
+        transition: box-shadow .25s ease, transform .25s ease;
+      }
+      .lift:hover,
+      .lift:focus {
+        box-shadow: 0 1rem 2.5rem fade-out(#1B1642, .9), 0 .5rem 1rem -.75rem fade-out($black, .9) !default;!important;
+        transform: translate3d(0, -3px, 0);
+      }
+      .lift-lg:hover,
+      .lift-lg:focus {
+        box-shadow: 0 1rem 5rem fade-out(#1B1642, .9), 0 2rem 3rem -1rem fade-out($black, .95) !default !important;
+        transform: translate3d(0, -5px, 0);
+      }
+      .btn-circle.btn-sm {
+        padding-left: .5rem !default;
+        padding-right: .5rem !default;
+        border-radius: 50%;
+      }
+    </style>
+  </body>
+</html>

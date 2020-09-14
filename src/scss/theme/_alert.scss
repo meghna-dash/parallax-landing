@@ -1,0 +1,24 @@
+//
+// alert.scss
+//
+
+.alert {
+  font-size: $alert-font-size;
+}
+
+
+// Variants
+
+@each $color, $value in $theme-colors {
+
+  .alert-#{$color} {
+    color: color-yiq(theme-color(#{$color}));
+  }
+}
+
+
+// Dismissible
+
+.alert-dismissible .close > .fe {
+  line-height: $alert-font-size * $line-height-base;
+}

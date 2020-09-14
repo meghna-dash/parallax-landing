@@ -1,0 +1,165 @@
+//
+// type.scss
+//
+
+// Import fonts
+
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,500,700|DM+Serif+Display&display=swap');
+
+
+// Responsive fonts
+
+@include media-breakpoint-down(md) {
+
+  h1, .h1 {
+    font-size: $h1-font-size-sm;
+  }
+
+  h2, .h2 {
+    font-size: $h2-font-size-sm;
+  }
+
+  h3, .h3 {
+    font-size: $h3-font-size-sm;
+  }
+
+  .display-4 {
+    font-size: $display4-size-sm;
+  }
+
+  .display-3 {
+    font-size: $display3-size-sm;
+  }
+
+  .display-2 {
+    font-size: $display2-size-sm;
+  }
+
+  .display-1 {
+    font-size: $display1-size-sm;
+  }
+
+  .lead {
+    font-size: $lead-font-size-sm;
+  }
+}
+
+
+// Headings
+
+h1, .h1, h2, .h2 {
+  line-height: $h1-line-height;
+}
+
+h2, .h3 {
+  line-height: $h3-line-height;
+}
+
+h4, .h4, h5, .h5, h6, .h6 {
+  line-height: $h4-line-height;
+}
+
+h6.text-uppercase, .h6.text-uppercase {
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-bolder;
+  letter-spacing: .18em;
+}
+
+
+// Sans serif
+
+.display-1.font-family-sans-serif, .display-2.font-family-sans-serif, .display-3.font-family-sans-serif, .display-4.font-family-sans-serif {
+  letter-spacing: -.02em;
+}
+
+h1.font-family-sans-serif, .h1.font-family-sans-serif {
+  letter-spacing: -.02em;
+}
+
+h2.font-family-sans-serif, .h2.font-family-sans-serif, h3.font-family-sans-serif, .h3.font-family-sans-serif, h4.font-family-sans-serif, .h4.font-family-sans-serif {
+  letter-spacing: -.01em;
+}
+
+
+
+// List checked
+
+.list-checked {
+  padding-left: 0;
+  text-align: left;
+  list-style-type: none;
+}
+
+.list-checked > li {
+  position: relative;
+  padding-left: 2.25rem;
+}
+
+.list-checked > li + li {
+  margin-top: .75rem;
+}
+
+.list-checked > li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Feather";
+  content: "\e92b";
+}
+
+@each $color, $value in $theme-colors {
+  .list-checked-#{$color} > li::before {
+    color: $value;
+  }
+}
+
+// Circle
+
+.list-checked-circle > li::before {
+  top: calc((#{$line-height-base} * 1rem - 1.25rem));
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  font-size: $font-size-xxs;
+  border-radius: 50%;
+}
+
+@each $color, $value in $theme-colors {
+  .list-checked-circle.list-checked-#{$color} > li::before {
+    background-color: $value;
+    color: color-yiq($value);
+  }
+}
+
+
+
+// Divider
+
+.hr-sm {
+  max-width: 5rem;
+  margin-top: 0;
+  border-top-width: $border-width * 5;
+}
+
+
+// Strong
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+
+// List
+
+ul, ol {
+  margin-bottom: $paragraph-margin-bottom;
+}
+
+
+// Links
+
+a, button {
+  outline: none !important;
+}

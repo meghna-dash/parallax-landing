@@ -1,0 +1,123 @@
+//
+// card.scss
+//
+
+.card {
+  box-shadow: $card-box-shadow;
+}
+
+.card-footer {
+  background-color: inherit;
+}
+
+
+// Sizing
+
+.card-body {
+  padding: $card-spacer-x-sm;
+}
+
+.card-footer {
+  padding-left: $card-spacer-x-sm;
+  padding-right: $card-spacer-x-sm;
+}
+
+.card-lg .card-body {
+  padding: $card-spacer-x;
+}
+
+.card-lg .card-footer {
+  padding-left: $card-spacer-x;
+  padding-right: $card-spacer-x;
+}
+
+@include media-breakpoint-up(lg) {
+
+  .card-body {
+    padding: $card-spacer-x;
+  }
+
+  .card-footer {
+    padding-left: $card-spacer-x;
+    padding-right: $card-spacer-x;
+  }
+
+  .card-lg .card-body {
+    padding: $card-spacer-x-lg;
+  }
+
+  .card-lg .card-footer {
+    padding-left: $card-spacer-x-lg;
+    padding-right: $card-spacer-x-lg;
+  }
+
+  .card-sm .card-body {
+    padding: $card-spacer-x-sm;
+  }
+
+  .card-sm .card-footer {
+    padding-left: $card-spacer-x-sm;
+    padding-right: $card-spacer-x-sm;
+  }
+}
+
+
+// Overlay
+
+.card-img-overlay {
+  top: auto;
+}
+
+
+// Flush
+
+.card-flush {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.card-flush .card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+// Image slider
+
+.card-img-slider {
+
+  @include media-breakpoint-up(md) {
+    height: 100%;
+    width: 100%;
+
+    * {
+      height: inherit !important;
+      width: inherit !important;
+    }
+  }
+}
+
+
+// Stack
+
+@include media-breakpoint-up('md') {
+
+  .card-stack {
+    display: grid;
+    grid-auto-rows: 1fr;
+  }
+
+  .card-stack-item {
+    position: sticky;
+    top: $card-stack-offset;
+  }
+
+  .card-stack-item > .card {
+    height: 100%;
+    transform-origin: top center;
+  }
+
+  .card-stack-item > .card > .row {
+    height: inherit;
+  }
+}

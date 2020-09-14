@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Toasts"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Toasts",
+            "isCustom": false,
+            "description": "Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.",
+            "bootstrapDocs": "https://getbootstrap.com/docs/4.2/components/toasts/",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Toast -->
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity: 1;">
+
+                  <!-- Header -->
+                  <div class="toast-header">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary-light mr-2">
+                      @@include('@@webRoot/partials/icons/duotone-icons/Communication/Chat#5.svg')
+                    </div>
+
+                    <!-- Title -->
+                    <strong class="mr-auto">
+                      Message from Dave
+                    </strong>
+
+                    <!-- Time -->
+                    <small class="text-gray-500">2m ago</small>
+
+                    <!-- Close -->
+                    <button type="button" class="ml-2 close" data-dismiss="toast" aria-label="Close">
+                      <i class="fe fe-x"></i>
+                    </button>
+
+                  </div>
+
+                  <!-- Body -->
+                  <div class="toast-body">
+                    Hello world! This is a toast message :)
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": []
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

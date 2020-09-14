@@ -1,0 +1,77 @@
+//
+// theme-sans-serif.scss
+//
+
+@import 'theme/variables';
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+
+
+// Display
+
+.display-1, .display-2, .display-3, .display-4 {
+  font-family: $font-family-sans-serif !important;
+  letter-spacing: -.02em;
+}
+
+.display-1 {
+  font-size: $display1-size-sm * .9375 !important;
+}
+
+.display-2 {
+  font-size: $display2-size-sm * .9375 !important;
+}
+
+.display-3 {
+  font-size: $display3-size-sm * .9375 !important;
+}
+
+.display-4 {
+  font-size: $display4-size-sm * .9375 !important;
+}
+
+@include media-breakpoint-up(md) {
+
+  .display-1 {
+    font-size: $display1-size * .9375 !important;
+  }
+
+  .display-2 {
+    font-size: $display2-size * .9375 !important;
+  }
+
+  .display-3 {
+    font-size: $display3-size * .9375 !important;
+  }
+
+  .display-4 {
+    font-size: $display4-size * .9375 !important;
+  }
+}
+
+
+// Headings
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: $font-family-sans-serif !important;
+}
+
+h1, .h1 {
+  letter-spacing: -.02em;
+}
+
+h2, .h2, h3, .h3, h4, .h4 {
+  letter-spacing: -.01em;
+}
+
+
+// Aa text (demo only)
+
+#text-aa-serif {
+  color: rgba($white, .2) !important;
+}
+
+#text-aa-sans-serif {
+  color: $white !important;
+}

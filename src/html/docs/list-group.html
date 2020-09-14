@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "List group"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "List group",
+            "isCustom": false,
+            "description": "List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.",
+            "bootstrapDocs": "http://getbootstrap.com/docs/4.1/components/list-group/",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- List group -->
+                <ul class="list-group">
+                  <li class="list-group-item active">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Morbi leo risus</li>
+                  <li class="list-group-item">Porta ac consectetur ac</li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Morbi leo risus
+                    <span class="badge badge-primary badge-pill">1</span>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Flush",
+            "id": "flush",
+            "isCustom": true,
+            "description": "Remove borders and horizontal paddings with a <code>.list-group-flush</code> component."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- List group -->
+                <ul class="list-group list-group-flush my-n5">
+                  <li class="list-group-item">
+                    Members per team
+                  </li>
+                  <li class="list-group-item">
+                    Data retention
+                  </li>
+                  <li class="list-group-item">
+                    Support
+                  </li>
+                  <li class="list-group-item">
+                    API Limiting
+                  </li>
+                </ul>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;ul&nbsp;class=&quot;list-group&nbsp;list-group-flush&quot;&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Members&nbsp;per&nbsp;team<br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Data&nbsp;retention<br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Support<br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;API&nbsp;Limiting<br />&nbsp;&nbsp;&lt;/li&gt;<br />&lt;/ul&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Sizing",
+            "id": "sizing",
+            "isCustom": true,
+            "description": "Easily control the size of the list group component with sizing utilities."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card mb-4">
+              <div class="card-body">
+
+                <!-- List group -->
+                <ul class="list-group list-group-lg">
+                  <li class="list-group-item">
+                    Members per team
+                  </li>
+                  <li class="list-group-item">
+                    Data retention
+                  </li>
+                  <li class="list-group-item">
+                    Support
+                  </li>
+                  <li class="list-group-item">
+                    API Limiting
+                  </li>
+                </ul>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;ul&nbsp;class=&quot;list-group&nbsp;list-group-lg&quot;&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Members&nbsp;per&nbsp;team<br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Data&nbsp;retention<br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Support<br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;API&nbsp;Limiting<br />&nbsp;&nbsp;&lt;/li&gt;<br />&lt;/ul&gt;
+                </code>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-sm docs-card mb-4">
+              <div class="card-body">
+
+                <!-- List group -->
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    Members per team
+                  </li>
+                  <li class="list-group-item">
+                    Data retention
+                  </li>
+                  <li class="list-group-item">
+                    Support
+                  </li>
+                  <li class="list-group-item">
+                    API Limiting
+                  </li>
+                </ul>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;ul&nbsp;class=&quot;list-group&quot;&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Members&nbsp;per&nbsp;team<br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Data&nbsp;retention<br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Support<br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;API&nbsp;Limiting<br />&nbsp;&nbsp;&lt;/li&gt;<br />&lt;/ul&gt;
+                </code>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- List group -->
+                <ul class="list-group list-group-sm">
+                  <li class="list-group-item">
+                    Members per team
+                  </li>
+                  <li class="list-group-item">
+                    Data retention
+                  </li>
+                  <li class="list-group-item">
+                    Support
+                  </li>
+                  <li class="list-group-item">
+                    API Limiting
+                  </li>
+                </ul>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;ul&nbsp;class=&quot;list-group&nbsp;list-group-sm&quot;&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Members&nbsp;per&nbsp;team<br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Data&nbsp;retention<br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Support<br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;API&nbsp;Limiting<br />&nbsp;&nbsp;&lt;/li&gt;<br />&lt;/ul&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Hover",
+            "id": "hover",
+            "isCustom": true,
+            "description": "Combine <code>.list-group-hover</code> with <code>.list-group-flush</code> to add a shadow when you hover over list group items."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body border-0">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush list-group-hover">
+                  <a class="list-group-item d-flex align-items-center text-reset text-decoration-none" data-toggle="flickity" data-target="#coworkingOptions" data-slide="0" href="#!">
+
+                    <!-- Body -->
+                    <div class="mr-auto">
+
+                      <!-- Heading -->
+                      <p class="font-size-lg font-weight-bold mb-0">
+                        Floating Seat
+                      </p>
+
+                      <!-- Text -->
+                      <p class="small text-muted mt-n1 mb-0">
+                        First-come first-serve seating
+                      </p>
+
+                    </div>
+
+                    <!-- Price -->
+                    <h6 class="text-uppercase text-primary mb-0">
+                      $49/mo
+                    </h6>
+
+                  </a>
+                  <a class="list-group-item d-flex align-items-center text-reset text-decoration-none" data-toggle="flickity" data-target="#coworkingOptions" data-slide="1" href="#!">
+
+                    <!-- Body -->
+                    <div class="mr-auto">
+
+                      <!-- Heading -->
+                      <p class="font-size-lg font-weight-bold mb-0">
+                        Dedicated Desk
+                      </p>
+
+                      <!-- Text -->
+                      <p class="small text-muted mt-n1 mb-0">
+                        Desk in a community space
+                      </p>
+
+                    </div>
+
+                    <!-- Price -->
+                    <h6 class="text-uppercase text-primary mb-0">
+                      $99/mo
+                    </h6>
+
+                  </a>
+                  <a class="list-group-item d-flex align-items-center text-reset text-decoration-none" data-toggle="flickity" data-target="#coworkingOptions" data-slide="2" href="#!">
+
+                    <!-- Body -->
+                    <div class="mr-auto">
+
+                      <!-- Heading -->
+                      <p class="font-size-lg font-weight-bold mb-0">
+                        Small Office
+                      </p>
+
+                      <!-- Text -->
+                      <p class="small text-muted mt-n1 mb-0">
+                        2-10 person team offices
+                      </p>
+
+                    </div>
+
+                    <!-- Price -->
+                    <h6 class="text-uppercase text-primary mb-0">
+                      $299/mo
+                    </h6>
+
+                  </a>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;list-group&nbsp;list-group-flush&nbsp;list-group-hover&quot;&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;...&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;...&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;list-group-item&quot;&gt;...&lt;/li&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Flush", "url": "#flush"}, {"title": "Sizing", "url": "#sizing"}, {"title": "Hover", "url": "#hover"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

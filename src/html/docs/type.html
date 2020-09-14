@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Type"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Type",
+            "isCustom": true,
+            "description": "Typography utilities to control text size, color and font family.",
+            "bootstrapDocs": "https://getbootstrap.com/docs/4.4/utilities/text/",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Font family",
+            "id": "fontFamily",
+            "isCustom": false,
+            "description": "Additional font family utilities."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Headings -->
+                <h1 class="font-family-serif">Font family Serif</h1>
+                <h1 class="font-family-sans-serif mb-0">Font family Sans Serif</h1>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;h1&nbsp;class=&quot;font-family-serif&quot;&gt;Font&nbsp;family&nbsp;Serif&lt;/h1&gt;<br />&lt;h1&nbsp;class=&quot;font-family-sans-serif&quot;&gt;Font&nbsp;family&nbsp;Sans&nbsp;Serif&lt;/h1&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Sizing",
+            "id": "sizing",
+            "isCustom": false,
+            "description": "Additional font size utilities."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Text -->
+                <p class="font-size-h2 mb-3">Font size h2</p>
+                <p class="font-size-h3 mb-3">Font size h3</p>
+                <p class="font-size-lg mb-3">Font size lg</p>
+                <p class="font-size-sm mb-3">Font size sm</p>
+                <p class="font-size-xs mb-3">Font size xs</p>
+                <p class="font-size-xxs mb-0">Font size xxs</p>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;p&nbsp;class=&quot;font-size-h2&quot;&gt;Font&nbsp;size&nbsp;h2&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;font-size-h3&quot;&gt;Font&nbsp;size&nbsp;h3&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;font-size-lg&quot;&gt;Font&nbsp;size&nbsp;lg&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;font-size-sm&quot;&gt;Font&nbsp;size&nbsp;sm&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;font-size-xs&quot;&gt;Font&nbsp;size&nbsp;xs&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;font-size-xxs&quot;&gt;Font&nbsp;size&nbsp;xxs&lt;/p&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Colors",
+            "id": "colors",
+            "isCustom": false,
+            "description": "Additional color utilities."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Text -->
+                <p class="text-white-20 mb-3">Text white 20</p>
+                <p class="text-white-60 mb-3">Text white 60</p>
+                <p class="text-white-80 mb-3">Text white 80</p>
+                <p class="text-gray-300 mb-3">Text gray 300</p>
+                <p class="text-gray-500 mb-3">Text gray 500</p>
+                <p class="text-gray-600 mb-3">Text gray 600</p>
+                <p class="text-gray-800 mb-0">Text gray 800</p>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;p&nbsp;class=&quot;text-white-20&quot;&gt;Text&nbsp;white&nbsp;20&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-white-60&quot;&gt;Text&nbsp;white&nbsp;60&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-white-80&quot;&gt;Text&nbsp;white&nbsp;80&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-gray-300&quot;&gt;Text&nbsp;gray&nbsp;300&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-gray-500&quot;&gt;Text&nbsp;gray&nbsp;500&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-gray-600&quot;&gt;Text&nbsp;gray&nbsp;600&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-gray-800&quot;&gt;Text&nbsp;gray&nbsp;800&lt;/p&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Underline",
+            "id": "underline",
+            "isCustom": false,
+            "description": "Multicolor text underline utilities."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Heading -->
+                <h1>A modern design system for your new <span class="text-underline-warning">SaaS platform</span>.</h1>
+                <h1 class="mb-0">Investing is Easy. <span class="text-underline-primary-light">Use MoneyBot</span>.</h1>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;h1&gt;A&nbsp;modern&nbsp;design&nbsp;system&nbsp;for&nbsp;your&nbsp;new&nbsp;&lt;span&nbsp;class=&quot;text-underline-warning&quot;&gt;SaaS&nbsp;platform&lt;/span&gt;.&lt;/h1&gt;<br />&lt;h1&gt;Investing&nbsp;is&nbsp;Easy.&nbsp;&lt;span&nbsp;class=&quot;text-underline-primary-light&quot;&gt;Use&nbsp;MoneyBot&lt;/span&gt;.&lt;/h1&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Social colors",
+            "id": "socialColors",
+            "isCustom": false,
+            "description": "Additional social color utilities. You can extend the list of social colors by extending the <code>$brand-colors</code> SCSS map."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Text -->
+                <p class="text-stripe mb-3">Stripe</p>
+                <p class="text-digital-ocean mb-3">Digital ocean</p>
+                <p class="text-airbnb mb-3">Airbnb</p>
+                <p class="text-coinbase mb-3">Coinbase</p>
+                <p class="text-netflix mb-3">Netflix</p>
+                <p class="text-dribbble mb-3">Dribbble</p>
+                <p class="text-pinterest mb-3">Pinterest</p>
+                <p class="text-instagram mb-0">Instagram</p>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;p&nbsp;class=&quot;text-stripe&quot;&gt;Stripe&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-digital-ocean&quot;&gt;Digital&nbsp;ocean&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-airbnb&quot;&gt;Airbnb&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-coinbase&quot;&gt;Coinbase&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-netflix&quot;&gt;Netflix&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-dribbble&quot;&gt;Dribbble&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-pinterest&quot;&gt;Pinterest&lt;/p&gt;<br />&lt;p&nbsp;class=&quot;text-instagram&quot;&gt;Instagram&lt;/p&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Line height",
+            "id": "lineHeight",
+            "isCustom": false,
+            "description": "Additional line height utilities."
+            })
+
+            <!-- List -->
+            <ul class="mb-0">
+              <li>
+                <code>.line-height-reset</code> - sets the line height to <code>1</code>.
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Font family", "url": "#fontFamily"}, {"title": "Sizing", "url": "#sizing"}, {"title": "Colors", "url": "#colors"}, {"title": "Underline", "url": "#underline"}, {"title": "Social colors", "url": "#socialColors"}, {"title": "Line height", "url": "#lineHeight"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

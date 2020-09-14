@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Timeline"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Timeline",
+            "isCustom": true,
+            "description": "Timeline component for complex ordered lists.",
+            "bootstrapDocs": "",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": "The color of the timeline component can be controlled with the <code>.timeline-{color}</code> utility classes. You can also specify the breakpoint at which the timeline component becomes uncollapsed via <code>.timeline-expand-{breakpoint}</code> utility classes."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Timeline -->
+                <ol class="timeline timeline-expand-xl timeline-warning mb-0">
+                  <li class="timeline-item active">
+
+                    <!-- Heading -->
+                    <h2>
+                      Activation
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+                    </p>
+
+                    <!-- Link -->
+                    <a class="h4 font-family-sans-serif" href="#!">
+                      Activation Triggers <i class="fe fe-chevron-right ml-1"></i>
+                    </a>
+
+                  </li>
+                  <li class="timeline-item active">
+
+                    <!-- Heading -->
+                    <h2>
+                      Engagement
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-4">
+                      In urna lectus, mattis non accumsan in, tempor dictum neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+
+                    <!-- Link -->
+                    <a class="h4 font-family-sans-serif" href="#!">
+                      Feedback Loops <i class="fe fe-chevron-right ml-1"></i>
+                    </a>
+
+                  </li>
+                  <li class="timeline-item active">
+
+                    <!-- Heading -->
+                    <h2>
+                      Retention
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="text-muted mb-4">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non accumsan in, tempor dictum neque.
+                    </p>
+
+                    <!-- Link -->
+                    <a class="h4 font-family-sans-serif" href="#!">
+                      Churn Minifiers <i class="fe fe-chevron-right ml-1"></i>
+                    </a>
+
+                  </li>
+                </ol>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;ol&nbsp;class=&quot;timeline&nbsp;timeline-expand-xl&nbsp;timeline-warning&nbsp;mb-0&quot;&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;timeline-item&nbsp;active&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Heading&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activation<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h2&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Text&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&nbsp;class=&quot;text-muted&nbsp;mb-4&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur&nbsp;adipiscing&nbsp;elit.&nbsp;In&nbsp;urna&nbsp;lectus,&nbsp;mattis&nbsp;non&nbsp;accumsan&nbsp;in,&nbsp;tempor&nbsp;dictum&nbsp;neque.<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Link&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;h4&nbsp;font-family-sans-serif&quot;&nbsp;href=&quot;#!&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activation&nbsp;Triggers&nbsp;&lt;i&nbsp;class=&quot;fe&nbsp;fe-chevron-right&nbsp;ml-1&quot;&gt;&lt;/i&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br /><br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;timeline-item&nbsp;active&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Heading&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Engagement<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h2&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Text&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&nbsp;class=&quot;text-muted&nbsp;mb-4&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In&nbsp;urna&nbsp;lectus,&nbsp;mattis&nbsp;non&nbsp;accumsan&nbsp;in,&nbsp;tempor&nbsp;dictum&nbsp;neque.&nbsp;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur&nbsp;adipiscing&nbsp;elit.<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Link&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;h4&nbsp;font-family-sans-serif&quot;&nbsp;href=&quot;#!&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feedback&nbsp;Loops&nbsp;&lt;i&nbsp;class=&quot;fe&nbsp;fe-chevron-right&nbsp;ml-1&quot;&gt;&lt;/i&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br /><br />&nbsp;&nbsp;&lt;/li&gt;<br />&nbsp;&nbsp;&lt;li&nbsp;class=&quot;timeline-item&nbsp;active&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Heading&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retention<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h2&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Text&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&nbsp;class=&quot;text-muted&nbsp;mb-4&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,&nbsp;consectetur&nbsp;adipiscing&nbsp;elit.&nbsp;In&nbsp;urna&nbsp;lectus,&nbsp;mattis&nbsp;non&nbsp;accumsan&nbsp;in,&nbsp;tempor&nbsp;dictum&nbsp;neque.<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Link&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;class=&quot;h4&nbsp;font-family-sans-serif&quot;&nbsp;href=&quot;#!&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Churn&nbsp;Minifiers&nbsp;&lt;i&nbsp;class=&quot;fe&nbsp;fe-chevron-right&nbsp;ml-1&quot;&gt;&lt;/i&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br /><br />&nbsp;&nbsp;&lt;/li&gt;<br />&lt;/ol&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": []
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

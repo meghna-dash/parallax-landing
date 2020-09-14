@@ -1,0 +1,11 @@
+//
+// modals.scss
+//
+
+// Close
+
+.modal-close {
+  position: absolute;
+  top: $modal-close-offset;
+  right: $modal-close-offset;
+}

@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Decorations"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Decorations",
+            "isCustom": true,
+            "description": "Decoration images with resonsive positioning.",
+            "bootstrapDocs": "",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": "Easily adjust the positioning of the decorations with the responsive positioning and margin utilities. The color of the decorations can be controlled with the <code>.text-{color}</code> utility classes."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Decoration -->
+                <div class="text-warning">
+                  @@include("@@webRoot/partials/decorations/decoration-1.svg")
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;position-absolute&nbsp;text-warning&quot;&gt;<br />&nbsp;&nbsp;@@include(&quot;@@webRoot/partials/decorations/decoration-1.svg&quot;)<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Decoration -->
+                <div class="text-primary-light">
+                  @@include("@@webRoot/partials/decorations/decoration-2.svg")
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;position-absolute&nbsp;text-primary-light&quot;&gt;<br />&nbsp;&nbsp;@@include(&quot;@@webRoot/partials/decorations/decoration-2.svg&quot;)<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Decoration -->
+                <div class="text-warning">
+                  @@include("@@webRoot/partials/decorations/decoration-3.svg")
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;position-absolute&nbsp;text-warning&quot;&gt;<br />&nbsp;&nbsp;@@include(&quot;@@webRoot/partials/decorations/decoration-3.svg&quot;)<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Decoration -->
+                <div class="text-primary">
+                  @@include("@@webRoot/partials/decorations/decoration-4.svg")
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;position-absolute&nbsp;text-primary&quot;&gt;<br />&nbsp;&nbsp;@@include(&quot;@@webRoot/partials/decorations/decoration-4.svg&quot;)<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Decoration -->
+                <div class="text-primary">
+                  @@include("@@webRoot/partials/decorations/decoration-5.svg")
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;position-absolute&nbsp;text-primary&quot;&gt;<br />&nbsp;&nbsp;@@include(&quot;@@webRoot/partials/decorations/decoration-5.svg&quot;)<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": []
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Flickity"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Flickity",
+            "isCustom": true,
+            "description": "Touch, responsive, flickable carousels.",
+            "bootstrapDocs": "",
+            "pluginDocs": "https://flickity.metafizzy.co/"
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Slider -->
+                <div data-flickity='{"imagesLoaded": true, "pageDots": false, "wrapAround": true}'>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-benefits.jpg" alt="...">
+
+                  </div>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-blog.jpg" alt="...">
+
+                  </div>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-blog-article.jpg" alt="...">
+
+                  </div>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-blog-article-cover.jpg" alt="...">
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;data-flickity='{&quot;imagesLoaded&quot;:&nbsp;true,&nbsp;&quot;pageDots&quot;:&nbsp;false,&nbsp;&quot;wrapAround&quot;:&nbsp;true}'&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;col-12&quot;&nbsp;style=&quot;max-width:&nbsp;480px;&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&quot;&nbsp;src=&quot;@@webRoot/assets/img/screenshots/desktop/page-benefits.jpg&quot;&nbsp;alt=&quot;...&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;col-12&quot;&nbsp;style=&quot;max-width:&nbsp;480px;&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&quot;&nbsp;src=&quot;@@webRoot/assets/img/screenshots/desktop/page-blog.jpg&quot;&nbsp;alt=&quot;...&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;col-12&quot;&nbsp;style=&quot;max-width:&nbsp;480px;&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&quot;&nbsp;src=&quot;@@webRoot/assets/img/screenshots/desktop/page-blog-article.jpg&quot;&nbsp;alt=&quot;...&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;col-12&quot;&nbsp;style=&quot;max-width:&nbsp;480px;&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Image&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;img&nbsp;class=&quot;img-fluid&quot;&nbsp;src=&quot;@@webRoot/assets/img/screenshots/desktop/page-blog-article-cover.jpg&quot;&nbsp;alt=&quot;...&quot;&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Overlapping buttons",
+            "id": "overlappingButtons",
+            "isCustom": false,
+            "description": "Make buttons overlap the flickity container with <code>.flickity-buttons-overlap</code> modifier."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Slider -->
+                <div class="flickity-buttons-overlap" data-flickity='{"imagesLoaded": true, "pageDots": false, "wrapAround": true}'>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-benefits.jpg" alt="...">
+
+                  </div>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-blog.jpg" alt="...">
+
+                  </div>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-blog-article.jpg" alt="...">
+
+                  </div>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-blog-article-cover.jpg" alt="...">
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;flickity-buttons-overlap&quot;&nbsp;data-flickity='{...}'&gt;<br />&nbsp;...<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Adjacent buttons",
+            "id": "adjacentButtons",
+            "isCustom": false,
+            "description": "Alternative navigation buttons styles and positioning."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Slider -->
+                <div class="flickity-buttons-adjacent flickity-buttons-rounded flickity-buttons-bottom-left shadow rounded mb-8" data-flickity='{"pageDots": false, "wrapAround": true}'>
+                  <div class="col-12 p-6 pb-9">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero mollitia quis recusandae beatae! Aut sit impedit laudantium beatae at. Dolores exercitationem alias eaque repellat itaque saepe ullam nulla architecto.
+                  </div>
+                  <div class="col-12 p-6 pb-9">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero mollitia quis recusandae beatae! Aut sit impedit laudantium beatae at. Dolores exercitationem alias eaque repellat itaque saepe ullam nulla architecto.
+                  </div>
+                  <div class="col-12 p-6 pb-9">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero mollitia quis recusandae beatae! Aut sit impedit laudantium beatae at. Dolores exercitationem alias eaque repellat itaque saepe ullam nulla architecto.
+                  </div>
+                </div>
+
+                <!-- Slider -->
+                <div class="flickity-buttons-adjacent flickity-buttons-rounded flickity-buttons-bottom-center shadow rounded mb-8" data-flickity='{"pageDots": false, "wrapAround": true}'>
+                  <div class="col-12 p-6 pb-9">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero mollitia quis recusandae beatae! Aut sit impedit laudantium beatae at. Dolores exercitationem alias eaque repellat itaque saepe ullam nulla architecto.
+                  </div>
+                  <div class="col-12 p-6 pb-9">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero mollitia quis recusandae beatae! Aut sit impedit laudantium beatae at. Dolores exercitationem alias eaque repellat itaque saepe ullam nulla architecto.
+                  </div>
+                  <div class="col-12 p-6 pb-9">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero mollitia quis recusandae beatae! Aut sit impedit laudantium beatae at. Dolores exercitationem alias eaque repellat itaque saepe ullam nulla architecto.
+                  </div>
+                </div>
+
+                <!-- Slider -->
+                <div class="flickity-buttons-adjacent flickity-buttons-rounded flickity-buttons-bottom-right shadow rounded mb-4" data-flickity='{"pageDots": false, "wrapAround": true}'>
+                  <div class="col-12 p-6 pb-9">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero mollitia quis recusandae beatae! Aut sit impedit laudantium beatae at. Dolores exercitationem alias eaque repellat itaque saepe ullam nulla architecto.
+                  </div>
+                  <div class="col-12 p-6 pb-9">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero mollitia quis recusandae beatae! Aut sit impedit laudantium beatae at. Dolores exercitationem alias eaque repellat itaque saepe ullam nulla architecto.
+                  </div>
+                  <div class="col-12 p-6 pb-9">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero mollitia quis recusandae beatae! Aut sit impedit laudantium beatae at. Dolores exercitationem alias eaque repellat itaque saepe ullam nulla architecto.
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;flickity-buttons-adjacent&nbsp;flickity-buttons-rounded&nbsp;flickity-buttons-bottom-left&quot;&nbsp;data-flickity='{...}'&gt;<br />&nbsp;&nbsp;...<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;flickity-buttons-adjacent&nbsp;flickity-buttons-rounded&nbsp;flickity-buttons-bottom-center&quot;&nbsp;data-flickity='{...}'&gt;<br />&nbsp;&nbsp;...<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;flickity-buttons-adjacent&nbsp;flickity-buttons-rounded&nbsp;flickity-buttons-bottom-right&quot;&nbsp;data-flickity='{...}'&gt;<br />&nbsp;&nbsp;...<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Soft edges",
+            "id": "softEdges",
+            "isCustom": false,
+            "description": "Adds soft edges of a provided color to the flickity slider. The default color is <code>$white</code>"
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Slider -->
+                <div class="flickity-soft-edges flickity-soft-edges-white lickity-buttons-adjacent flickity-buttons-rounded flickity-buttons-bottom-center shadow rounded mb-4" data-flickity='{"pageDots": false, "wrapAround": true}'>
+                  <div class="col-12 p-6 pb-9">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero mollitia quis recusandae beatae! Aut sit impedit laudantium beatae at. Dolores exercitationem alias eaque repellat itaque saepe ullam nulla architecto.
+                  </div>
+                  <div class="col-12 p-6 pb-9">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero mollitia quis recusandae beatae! Aut sit impedit laudantium beatae at. Dolores exercitationem alias eaque repellat itaque saepe ullam nulla architecto.
+                  </div>
+                  <div class="col-12 p-6 pb-9">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero mollitia quis recusandae beatae! Aut sit impedit laudantium beatae at. Dolores exercitationem alias eaque repellat itaque saepe ullam nulla architecto.
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;flickity-soft-edges&nbsp;flickity-soft-edges-white&quot;&nbsp;data-flickity='{...}'&gt;<br />&nbsp;&nbsp;...<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Fade",
+            "id": "fade",
+            "isCustom": false,
+            "description": "Makes the center item stand out and fades out the rest of the slides."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Slider -->
+                <div class="flickity-items-fade" data-flickity='{"imagesLoaded": true, "pageDots": false, "wrapAround": true}'>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-benefits.jpg" alt="...">
+
+                  </div>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-blog.jpg" alt="...">
+
+                  </div>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-blog-article.jpg" alt="...">
+
+                  </div>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-blog-article-cover.jpg" alt="...">
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;flickity-items-fade&quot;&nbsp;data-flickity='{...}'&gt;<br />&nbsp;&nbsp;...<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Responsive buttons",
+            "id": "responsiveButtons",
+            "isCustom": false,
+            "description": "Replaces navigation buttons with page dots on mobile devices."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Slider -->
+                <div class="flickity-buttons-responsive mb-4 mb-md-0" data-flickity='{"imagesLoaded": true, "wrapAround": true}'>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-benefits.jpg" alt="...">
+
+                  </div>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-blog.jpg" alt="...">
+
+                  </div>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-blog-article.jpg" alt="...">
+
+                  </div>
+                  <div class="col-12" style="max-width: 480px;">
+
+                    <!-- Image -->
+                    <img class="img-fluid" src="@@webRoot/assets/img/screenshots/desktop/page-blog-article-cover.jpg" alt="...">
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;flickity-buttons-reponsive&quot;&nbsp;data-flickity='{...}'&gt;<br />&nbsp;&nbsp;...<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Visible overflow",
+            "id": "visibleOverflow",
+            "isCustom": false,
+            "description": "Changes the overflow visibililty of the flickity viewport."
+            })
+
+            <!-- Slider -->
+            <div class="flickity-viewport-visible mx-n4 mb-8" data-flickity='{"cellAlign": "left", "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "contain": true}'>
+              <div class="col-12" style="max-width: 300px;">
+
+                <!-- Card -->
+                <div class="card card-sm rounded-top-left rounded-bottom-right lift">
+
+                  <!-- Image  -->
+                  <img class="card-img rounded-top-left" src="@@webRoot/assets/img/robo-advisor/office-stripe.jpg" alt="...">
+
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        @@include("@@webRoot/partials/shapes/angles/angle-top-right.svg")
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Body -->
+                  <div class="card-body">
+
+                    <!-- Heading -->
+                    <div class="d-flex align-items-center mb-3">
+
+                      <!-- Logo -->
+                      <div class="img-fluid svg-shim text-stripe mb-0" style="max-width: 64px;">
+                        @@include("@@webRoot/partials/brands/logotype/stripe.svg")
+                      </div>
+
+                      <!-- Icon -->
+                      <a class="ml-auto text-decoration-none text-stripe stretched-link" href="#!">
+                        <i class="fe fe-arrow-right"></i>
+                      </a>
+
+                    </div>
+
+                    <!-- Text -->
+                    <small>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non.
+                    </small>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-12" style="max-width: 300px;">
+
+                <!-- Card -->
+                <div class="card card-sm rounded-top-left rounded-bottom-right lift">
+
+                  <!-- Image  -->
+                  <img class="card-img rounded-top-left" src="@@webRoot/assets/img/robo-advisor/office-digital-ocean.jpg" alt="...">
+
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        @@include("@@webRoot/partials/shapes/angles/angle-top-right.svg")
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Body -->
+                  <div class="card-body">
+
+                    <!-- Heading -->
+                    <div class="d-flex align-items-center mb-3">
+
+                      <!-- Logo -->
+                      <div class="img-fluid svg-shim text-digital-ocean mb-0" style="max-width: 140px;">
+                        @@include("@@webRoot/partials/brands/logotype/digital-ocean.svg")
+                      </div>
+
+                      <!-- Icon -->
+                      <a class="ml-auto text-decoration-none text-digital-ocean stretched-link" href="#!">
+                        <i class="fe fe-arrow-right"></i>
+                      </a>
+
+                    </div>
+
+                    <!-- Text -->
+                    <small>
+                      Tempor dictum neque. In hac habitasse platea dictumst. Proin sit amet convallis enim.
+                    </small>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-12" style="max-width: 300px;">
+
+                <!-- Card -->
+                <div class="card card-sm rounded-top-left rounded-bottom-right lift">
+
+                  <!-- Image  -->
+                  <img class="card-img rounded-top-left" src="@@webRoot/assets/img/robo-advisor/office-airbnb.jpg" alt="...">
+
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        @@include("@@webRoot/partials/shapes/angles/angle-top-right.svg")
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Body -->
+                  <div class="card-body">
+
+                    <!-- Heading -->
+                    <div class="d-flex align-items-center mb-3">
+
+                      <!-- Logo -->
+                      <div class="img-fluid svg-shim text-airbnb mb-0" style="max-width: 96px;">
+                        @@include("@@webRoot/partials/brands/logotype/airbnb.svg")
+                      </div>
+
+                      <!-- Icon -->
+                      <a class="ml-auto text-decoration-none text-airbnb stretched-link" href="#!">
+                        <i class="fe fe-arrow-right"></i>
+                      </a>
+
+                    </div>
+
+                    <!-- Text -->
+                    <small>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non.
+                    </small>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-12" style="max-width: 300px;">
+
+                <!-- Card -->
+                <div class="card card-sm rounded-top-left rounded-bottom-right lift">
+
+                  <!-- Image  -->
+                  <img class="card-img rounded-top-left" src="@@webRoot/assets/img/robo-advisor/office-coinbase.jpg" alt="...">
+
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        @@include("@@webRoot/partials/shapes/angles/angle-top-right.svg")
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Body -->
+                  <div class="card-body">
+
+                    <!-- Heading -->
+                    <div class="d-flex align-items-center mb-3">
+
+                      <!-- Logo -->
+                      <div class="img-fluid svg-shim text-coinbase mb-0" style="max-width: 96px;">
+                        @@include("@@webRoot/partials/brands/logotype/coinbase.svg")
+                      </div>
+
+                      <!-- Icon -->
+                      <a class="ml-auto text-decoration-none text-coinbase stretched-link" href="#!">
+                        <i class="fe fe-arrow-right"></i>
+                      </a>
+
+                    </div>
+
+                    <!-- Text -->
+                    <small>
+                      Tempor dictum neque. In hac habitasse platea dictumst. Proin sit amet convallis enim.
+                    </small>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-12" style="max-width: 300px;">
+
+                <!-- Card -->
+                <div class="card card-sm rounded-top-left rounded-bottom-right lift">
+
+                  <!-- Image  -->
+                  <img class="card-img rounded-top-left" src="@@webRoot/assets/img/robo-advisor/office-netflix.jpg" alt="...">
+
+                  <!-- SHAPE -->
+                  <div class="position-relative">
+                    <div class="shape shape-fluid-x shape-top text-white">
+                      <div class="shape-img pb-4">
+                        @@include("@@webRoot/partials/shapes/angles/angle-top-right.svg")
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Body -->
+                  <div class="card-body">
+
+                    <!-- Heading -->
+                    <div class="d-flex align-items-center mb-3">
+
+                      <!-- Logo -->
+                      <div class="img-fluid svg-shim text-netflix mb-0" style="max-width: 86px;">
+                        @@include("@@webRoot/partials/brands/logotype/netflix.svg")
+                      </div>
+
+                      <!-- Icon -->
+                      <a class="ml-auto text-decoration-none text-netflix stretched-link" href="#!">
+                        <i class="fe fe-arrow-right"></i>
+                      </a>
+
+                    </div>
+
+                    <!-- Text -->
+                    <small>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna lectus, mattis non.
+                    </small>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card docs-card">
+              <div class="card-footer">
+                <code class="html highlight">
+                  &nbsp;&nbsp;&lt;div&nbsp;class=&quot;flickity-viewport-visible&quot;&nbsp;data-flickity='{&quot;cellAlign&quot;:&nbsp;&quot;left&quot;,&nbsp;&quot;contain&quot;:&nbsp;true}'&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;...<br />&nbsp;&nbsp;&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Overlapping buttons", "url": "#overlappingButtons"}, {"title": "Adjacent buttons", "url": "#adjacentButtons"}, {"title": "Soft edges", "url": "#softEdges"}, {"title": "Fade", "url": "#fade"}, {"title": "Responsive buttons", "url": "#responsiveButtons"}, {"title": "Visible overflow", "url": "#visibleOverflow"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

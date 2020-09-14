@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Blueriddle Blog"
+    })
+  </head>
+  <body class="bg-white">
+
+    <!-- MODALS -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light bg-white"
+    })
+
+    <!-- WELCOME -->
+    <section class="pt-6 pt-md-8 bg-white">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8 text-center text-gray-900">
+
+            <!-- Preheading -->
+            <h6 class="text-uppercase text-primary mb-5">
+              News from us
+            </h6>
+
+            <!-- Heading -->
+            <h1 class="display-3 mb-4">
+              Blueriddle Bulletin
+            </h1>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIDEBOOK -->
+    <section class="pt-9 pt-md-11">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Heading -->
+            <h1 class="mb-0 text-gray-900">
+              Our Updates
+            </h1>
+
+            <!-- Text -->
+            <p class="text-gray-900">
+              What we’ve been working on lately.
+            </p>
+
+            <!-- DECORATION -->
+            <div class="position-relative">
+              <div class="position-absolute top-right text-warning mt-n11 mr-n7">
+                @@include("partials/decorations/decoration-2.svg")
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card card-lg rounded-top-left rounded-bottom-right lift lift-lg">
+              <div class="row no-gutters">
+                <div class="col-md-6 bg-cover rounded-top-left my-n2" style="background-image: url(assets/img/blog/post-side-header-1.png); background-position: center right;">
+
+                  <img class="img-fluid invisible" src="assets/img/blog/post-side-header-1.png" alt="...">
+
+                </div>
+                <div class="col-md-6">
+
+                  <div class="card-body">
+
+                    <h6 class="font-family-sans-serif text-primary mb-2">
+                      Featured Story
+                    </h6>
+
+                    <h2 class="display-4 mb-4">
+                      Welcome to Blueriddle.
+                    </h2>
+
+                    <p class="mb-4">
+                      Where's your Amazon package really coming from?
+                    </p>
+
+                    <div class="d-flex align-items-center">
+
+                      <div class="avatar avatar-xs">
+                        <img class="avatar-img rounded-circle" src="assets/img/pics/sid.jpg" alt="...">
+                      </div>
+
+                      <div class="ml-4 text-left">
+
+                        <p class="mb-0">
+                          Sidharth Potdar
+                        </p>
+
+                        <p class="small text-muted mt-n1 mb-0">
+                          July 8, 2020
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                    <a class="stretched-link" href="@@webRoot/blog-1.html"></a>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br />
+    <br />
+
+    <!-- CTA -->
+    <section class="bg-dark border-multicolor">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-12">
+
+            <!-- Divider -->
+            <hr class="border-gray-900 mt-0 mb-8">
+
+          </div>
+          <div class="col-md">
+
+            <!-- Heading -->
+            <h1 class="text-white mb-0">
+              Get your news <span class="text-primary-light">delivered.</span>
+            </h1>
+
+            <!-- Text -->
+            <p class="text-white-60 mb-4 mb-md-0">
+              Only important news and sales. Never spam.
+            </p>
+
+          </div>
+          <div class="col-md-4">
+
+            <!-- Form -->
+            <form>
+              <input class="form-control" type="email" placeholder="Email address">
+            </form>
+
+          </div>
+          <div class="col-12">
+
+            <!-- Divider -->
+            <hr class="border-gray-900 mb-0 mt-8">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    @@include("partials/footer.html", {
+    "classList": "bg-dark"
+    })
+
+    <!-- JAVASCRIPT -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

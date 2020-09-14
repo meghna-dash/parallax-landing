@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Alerts"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Alerts",
+            "isCustom": false,
+            "description": "Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.",
+            "bootstrapDocs": "http://getbootstrap.com/docs/4.1/components/alerts/",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "",
+            "id": "id",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <div class="alert alert-primary" role="alert">
+                  A simple primary alert—check it out!
+                </div>
+
+                <div class="alert alert-secondary" role="alert">
+                  A simple secondary alert—check it out!
+                </div>
+
+                <div class="alert alert-success" role="alert">
+
+                  <!-- Title -->
+                  <h4 class="alert-heading font-family-sans-serif">Well done!</h4>
+
+                  <!-- Description -->
+                  <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+
+                  <!-- Divider -->
+                  <hr>
+
+                  <!-- Text -->
+                  <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+
+                </div>
+
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+
+                  <!-- Title -->
+                  <strong>Danger Will Robinson!</strong> This is a dismissable alert!
+
+                  <!-- Button -->
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="fe fe-x"></i>
+                  </button>
+
+                </div>
+
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+
+                  <!-- Title -->
+                  <strong>Holy guacamole!</strong> Notice how the text/UI have high contrast?
+
+                  <!-- Button -->
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <i class="fe fe-x"></i>
+                  </button>
+
+                </div>
+
+                <div class="alert alert-info" role="alert">
+                  A simple info alert—check it out!
+                </div>
+
+                <div class="alert alert-light" role="alert">
+                  A simple light alert—check it out!
+                </div>
+
+                <div class="alert alert-dark" role="alert">
+                  A simple dark alert—check it out!
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": []
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

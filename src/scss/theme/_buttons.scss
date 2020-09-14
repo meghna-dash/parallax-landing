@@ -1,0 +1,108 @@
+//
+// buttons.scss
+//
+
+.btn:not([class*="btn-outline"]) {
+  border-color: transparent !important;
+}
+
+
+// Hovers
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include hover-focus {
+      background-color: darken(theme-color($color), 4%);
+    }
+  }
+}
+
+// Colors
+
+.btn-white {
+  @include button-variant($white, $white);
+  color: $link-color;
+
+  @include hover-focus-active {
+    background-color: $white;
+    color: $link-hover-color;
+  }
+}
+
+.btn-white:not(:disabled):not(.disabled):active,
+.btn-white:not(:disabled):not(.disabled).active {
+  background-color: $white;
+  color: $link-hover-color;
+}
+
+.btn-gray-200 {
+  @include button-variant($gray-200, $gray-200);
+  color: $link-hover-color;
+
+  @include hover-focus-active {
+    color: $link-hover-color;
+  }
+}
+
+.btn-gray-200:not(:disabled):not(.disabled):active,
+.btn-gray-200:not(:disabled):not(.disabled).active {
+  color: $link-hover-color;
+}
+
+.btn-gray-300 {
+  @include button-variant($gray-300, $gray-300);
+  color: $link-hover-color;
+
+  @include hover-focus-active {
+    color: $link-hover-color;
+  }
+}
+
+.btn-gray-300:not(:disabled):not(.disabled):active,
+.btn-gray-300:not(:disabled):not(.disabled).active {
+  color: $link-hover-color;
+}
+
+
+// Circle
+
+.btn-circle {
+  padding-left: $btn-padding-y;
+  padding-right: $btn-padding-y;
+  border-radius: 50%;
+}
+
+.btn-circle > * {
+  display: block;
+  width: calc(#{$btn-font-size} * #{$btn-line-height});
+  line-height: inherit;
+}
+
+// Sizing
+
+.btn-circle.btn-lg {
+  padding-left: $btn-padding-y-lg;
+  padding-right: $btn-padding-y-lg;
+  border-radius: 50%;
+}
+
+.btn-circle.btn-lg > * {
+  width: calc(#{$btn-font-size-lg} * #{$btn-line-height-lg});
+}
+
+.btn-circle.btn-sm {
+  padding-left: $btn-padding-y-sm;
+  padding-right: $btn-padding-y-sm;
+  border-radius: 50%;
+}
+
+.btn-circle.btn-sm > * {
+  width: calc(#{$btn-font-size-sm} * #{$btn-line-height-sm});
+}
+
+
+// Link
+
+.btn-link {
+  font-weight: $btn-font-weight;
+}

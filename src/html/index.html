@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "pageTitle": "Blueriddle"
+    })
+
+  </head>
+  <body>
+
+    @@include("partials/modals.html")
+
+    @@include("partials/navbar.html", {
+    "classList": "navbar-light"
+    })
+
+
+    <section class="pt-6 pt-md-12">
+      <div class="container-lg">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-xl-6 text-center text-md-left mt-md-n8" data-aos="fade-up">
+
+            <h1 class="display-3 mb-4">
+              Helping you get your <span class="text-underline-warning d-xl-inline d-xl-none">401(k) match</span>.
+            </h1>
+
+            <p class="lead text-muted">
+              1-in-4 Americans don't get their 401(k) match, leaving 24 billion dollars on the table every year. We're changing that.
+            </p>
+
+            <div class="mb-8 mb-md-0">
+              <a class="btn btn-primary lift" href="mailto: contact@blueriddle.com">
+                Learn More
+              </a>
+            </div>
+
+          </div>
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-5">
+
+            <!-- Image -->
+            <div class="position-relative">
+
+              <!-- Decoration -->
+              <div class="position-absolute bottom-right text-primary-light mr-n8 mb-n6" data-aos="fade-up" data-aos-delay="0">
+                @@include("partials/decorations/decoration-2.svg")
+              </div>
+
+              <!-- Image -->
+              <div class="text-center">
+                <img class="position-relative img-fluid rounded-top-left rounded-bottom-right shadow-lg mw-md-125 mb-8 mb-md-0" src="assets/img/401k.png" alt="..." data-aos="fade-up" data-aos-delay="0">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- JAVASCRIPT -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

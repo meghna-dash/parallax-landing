@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+  <head>
+    @@include("@@webRoot/partials/head.html", {
+    "pageTitle": "Goodkit"
+    })
+  </head>
+  <body class="docs-body">
+
+    <!-- MODALS -->
+    @@include("@@webRoot/partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("@@webRoot/partials/navbar.html", {
+    "classList": "navbar-light fixed-top bg-white border-bottom"
+    })
+
+    <!-- BREADCRUMB -->
+    @@include("@@webRoot/partials/docs/breadcrumb.html", {
+    "title": "Custom forms"
+    })
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col-lg-3 col-xl-2 docs-sidenav docs-sidenav-left">
+
+            @@include("@@webRoot/partials/docs/nav.html")
+
+          </div>
+          <div class="col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-6 py-md-9 px-lg-10">
+
+            @@include("@@webRoot/partials/docs/header.html", {
+            "title": "Custom forms",
+            "isCustom": false,
+            "description": "For even more customization and cross browser consistency, use our completely custom form elements to replace the browser defaults. They’re built on top of semantic and accessible markup, so they’re solid replacements for any default form control.",
+            "bootstrapDocs": "https://getbootstrap.com/docs/4.4/components/forms/#custom-forms",
+            "pluginDocs": ""
+            })
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Checkboxes",
+            "id": "checkboxes",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Custom checkbox -->
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;custom-control&nbsp;custom-checkbox&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;class=&quot;custom-control-input&quot;&nbsp;id=&quot;customCheck1&quot;&gt;<br />&nbsp;&nbsp;&lt;label&nbsp;class=&quot;custom-control-label&quot;&nbsp;for=&quot;customCheck1&quot;&gt;Check&nbsp;this&nbsp;custom&nbsp;checkbox&lt;/label&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Radios",
+            "id": "radios",
+            "isCustom": false,
+            "description": ""
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Custom radio -->
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                </div>
+
+                <!-- Custom radio -->
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                </div>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;div&nbsp;class=&quot;custom-control&nbsp;custom-radio&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;customRadio1&quot;&nbsp;name=&quot;customRadio&quot;&nbsp;class=&quot;custom-control-input&quot;&gt;<br />&nbsp;&nbsp;&lt;label&nbsp;class=&quot;custom-control-label&quot;&nbsp;for=&quot;customRadio1&quot;&gt;Toggle&nbsp;this&nbsp;custom&nbsp;radio&lt;/label&gt;<br />&lt;/div&gt;<br /><br />&lt;div&nbsp;class=&quot;custom-control&nbsp;custom-radio&quot;&gt;<br />&nbsp;&nbsp;&lt;input&nbsp;type=&quot;radio&quot;&nbsp;id=&quot;customRadio2&quot;&nbsp;name=&quot;customRadio&quot;&nbsp;class=&quot;custom-control-input&quot;&gt;<br />&nbsp;&nbsp;&lt;label&nbsp;class=&quot;custom-control-label&quot;&nbsp;for=&quot;customRadio2&quot;&gt;Or&nbsp;toggle&nbsp;this&nbsp;other&nbsp;custom&nbsp;radio&lt;/label&gt;<br />&lt;/div&gt;
+                </code>
+              </div>
+            </div>
+
+            @@include("@@webRoot/partials/docs/subheader.html", {
+            "title": "Timeline radio",
+            "id": "timelineRadio",
+            "isCustom": true,
+            "description": "The timeline radio component that combines the custom radios and the countUp plugin. The color of the timeline radio component can be controlled with the <code>.timeline-radio-{color}</code> utility classes."
+            })
+
+            <!-- Card -->
+            <div class="card card-sm docs-card">
+              <div class="card-body">
+
+                <!-- Form -->
+                <form>
+                  <div class="form-group timeline-radio timeline-radio-warning">
+
+                    <!-- Timeline radio -->
+                    <input class="timeline-radio-input" id="timelineRadioOne" data-toggle="price" data-target="#price" data-value="199" name="timelineRadio" type="radio">
+                    <label class="timeline-radio-label" for="timelineRadioOne">
+                      <small class="text-muted">1-5</small>
+                    </label>
+
+                    <!-- Timeline radio -->
+                    <input class="timeline-radio-input" id="timelineRadioTwo" data-toggle="price" data-target="#price" data-value="299" name="timelineRadio" type="radio">
+                    <label class="timeline-radio-label" for="timelineRadioTwo">
+                      <small class="text-muted">6-15</small>
+                    </label>
+
+                    <!-- Timeline radio -->
+                    <input class="timeline-radio-input" id="timelineRadioThree" data-toggle="price" data-target="#price" data-value="399" name="timelineRadio" type="radio">
+                    <label class="timeline-radio-label" for="timelineRadioThree">
+                      <small class="text-muted">16-40</small>
+                    </label>
+
+                    <!-- Timeline radio -->
+                    <input class="timeline-radio-input" id="timelineRadioFour" data-toggle="price" data-target="#price" data-value="499" name="timelineRadio" type="radio" checked>
+                    <label class="timeline-radio-label" for="timelineRadioFour">
+                      <small class="text-muted">41-100</small>
+                    </label>
+
+                    <!-- Timeline radio -->
+                    <input class="timeline-radio-input" id="timelineRadioFive" data-toggle="price" data-target="#price" data-value="599" name="timelineRadio" type="radio">
+                    <label class="timeline-radio-label" for="timelineRadioFive">
+                      <small class="text-muted">100+</small>
+                    </label>
+
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-md text-center text-md-left">
+
+                      <!-- Price -->
+                      <div class="display-4 font-family-sans-serif font-weight-bolder mb-4 mb-md-0">
+                        <span class="font-size-h3 align-middle">$</span>
+                        <span class="mx-n2" id="price">499</span>
+                        <span class="font-size-h2 align-middle">/mo </span>
+                      </div>
+
+                    </div>
+                    <div class="col-md-auto">
+
+                      <!-- Button -->
+                      <button class="btn btn-block btn-primary-dark lift">
+                        Start Hiring
+                      </button>
+
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+              <div class="card-footer">
+                <code class="html highlight">
+                  &lt;form&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;form-group&nbsp;timeline-radio&nbsp;timeline-radio-warning&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Timeline&nbsp;radio&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;class=&quot;timeline-radio-input&quot;&nbsp;id=&quot;timelineRadioOne&quot;&nbsp;data-toggle=&quot;price&quot;&nbsp;data-target=&quot;#price&quot;&nbsp;data-value=&quot;199&quot;&nbsp;name=&quot;timelineRadio&quot;&nbsp;type=&quot;radio&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;class=&quot;timeline-radio-label&quot;&nbsp;for=&quot;timelineRadioOne&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;small&nbsp;class=&quot;text-muted&quot;&gt;1-5&lt;/small&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Timeline&nbsp;radio&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;class=&quot;timeline-radio-input&quot;&nbsp;id=&quot;timelineRadioTwo&quot;&nbsp;data-toggle=&quot;price&quot;&nbsp;data-target=&quot;#price&quot;&nbsp;data-value=&quot;299&quot;&nbsp;name=&quot;timelineRadio&quot;&nbsp;type=&quot;radio&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;class=&quot;timeline-radio-label&quot;&nbsp;for=&quot;timelineRadioTwo&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;small&nbsp;class=&quot;text-muted&quot;&gt;6-15&lt;/small&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Timeline&nbsp;radio&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;class=&quot;timeline-radio-input&quot;&nbsp;id=&quot;timelineRadioThree&quot;&nbsp;data-toggle=&quot;price&quot;&nbsp;data-target=&quot;#price&quot;&nbsp;data-value=&quot;399&quot;&nbsp;name=&quot;timelineRadio&quot;&nbsp;type=&quot;radio&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;class=&quot;timeline-radio-label&quot;&nbsp;for=&quot;timelineRadioThree&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;small&nbsp;class=&quot;text-muted&quot;&gt;16-40&lt;/small&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Timeline&nbsp;radio&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;class=&quot;timeline-radio-input&quot;&nbsp;id=&quot;timelineRadioFour&quot;&nbsp;data-toggle=&quot;price&quot;&nbsp;data-target=&quot;#price&quot;&nbsp;data-value=&quot;499&quot;&nbsp;name=&quot;timelineRadio&quot;&nbsp;type=&quot;radio&quot;&nbsp;checked&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;class=&quot;timeline-radio-label&quot;&nbsp;for=&quot;timelineRadioFour&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;small&nbsp;class=&quot;text-muted&quot;&gt;41-100&lt;/small&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Timeline&nbsp;radio&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;class=&quot;timeline-radio-input&quot;&nbsp;id=&quot;timelineRadioFive&quot;&nbsp;data-toggle=&quot;price&quot;&nbsp;data-target=&quot;#price&quot;&nbsp;data-value=&quot;599&quot;&nbsp;name=&quot;timelineRadio&quot;&nbsp;type=&quot;radio&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&nbsp;class=&quot;timeline-radio-label&quot;&nbsp;for=&quot;timelineRadioFive&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;small&nbsp;class=&quot;text-muted&quot;&gt;100+&lt;/small&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/label&gt;<br /><br />&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;div&nbsp;class=&quot;row&nbsp;align-items-center&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;col-md&nbsp;text-center&nbsp;text-md-left&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Price&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;display-4&nbsp;font-weight-bolder&nbsp;mb-4&nbsp;mb-md-0&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;font-size-h3&nbsp;align-middle&quot;&gt;$&lt;/span&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;mx-n2&quot;&nbsp;id=&quot;price&quot;&gt;499&lt;/span&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&nbsp;class=&quot;font-size-h2&nbsp;align-middle&quot;&gt;/mo&nbsp;&lt;/span&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;col-md-auto&quot;&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Button&nbsp;--&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;btn&nbsp;btn-block&nbsp;btn-primary-dark&nbsp;lift&quot;&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start&nbsp;Hiring<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />&nbsp;&nbsp;&lt;/div&gt;<br />&lt;/form&gt;
+                </code>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-xl-2 d-none d-xl-block docs-sidenav docs-sidenav-right">
+
+            @@include("@@webRoot/partials/docs/subnav.html", {
+            "items": [{"title": "Checkboxes", "url": "#checkboxes"}, {"title": "Radios", "url": "#radios"}, {"title": "Timeline radio", "url": "#timelineRadio"}]
+            })
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    @@include("@@webRoot/partials/scripts.html")
+
+  </body>
+</html>

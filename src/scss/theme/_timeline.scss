@@ -1,0 +1,107 @@
+//
+// timeline.scss
+//
+
+.timeline {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+// Item
+
+.timeline-item {
+  position: relative;
+  display: block;
+  text-align: center;
+  counter-increment: timeline-counter;
+}
+
+.timeline-item + .timeline-item {
+  margin-top: $timeline-item-margin-bottom;
+}
+
+// Counter
+
+.timeline-item::before {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $timeline-counter-size;
+  height: $timeline-counter-size;
+  margin: 0 auto $timeline-counter-margin-bottom;
+  font-size: $timeline-counter-font-size;
+  font-family: $timeline-counter-font-family;
+  border-radius: 50%;
+  content: counter(timeline-counter);
+}
+
+// Line
+
+.timeline-item::after {
+  position: absolute;
+  top: $timeline-counter-size / 2;
+  left: 0;
+  right: 0;
+  display: none;
+  border-top: $border-width * 2 solid;
+  content: '';
+}
+
+.timeline-item:first-child::after {
+  left: 50%;
+  width: 50%;
+}
+
+.timeline-item:last-child::after {
+  width: 50%;
+}
+
+// Colors
+
+@each $color, $value in $theme-colors {
+
+  .timeline-#{$color} {
+
+    .timeline-item::before {
+      background-color: theme-color-level(#{$color}, -7);
+      color: color-yiq($value);
+    }
+
+    .timeline-item.active::before {
+      background-color: $value;
+    }
+
+    .timeline-item::after {
+      border-color: theme-color-level(#{$color}, -7);
+    }
+
+    .timeline-item.active::after {
+      border-color: $value;
+    }
+  }
+}
+
+// Expand
+
+@each $breakpoint, $value in $grid-breakpoints {
+  @include media-breakpoint-up(#{$breakpoint}) {
+
+    .timeline-expand-#{$breakpoint} {
+      display: flex;
+
+      .timeline-item {
+        flex: 1;
+      }
+
+      .timeline-item::after {
+        display: block;
+      }
+
+      .timeline-item + .timeline-item {
+        margin-top: 0;
+      }
+    }
+  }
+}

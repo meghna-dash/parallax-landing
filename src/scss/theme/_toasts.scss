@@ -1,0 +1,28 @@
+//
+// toasts.scss
+//
+
+.toast-header {
+  padding-top: $toast-header-padding-y;
+  padding-bottom: $toast-header-padding-y;
+  border-bottom-width: $border-width;
+}
+
+
+// Positioner
+
+.toast-positioner {
+  position: fixed;
+  z-index: $zindex-fixed;
+  bottom: $toast-positioner-spacing;
+  width: 100%;
+  max-width: $toast-max-width;
+}
+
+.toast-positioner-left {
+  left: $toast-positioner-spacing;
+}
+
+.toast-positioner-right {
+  right: $toast-positioner-spacing;
+}
